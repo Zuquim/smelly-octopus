@@ -5,7 +5,7 @@ Repositório criado para publicar as respostas pertinentes às [atividades
 propostas](https://github.com/xavierlaerte/labex-20.1/blob/master/labs/lab01.md) 
  no [repositório da disciplina](https://github.com/xavierlaerte/labex-20.1).
 
-## Instruções de uso (Linux)
+## Instruções de uso (Linux/MacOS)
 ### Método recomendado: Container Docker
 
 **Requisitos:**
