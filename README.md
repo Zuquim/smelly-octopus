@@ -20,7 +20,8 @@ A partir do diretório raíz do projeto, execute:
 
 **Requisitos:**
 - [Python](https://www.python.org/downloads/) >= 3.6
-- Módulos Python contidos no arquivo `requirements.txt` 
+- Módulos Python contidos no arquivo 
+[requirements.txt](https://github.com/Zuquim/smelly-octopus/blob/master/requirements.txt)
 
 A partir do diretório raíz do projeto, execute:
 
