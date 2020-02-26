@@ -7,12 +7,12 @@ propostas](https://github.com/xavierlaerte/labex-20.1/blob/master/labs/lab01.md)
 
 ## Instruções de uso (Linux/MacOS)
 Independente do método escolhido, a aplicação irá procurar por um arquivo de 
-texto no diretório raíz do projeto chamado `graphql.token` que contém uma chave 
+texto chamado `graphql.token` no diretório raíz do projeto, que contém uma chave 
 de acesso à API do GitHub para o uso do GraphQL. Caso a aplicação não 
 identifique esse arquivo, a mesma irá solicitar que o usuário insira esta chave 
 manualmente no prompt do terminal.
 
-### Método recomendado: Container Docker
+### Método #1 (recomendado): Container Docker
 
 **Requisitos:**
 - [Docker](https://docs.docker.com/install/#supported-platforms)
