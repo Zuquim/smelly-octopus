@@ -12,7 +12,7 @@ de acesso à API do GitHub para o uso do GraphQL. Caso a aplicação não
 identifique esse arquivo, a mesma irá solicitar que o usuário insira esta chave 
 manualmente no prompt do terminal.
 
-### Método #1 (recomendado): Container Docker
+### Método #1: Container Docker (recomendado)
 
 **Requisitos:**
 - [Docker](https://docs.docker.com/install/#supported-platforms)
