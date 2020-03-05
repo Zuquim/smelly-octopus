@@ -49,3 +49,23 @@ class Query:
             f"response.status_code={self.response.status_code}; "
             f"response.json()='{self.response.json()}'"
         )
+
+    def run_query(self):
+        # Checking if HTTP POST request was successful
+        if self.response.status_code != 200:
+            l.error(
+                f"HTTP POST request failed! Status code: {self.response.status_code}"
+            )
+            exit(1)
+        if self.response.status_code == 200 and "errors" in self.response.json():
+            l.error(
+                f"HTTP POST request failed!"
+                f"\nErrors:"
+                f"\n{[err['message'] for err in self.response.json()['errors']]}"
+            )
+            exit(1)
+
+        # Printing request response
+        print(f"Raw JSON response: {self.response.json()}")
+
+        return self.response
