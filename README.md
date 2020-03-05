@@ -12,7 +12,16 @@ de acesso à API do GitHub para o uso do GraphQL. Caso a aplicação não
 identifique esse arquivo, a mesma irá solicitar que o usuário insira esta chave 
 manualmente no prompt do terminal.
 
-### Método #1: Container Docker (recomendado)
+### Método #1: Docker Compose (recomendado)
+
+**Requisitos:**
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+A partir do diretório raíz do projeto, execute:
+
+- `docker-compose up --build`
+
+### Método #2: Docker Container
 
 **Requisitos:**
 - [Docker](https://docs.docker.com/install/#supported-platforms)
@@ -20,9 +29,9 @@ manualmente no prompt do terminal.
 A partir do diretório raíz do projeto, execute:
 
 - `docker build --rm --no-cache --pull -t zuquim-labex:latest .`
-- `docker run -it --rm --name zuquim-labex zuquim-labex`
+- `docker run -it --rm --name zuquim-labex -v $PWD/output:/opt/output zuquim-labex`
 
-### Método #2: [venv](https://docs.python.org/3.7/library/venv.html)
+### Método #3: [venv](https://docs.python.org/3.7/library/venv.html)
 
 **Requisitos:**
 - [Python](https://www.python.org/downloads/) >= 3.6
