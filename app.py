@@ -1,12 +1,15 @@
+from csv import writer
 from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL
+from os import getcwd
 from os.path import exists
 from sys import exit
 
 from logzero import setup_logger
 
-from sprints.Lab01S01 import Query as sprint_01
+from sprints.Lab01S01 import Query as query_01
+from sprints.Lab01S02 import Query as query_02
 
-l = setup_logger(name="main", level=WARNING)
+l = setup_logger(name="main", level=INFO)
 
 # Loading token string
 _token_file = "graphql.token"
@@ -38,21 +41,36 @@ headers = {
     "Authorization": f"bearer {_token}",
 }
 
-# Running HTTP POST request
-query = sprint_01(url, headers)
-response = query.response
+# Some constants
+_output_path = f"{getcwd()}/output"
 
-# Checking if HTTP POST request was successful
-if response.status_code != 200:
-    l.error(f"HTTP POST request failed! Status code: {response.status_code}")
-    exit(1)
-if response.status_code == 200 and "errors" in response.json():
-    l.error(
-        f"HTTP POST request failed!"
-        f"\nErrors:"
-        f"\n{[err['message'] for err in response.json()['errors']]}"
-    )
-    exit(1)
+# Sprint 01
+l.info("Running Sprint 01")
+s01 = query_01(url, headers)
+s01.run_query()
+l.info("Finished Sprint 01")
 
-# Printing request response
-print(f"Raw JSON response: {response.json()}")
+# Sprint 02
+l.info("Running Sprint 02")
+s02 = query_02(url, headers)
+nodes = s02.json["data"]["search"]["nodes"]
+table_headers = nodes[0].keys()
+l.info(f"Total nodes after first run: {len(nodes)}")
+
+# Getting nodes for the next 19 pages
+for _ in range(1, 20):
+    s02.next_page()
+    s02.request()
+    l.debug(f"Total nodes after last run: {len(nodes)}")
+    nodes += s02.json["data"]["search"]["nodes"]
+l.info(f"Total nodes after final run: {len(nodes)}")
+
+# Saving repositories data to CSV file inside 'output' directory
+with open(f"{_output_path}/repositories.csv", "w") as f:
+    csv = writer(f)
+    csv.writerow(table_headers)
+    for repository in nodes:
+        l.debug(f"repository={repository}")
+        csv.writerow(repository.values())
+
+l.info("Finished Sprint 02")
