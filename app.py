@@ -4,6 +4,8 @@ from os import getcwd
 from os.path import exists
 from sys import exit
 
+import pandas as pd
+
 from logzero import setup_logger
 
 from sprints.Lab01S01 import Query as query_01
@@ -65,6 +67,11 @@ for _ in range(1, 20):
     nodes += s02.json["data"]["search"]["nodes"]
 l.info(f"Total nodes after final run: {len(nodes)}")
 
+# Fixing node dictionaries
+for i, node in enumerate(nodes):
+    nodes[i] = s02.fix_dict(node)
+l.info(f"Fixed a total of {len(nodes)} node dictionaries.")
+
 # Saving repositories data to CSV file inside 'output' directory
 with open(f"{_output_path}/repositories.csv", "w") as f:
     csv = writer(f)
@@ -74,3 +81,7 @@ with open(f"{_output_path}/repositories.csv", "w") as f:
         csv.writerow(repository.values())
 
 l.info("Finished Sprint 02")
+
+# Sprint 03
+df = pd.read_csv(f"{_output_path}/repositories.csv")
+df.keys()

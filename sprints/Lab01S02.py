@@ -27,8 +27,8 @@ class Query:
         "        url"
         "        createdAt"
         "        updatedAt"
-        "        releases{ totalCount }"
         "        primaryLanguage{ name }"
+        "        releases{ totalCount }"
         "        pullRequests{ totalCount }"
         "        all_issues: issues{ totalCount } "
         "        closed_issues: issues(states:CLOSED){ totalCount }"
@@ -99,3 +99,15 @@ class Query:
         self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
 
         return self.json["data"]["search"]["pageInfo"]["endCursor"]
+
+    def fix_dict(self, node):
+        try:
+            node["primaryLanguage"] = node["primaryLanguage"]["name"]
+        except TypeError as e:
+            l.warning(f"Primary language not available. Setting null. | {e}")
+            node["primaryLanguage"] = None
+        node["releases"] = node["releases"]["totalCount"]
+        node["pullRequests"] = node["pullRequests"]["totalCount"]
+        node["all_issues"] = node["all_issues"]["totalCount"]
+        node["closed_issues"] = node["closed_issues"]["totalCount"]
+        return node
