@@ -1,4 +1,4 @@
-from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL
+from logging import DEBUG, INFO
 
 from logzero import setup_logger
 from requests import post
