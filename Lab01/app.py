@@ -1,5 +1,5 @@
 from csv import writer
-from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL
+from logging import DEBUG, INFO
 from os import getcwd
 from os.path import exists
 from sys import exit
