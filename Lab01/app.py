@@ -8,8 +8,8 @@ import pandas as pd
 
 from logzero import setup_logger
 
-from sprints.Lab01S01 import Query as query_01
-from sprints.Lab01S02 import Query as query_02
+from Lab01.sprints.Lab01S01 import Query as query_01
+from Lab01.sprints.Lab01S02 import Query as query_02
 
 l = setup_logger(name="main", level=INFO)
 
