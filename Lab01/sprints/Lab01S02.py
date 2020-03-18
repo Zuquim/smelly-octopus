@@ -1,4 +1,5 @@
 from logging import DEBUG, INFO
+from sys import exit
 
 from logzero import setup_logger
 from requests import post
@@ -42,7 +43,7 @@ class Query:
         "}"
     )
 
-    def __init__(self, url, headers):
+    def __init__(self, url, headers, data_template=data_template):
         # Initializing instance attributes
         self.data = {"query": ""}
         self.headers = headers
@@ -50,7 +51,7 @@ class Query:
         self.json = {}
 
         # Setting up first query (the only one where 'after' is 'null')
-        self.data["query"] = self.data_template.replace('"!<REPLACE-ME>!"', "null")
+        self.data["query"] = data_template.replace('"!<REPLACE-ME>!"', "null")
 
         # Running HTTP POST request
         self.request()
@@ -96,9 +97,11 @@ class Query:
         return self.data
 
     def next_page(self):
-        self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
-
-        return self.json["data"]["search"]["pageInfo"]["endCursor"]
+        if self.json["data"]["search"]["pageInfo"]["hasNextPage"]:
+            self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
+            return self.json["data"]["search"]["pageInfo"]["endCursor"]
+        else:
+            return "null"
 
     def fix_dict(self, node):
         try:
@@ -106,8 +109,34 @@ class Query:
         except TypeError as e:
             l.warning(f"Primary language not available. Setting null. | {e}")
             node["primaryLanguage"] = None
-        node["releases"] = node["releases"]["totalCount"]
-        node["pullRequests"] = node["pullRequests"]["totalCount"]
-        node["all_issues"] = node["all_issues"]["totalCount"]
-        node["closed_issues"] = node["closed_issues"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No primaryLanguage | {e}")
+        try:
+            node["releases"] = node["releases"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No releases | {e}")
+        try:
+            node["pullRequests"] = node["pullRequests"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No pullRequests | {e}")
+        try:
+            node["all_issues"] = node["all_issues"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No all_issues | {e}")
+        try:
+            node["closed_issues"] = node["closed_issues"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No closed_issues | {e}")
+        try:
+            node["stargazers"] = node["stargazers"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No stargazers | {e}")
+        try:
+            node["watchers"] = node["watchers"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No watchers | {e}")
+        try:
+            node["commitComments"] = node["commitComments"]["totalCount"]
+        except KeyError as e:
+            l.debug(f"No commitComments | {e}")
         return node
