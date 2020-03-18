@@ -1,5 +1,3 @@
-from csv import writer
-from json import load
 from logging import DEBUG, INFO
 from os import getcwd, listdir, makedirs
 from os.path import exists
@@ -9,7 +7,6 @@ from sys import exit
 import git
 import pandas as pd
 from logzero import setup_logger
-from radon import raw
 
 from GitHub.GraphQL import Query
 from GitHub.tools import *
@@ -83,40 +80,19 @@ save_csv("python_repos", table_headers, nodes)
 l.info("Finished Sprint 01, second step (2/4)")
 
 # Step 3
-df = pd.read_csv("output/guido_repos.csv")
-
 # Making temporary directory to store cloned repositories
-repos_path = f"/tmp/repositories/"
+repos_path = f"/tmp/repositories"
 if not exists(repos_path):
     makedirs(repos_path)
 
-# Cloning repositories
-for name, url in zip(df["name"], df["url"]):
-    git.Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
-    l.info(f"Cloned {name}")
+for csv in listdir("output"):
+    df = pd.read_csv("output/" + csv)
 
-# Analyzing LoC in each repository
-for repo in listdir(repos_path):
-    out, err = Popen(
-        [
-            f"{getcwd()}/../venv/bin/radon",
-            "raw",
-            "-O", f"{repos_path}/{repo}.txt",
-            f"{repos_path}/{repo}"
-        ], stdout=PIPE, stderr=PIPE
-    ).communicate()
-    # Checking return code
-    if err != b"":
-        l.error(err.decode())
-    else:
-        l.debug(f"Analyzed {repo}")
-        # Summing total LoC for each repository
-        with open(f"{repos_path}/{repo}.txt", "r") as f:
-            code = f.read()
-        loc = 0
-        for line in code.splitlines():
-            if " LOC:" in line:
-                loc += int(line.split(": ")[1])
-        l.info(f"LoC for {repo}: {loc}")
-        with open(f"{repos_path}/loc_{repo}.txt", "w") as f:
-            f.write(str(loc))
+    # Cloning repositories and getting a list of LoC sum for each one
+    loc_list = clone_n_sum_loc(df, repos_path)
+
+    # Saving new CSV
+    df.insert(9, "LoC", value=loc_list, allow_duplicates=True)
+    df.to_csv(f"output/loc_{csv}")
+
+l.info("Finished Sprint 01, third step (3/4)")

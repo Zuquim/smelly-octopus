@@ -1,3 +1,4 @@
+import json
 from logging import DEBUG, INFO
 from sys import exit
 
@@ -43,7 +44,7 @@ class Query:
         "}"
     )
 
-    def __init__(self, url, headers, data_template=default_template):
+    def __init__(self, url: str, headers: json, data_template: str=default_template):
         # Initializing instance attributes
         self.data = {"query": ""}
         self.data_template = data_template
@@ -89,7 +90,7 @@ class Query:
 
         return True
 
-    def new_query(self, end_cursor):
+    def new_query(self, end_cursor: str):
         l.debug(f"end_cursor={end_cursor}")
 
         # GraphQL query definition (setting up parameter to get next page)
@@ -104,7 +105,7 @@ class Query:
         else:
             return False
 
-    def fix_dict(self, node):
+    def fix_dict(self, node: json):
         try:
             node["primaryLanguage"] = node["primaryLanguage"]["name"]
         except TypeError as e:
