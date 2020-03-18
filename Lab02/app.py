@@ -1,12 +1,14 @@
 from csv import writer
 from logging import DEBUG, INFO
-from os import getcwd
+from os import getcwd, makedirs
 from os.path import exists
 from sys import exit
 
-from GraphQL import Query
-
+import git
+import pandas as pd
 from logzero import setup_logger
+
+from GraphQL import Query
 
 l = setup_logger(name="main", level=INFO)
 
@@ -147,3 +149,12 @@ save_csv("python_repos", table_headers, nodes)
 l.info("Finished Sprint 01, second step (2/4)")
 
 # Step 3
+df = pd.read_csv("output/guido_repos.csv")
+
+repos_path = f"/tmp/repositories/"
+if not exists(repos_path):
+    makedirs(repos_path)
+
+for name, url in zip(df["name"], df["url"]):
+    repo_path = f"{repos_path}/{name}"
+    git.Git(repo_path).clone(f"{url.replace('https', 'git')}.git")
