@@ -8,10 +8,10 @@ l = setup_logger(name="Lab01S02", level=INFO)
 
 
 class Query:
-    __slots__ = ["data", "headers", "url", "response", "json"]
+    __slots__ = ["data", "data_template", "headers", "url", "response", "json"]
 
     # Request JSON data template
-    data_template = (
+    default_template = (
         "{"
         "  search("
         '      query:"stars:>100",'
@@ -43,9 +43,10 @@ class Query:
         "}"
     )
 
-    def __init__(self, url, headers, data_template=data_template):
+    def __init__(self, url, headers, data_template=default_template):
         # Initializing instance attributes
         self.data = {"query": ""}
+        self.data_template = data_template
         self.headers = headers
         self.url = url
         self.json = {}
@@ -101,7 +102,7 @@ class Query:
             self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
             return self.json["data"]["search"]["pageInfo"]["endCursor"]
         else:
-            return "null"
+            return False
 
     def fix_dict(self, node):
         try:
