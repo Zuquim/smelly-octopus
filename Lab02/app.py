@@ -4,7 +4,7 @@ from os import getcwd
 from os.path import exists
 from sys import exit
 
-from Lab01.sprints.Lab01S02 import Query as query_02
+from GraphQL import Query
 
 from logzero import setup_logger
 
@@ -84,7 +84,7 @@ l.info("Running Sprint 01")
 
 data_template = ("""
 {
-  search(type: REPOSITORY, query: "user:gvanrossum language:python", after:"!<REPLACE-ME>!", first: 50) {
+  search(query: "user:gvanrossum language:python", type: REPOSITORY, first: 50, after:"!<REPLACE-ME>!") {
     repositoryCount
     pageInfo {
       hasNextPage
@@ -115,14 +115,14 @@ data_template = ("""
     """)
 
 # First run
-s01 = query_02(url, headers, data_template)
-s01, table_headers, nodes = first_run(s01)
+query_01 = Query(url, headers, data_template)
+query_01, table_headers, nodes = first_run(query_01)
 
 # Getting nodes for the next pages
-s01, nodes = get_me_a_thousand(s01, nodes)
+query_01, nodes = get_me_a_thousand(query_01, nodes)
 
 # Fixing node dictionaries
-_, nodes = fix_dictionaries(s01, nodes)
+_, nodes = fix_dictionaries(query_01, nodes)
 
 # Saving repositories data to CSV file inside 'output' directory
 save_csv("guido_repos", table_headers, nodes)
@@ -132,14 +132,14 @@ l.info("Finished Sprint 01, first step (1/4)")
 # Step 2
 data_template = data_template.replace("user:gvanrossum language", "language")
 # First run
-s01 = query_02(url, headers, data_template)
-s01, table_headers, nodes = first_run(s01)
+query_02 = Query(url, headers, data_template)
+query_02, table_headers, nodes = first_run(query_02)
 
 # Getting nodes for the next pages
-s01, nodes = get_me_a_thousand(s01, nodes)
+query_02, nodes = get_me_a_thousand(query_02, nodes)
 
 # Fixing node dictionaries
-s01, nodes = fix_dictionaries(s01, nodes)
+query_02, nodes = fix_dictionaries(query_02, nodes)
 
 # Saving repositories data to CSV file inside 'output' directory
 save_csv("python_repos", table_headers, nodes)
