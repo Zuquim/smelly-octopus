@@ -1,10 +1,8 @@
 from logging import DEBUG, INFO
-from os import getcwd, listdir, makedirs
+from os import listdir, makedirs
 from os.path import exists
-from subprocess import Popen, PIPE
 from sys import exit
 
-import git
 import pandas as pd
 from logzero import setup_logger
 
@@ -46,53 +44,72 @@ headers = {
 # Sprint 01
 l.info("Running Sprint 01")
 
+# Step 1
+first_step = "guido_repos"
+if not exists(f"{output_path}/{first_step}.csv"):
+    # First run
+    query_01 = Query(url, headers, data_template)
+    query_01, table_headers, nodes = first_run(query_01)
 
-# First run
-query_01 = Query(url, headers, data_template)
-query_01, table_headers, nodes = first_run(query_01)
+    # Getting nodes for the next pages
+    query_01, nodes = get_me_a_thousand(query_01, nodes)
 
-# Getting nodes for the next pages
-query_01, nodes = get_me_a_thousand(query_01, nodes)
+    # Fixing node dictionaries
+    _, nodes = fix_dictionaries(query_01, nodes)
 
-# Fixing node dictionaries
-_, nodes = fix_dictionaries(query_01, nodes)
-
-# Saving repositories data to CSV file inside 'output' directory
-save_csv("guido_repos", table_headers, nodes)
-
+    # Saving repositories data to CSV file inside 'output' directory
+    save_csv(first_step, table_headers, nodes)
+else:
+    l.info(f"CSV file for '{first_step}' already exist. Skipping...")
 l.info("Finished Sprint 01, first step (1/4)")
 
 # Step 2
 data_template = data_template.replace("user:gvanrossum language", "language")
-# First run
-query_02 = Query(url, headers, data_template)
-query_02, table_headers, nodes = first_run(query_02)
+second_step = "python_repos"
+if not exists(f"{output_path}/{second_step}.csv"):
+    # First run
+    query_02 = Query(url, headers, data_template)
+    query_02, table_headers, nodes = first_run(query_02)
 
-# Getting nodes for the next pages
-query_02, nodes = get_me_a_thousand(query_02, nodes)
+    # Getting nodes for the next pages
+    query_02, nodes = get_me_a_thousand(query_02, nodes)
 
-# Fixing node dictionaries
-query_02, nodes = fix_dictionaries(query_02, nodes)
+    # Fixing node dictionaries
+    query_02, nodes = fix_dictionaries(query_02, nodes)
 
-# Saving repositories data to CSV file inside 'output' directory
-save_csv("python_repos", table_headers, nodes)
-
+    # Saving repositories data to CSV file inside 'output' directory
+    save_csv(second_step, table_headers, nodes)
+else:
+    l.info(f"CSV file for '{second_step}' already exist. Skipping...")
 l.info("Finished Sprint 01, second step (2/4)")
 
+exit(0)  # FIXME
 # Step 3
 # Making temporary directory to store cloned repositories
 repos_path = f"/tmp/repositories"
 if not exists(repos_path):
     makedirs(repos_path)
 
-for csv in listdir("output"):
-    df = pd.read_csv("output/" + csv)
+csv_dir = listdir(output_path)
+for csv in csv_dir:
+    if csv.endswith(".loc"):
+        i = 0
+        # Continuing from checkpoint
+        df = pd.read_csv(f"{output_path}/{csv}")
+        try:
+            while df["LoC"][i].__class__ != -1:
+                i += 1
+        except KeyError:
+            continue
+        l.info(f"Continuing stopped job on {csv} line #{i}...")
+        # Cloning repositories and getting a list of LoC sum for each one
+        df, loc_list = read_repos_table(csv, repos_path, output_path, i)
+    elif csv[:4] == "LoC_" or f"{csv}.loc" in csv_dir:
+        # Either already finished or still in progress. Skipping original file...
+        continue
+    else:
+        # Cloning repositories and getting a list of LoC sum for each one
+        df, loc_list = read_repos_table(csv, repos_path, output_path)
 
-    # Cloning repositories and getting a list of LoC sum for each one
-    loc_list = clone_n_sum_loc(df, repos_path)
-
-    # Saving new CSV
-    df.insert(9, "LoC", value=loc_list, allow_duplicates=True)
-    df.to_csv(f"output/loc_{csv}")
 
 l.info("Finished Sprint 01, third step (3/4)")
