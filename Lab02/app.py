@@ -83,7 +83,6 @@ else:
     l.info(f"CSV file for '{second_step}' already exist. Skipping...")
 l.info("Finished Sprint 01, second step (2/4)")
 
-exit(0)  # FIXME
 # Step 3
 # Making temporary directory to store cloned repositories
 repos_path = f"/tmp/repositories"
@@ -97,9 +96,11 @@ for csv in csv_dir:
         # Continuing from checkpoint
         df = pd.read_csv(f"{output_path}/{csv}")
         try:
-            while df["LoC"][i].__class__ != -1:
+            while df.LoC.get(i) != -1 and i <= df.LoC.__len__():
                 i += 1
-        except KeyError:
+                l.debug(f"i={i}")
+        except KeyError as e:
+            l.warning(f"Finished rows. | i={i} | e={e}")
             continue
         l.info(f"Continuing stopped job on {csv} line #{i}...")
         # Cloning repositories and getting a list of LoC sum for each one

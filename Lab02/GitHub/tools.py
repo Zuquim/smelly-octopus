@@ -11,7 +11,7 @@ from logzero import setup_logger
 
 from .GraphQL import Query
 
-l = setup_logger(name="tools", level=DEBUG)
+l = setup_logger(name="tools", level=INFO)
 
 # Some constants
 output_path = f"{getcwd()}/output"
@@ -116,6 +116,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str):
     l.info(f"LoC for {name}: {loc}")
     rmtree(f"{repos_path}/{name}")
     l.info(f"Removed repository directory ({repos_path}/{name})")
+    return loc
 
 
 def read_repos_table(file_name: str, repos_path: str, output_path: str=output_path, index: int=0):
@@ -131,10 +132,8 @@ def read_repos_table(file_name: str, repos_path: str, output_path: str=output_pa
         if "LoC" not in df.columns:
             df.insert(len(df.columns), "LoC", -1)
             df.index = [i for i in range(0, len(df["name"]))]
-        l.debug(f"Index={df.index}")
-        print(df)
         # Inputing current repository LoC sum to table
-        df.loc[:, ("LoC", i)] = loc  # FIXME
+        df.at[i, "LoC"] = loc
         # Saving partial results
         partial_file = f"{output_path}/{file_name.replace('.loc', '')}.loc"
         df.to_csv(partial_file)
