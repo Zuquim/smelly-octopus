@@ -137,7 +137,7 @@ def remove_directory(path: str, ans: str = "y"):
     return False
 
 
-def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1800):
+def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_timeout: int = 1800):
     """Clone Git repository, analyze it using radon raw, calculate and return project LoC."""
 
     try:
@@ -148,11 +148,11 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
             Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
         else:
             l.info("Exiting...")
-            notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name}")
+            notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name} #{index}")
             exit(0)
     size = sys_cmd(["du", "-hs", f"{repos_path}/{name}"])
     l.info(f"Cloned {name}")
-    notify_owner(f"Cloned: {name} | Size: {size.split()[0]}")
+    notify_owner(f"#{index} | Cloned: {name} | Size: {size.split()[0]}")
 
     # Analyzing LoC in each repository
     alarm(radon_timeout)  # Setting 30 min timeout for radon analysis
@@ -167,7 +167,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
         )
     except TimeoutException:
         l.error(f"Analysis timeout! Using '-2' as repository LoC.")
-        notify_owner(f"Analysis timeout for {name}")
+        notify_owner(f"#{index} | Analysis timeout for {name}")
         return -2
     else:
         alarm(0)
@@ -181,7 +181,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
         if " LOC:" in line:
             loc += int(line.split(": ")[1])
     l.info(f"LoC for {name}: {loc}")
-    notify_owner(f"Analyzed: {name} | LoC: {loc}")
+    notify_owner(f"#{index} | Analyzed: {name} | LoC: {loc}")
     rmtree(f"{repos_path}/{name}")
     l.info(f"Removed repository directory ({repos_path}/{name})")
 
@@ -198,7 +198,7 @@ def read_repos_table(
     # Cloning repositories and analyzing LoC
     for i in range(index, len(df["name"])):
         l.info(f"{file_name} | Row #{i}")
-        loc = clone_n_sum_loc(df["name"][i], df["url"][i], repos_path)
+        loc = clone_n_sum_loc(i, df["name"][i], df["url"][i], repos_path)
         # Creating LoC column in case it doesn't already exists
         if "LoC" not in df.columns:
             df.insert(len(df.columns), "LoC", -1)
