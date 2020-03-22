@@ -181,7 +181,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
         if " LOC:" in line:
             loc += int(line.split(": ")[1])
     l.info(f"LoC for {name}: {loc}")
-    notify_owner(f"Finished analysis for {name} | LoC: {loc}")
+    notify_owner(f"Analyzed: {name} | LoC: {loc}")
     rmtree(f"{repos_path}/{name}")
     l.info(f"Removed repository directory ({repos_path}/{name})")
 
