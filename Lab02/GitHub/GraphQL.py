@@ -1,4 +1,3 @@
-import json
 from logging import DEBUG, INFO
 from sys import exit
 
@@ -44,7 +43,7 @@ class Query:
         "}"
     )
 
-    def __init__(self, url: str, headers: json, data_template: str=default_template):
+    def __init__(self, url: str, headers: dict, data_template: str = default_template):
         # Initializing instance attributes
         self.data = {"query": ""}
         self.data_template = data_template
@@ -105,7 +104,7 @@ class Query:
         else:
             return False
 
-    def fix_dict(self, node: json):
+    def fix_dict(self, node: dict):
         try:
             node["primaryLanguage"] = node["primaryLanguage"]["name"]
         except TypeError as e:
