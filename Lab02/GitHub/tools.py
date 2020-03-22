@@ -1,9 +1,10 @@
 from csv import writer
 from datetime import datetime as dt
 from logging import DEBUG, INFO
-from os import getcwd, listdir
+from os import getcwd, listdir, system
 from shutil import rmtree
 from signal import alarm, signal, SIGALRM
+from socket import gethostname
 from subprocess import Popen, PIPE
 
 import pandas as pd
@@ -63,6 +64,12 @@ def timeout_handler(signum, frame):  # Custom signal handler
 signal(SIGALRM, timeout_handler)
 
 
+def notify_owner(message):
+    # Notify code owner via local Telegram Bot script (none provided in project)
+    if gethostname() == "heisenberg":
+        system(message)
+
+
 def sys_cmd(cmd: list) -> str:
     """Execute system commands using subprocess.Popen()."""
 
@@ -70,6 +77,7 @@ def sys_cmd(cmd: list) -> str:
     # Checking return code
     if err != b"":
         l.error(err.decode())
+        notify_owner(f"Exited(1) ln#80 for: {err.decode()}")
         exit(1)
     else:
         return out.decode()
@@ -140,9 +148,11 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
             Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
         else:
             l.info("Exiting...")
+            notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name}")
             exit(0)
     size = sys_cmd(["du", "-hs", f"{repos_path}/{name}"])
     l.info(f"Cloned {name}")
+    notify_owner(f"Cloned: {name} | Size: {size.split()[0]}")
 
     # Analyzing LoC in each repository
     alarm(radon_timeout)  # Setting 30 min timeout for radon analysis
@@ -157,6 +167,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
         )
     except TimeoutException:
         l.error(f"Analysis timeout! Using '-2' as repository LoC.")
+        notify_owner(f"Analysis timeout for {name}")
         return -2
     else:
         alarm(0)
@@ -170,6 +181,7 @@ def clone_n_sum_loc(name: str, url: str, repos_path: str, radon_timeout: int = 1
         if " LOC:" in line:
             loc += int(line.split(": ")[1])
     l.info(f"LoC for {name}: {loc}")
+    notify_owner(f"Finished analysis for {name} | LoC: {loc}")
     rmtree(f"{repos_path}/{name}")
     l.info(f"Removed repository directory ({repos_path}/{name})")
 
@@ -202,5 +214,6 @@ def read_repos_table(
     complete_file = f"{output_path}/LoC_{file_name.replace('.loc', '')}"
     df.to_csv(complete_file)
     l.info(f"Saved complete LoC info in {complete_file}")
+    notify_owner(f"Finished ALL analysis for {complete_file}")
 
     return df
