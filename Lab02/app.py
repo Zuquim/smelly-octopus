@@ -9,27 +9,34 @@ from logzero import setup_logger
 from GitHub.GraphQL import Query
 from GitHub.tools import *
 
-l = setup_logger(name="main", level=INFO)
+l = setup_logger(
+    name="main",
+    level=INFO,
+    logfile="lab02.log",
+    fileLoglevel=DEBUG,
+    maxBytes=2e6,
+    backupCount=4,
+)
 
 # Loading token string
 _token_file = "graphql.token"
 l.info(f"Loading GitHub GraphQL token from {_token_file}")
 if exists(_token_file):
     with open(_token_file, "r") as t:
-        _token = t.read()
+        token = t.read()
 else:
     l.warning(f"Token file ({_token_file}) not found. Asking for user input...")
-    _token = input("Insert token string: ")
+    token = input("Insert token string: ")
 
 # Stripping blanks from token
-_token = _token.strip()
+token = token.strip()
 
 # Checking token string
 _token_length = 40
-l.debug(f"_token='{_token}'; len(_token)={len(_token)};")
-if len(_token) != _token_length:
+l.debug(f"_token='{token}'; len(_token)={len(token)};")
+if len(token) != _token_length:
     l.error(
-        f"Provided token length ({len(_token)}) does not match "
+        f"Provided token length ({len(token)}) does not match "
         f"expected length ({_token_length})!"
     )
     exit(1)
@@ -38,7 +45,7 @@ if len(_token) != _token_length:
 url = "https://api.github.com/graphql"
 headers = {
     "Accept": "application/vnd.github.v4.idl",
-    "Authorization": f"bearer {_token}",
+    "Authorization": f"bearer {token}",
 }
 
 # Sprint 01
@@ -96,7 +103,7 @@ for csv in csv_dir:
         # Continuing from checkpoint
         df = pd.read_csv(f"{output_path}/{csv}")
         try:
-            while df.LoC.get(i) != -1 and i <= df.LoC.__len__():
+            while df.LoC.get(i) > -1 and i <= df.LoC.__len__():
                 i += 1
                 l.debug(f"i={i}")
         except KeyError as e:
@@ -104,13 +111,13 @@ for csv in csv_dir:
             continue
         l.info(f"Continuing stopped job on {csv} line #{i}...")
         # Cloning repositories and getting a list of LoC sum for each one
-        df, loc_list = read_repos_table(csv, repos_path, output_path, i)
+        df = read_repos_table(csv, repos_path, output_path, i)
     elif csv[:4] == "LoC_" or f"{csv}.loc" in csv_dir:
         # Either already finished or still in progress. Skipping original file...
         continue
     else:
         # Cloning repositories and getting a list of LoC sum for each one
-        df, loc_list = read_repos_table(csv, repos_path, output_path)
+        df = read_repos_table(csv, repos_path, output_path)
 
 
 l.info("Finished Sprint 01, third step (3/4)")
