@@ -64,10 +64,10 @@ def timeout_handler(signum, frame):  # Custom signal handler
 signal(SIGALRM, timeout_handler)
 
 
-def notify_owner(message):
+def notify_owner(message: str):
     # Notify code owner via local Telegram Bot script (none provided in project)
     if gethostname() == "heisenberg":
-        system(message)
+        system(f"st '{message}'")
 
 
 def sys_cmd(cmd: list) -> str:
