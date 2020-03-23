@@ -106,7 +106,7 @@ analyze(first_step)
 l.info("Finished Sprint 01")
 
 data_template = data_template.replace("user:gvanrossum language", "language")
-second_step = "_python_repos"
+second_step = "python_repos"
 if not exists(f"{output_path}/{second_step}.csv"):
     # First run
     query_02 = Query(url, headers, data_template)
