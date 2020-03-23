@@ -144,16 +144,20 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
     try:
         Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
     except GitCommandError as e:
-        if "Repository not found." in e:
-            l.error(f"Repository not found! | {e}")
+        if "Repository not found." in str(e):
+            l.error(f"Repository not found!")
             return -404
-        l.warning(f"Repository directory already exists. | {e}")
-        if remove_directory(f"{repos_path}/{name}"):
-            Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
+        elif " already exists and is not an empty directory." in str(e):
+            l.warning(f"Repository directory already exists and it's not empty.")
+            if remove_directory(f"{repos_path}/{name}"):
+                Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
+            else:
+                l.info("Exiting...")
+                notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name} #{index}")
+                exit(0)
         else:
-            l.info("Exiting...")
-            notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name} #{index}")
-            exit(0)
+            l.exception(f"Crashed! | {e}")
+            exit(1)
 
     tdelta = str(dt.now() - dt_clone).split('.')[0]
     size = sys_cmd(["du", "-hs", f"{repos_path}/{name}"])
