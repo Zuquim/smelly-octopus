@@ -99,6 +99,7 @@ CheatSheetSeries,https://github.com/OWASP/CheatSheetSeries,12247,411,1727,False,
 fabric,https://github.com/fabric/fabric,12133,516,1796,False,69,0,2009-05-01T01:14:24Z,Python
 python-cheatsheet,https://github.com/gto76/python-cheatsheet,12028,468,2409,False,1,0,2018-01-25T04:16:53Z,Python
 wxpy,https://github.com/youfou/wxpy,11952,552,2121,False,18,14,2017-02-20T18:20:46Z,Python
+zulip,https://github.com/zulip/zulip,11321,363,3639,False,163,44,2015-09-25T16:37:25Z,Python
 dash,https://github.com/plotly/dash,11183,386,1142,False,23,14,2015-04-10T01:53:08Z,Python
 awesome-python-login-model,https://github.com/Kr1s77/awesome-python-login-model,11176,369,2379,False,4,0,2019-01-20T10:43:13Z,Python
 py12306,https://github.com/pjialin/py12306,11155,326,2977,False,2,1,2019-01-07T18:04:11Z,Python
@@ -203,7 +204,6 @@ explainshell,https://github.com/idank/explainshell,7840,185,507,False,0,0,2013-0
 howdoi,https://github.com/gleitz/howdoi,7806,247,724,False,16,0,2012-11-22T08:49:24Z,Python
 Shadowrocket-ADBlock-Rules,https://github.com/h2y/Shadowrocket-ADBlock-Rules,7788,334,1155,False,8,0,2016-08-13T01:30:46Z,Python
 routersploit,https://github.com/threat9/routersploit,7786,499,1599,False,14,10,2016-03-30T11:43:12Z,Python
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,7782,111,661,False,18,0,2018-11-08T04:09:47Z,Python
 tutorials,https://github.com/MorvanZhou/tutorials,7781,617,4666,False,0,0,2016-05-29T13:29:44Z,Python
 XSStrike,https://github.com/s0md3v/XSStrike,7738,244,1044,False,4,14,2017-06-26T07:24:44Z,Python
 http-prompt,https://github.com/eliangcs/http-prompt,7678,176,294,False,1,15,2016-04-06T07:24:35Z,Python
