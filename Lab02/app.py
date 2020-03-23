@@ -48,6 +48,33 @@ headers = {
     "Authorization": f"bearer {token}",
 }
 
+
+def analyze(query_name: str):
+    csv_dir = listdir(output_path)
+    for csv in csv_dir:
+        if query_name in csv:
+            if csv.endswith(".loc"):
+                i = 0
+                # Continuing from checkpoint
+                df = pd.read_csv(f"{output_path}/{csv}")
+                try:
+                    while df.LoC.get(i) > -1 and i <= df.LoC.__len__():
+                        i += 1
+                        l.debug(f"i={i}")
+                except KeyError as e:
+                    l.warning(f"Finished rows. | i={i} | e={e}")
+                    continue
+                l.info(f"Continuing stopped job on {csv} line #{i}...")
+                # Cloning repositories and getting a list of LoC sum for each one
+                df = read_repos_table(csv, repos_path, output_path, i)
+            elif csv[:4] == "LoC_" or f"{csv}.loc" in csv_dir:
+                # Either already finished or still in progress. Skipping original file...
+                continue
+            else:
+                # Cloning repositories and getting a list of LoC sum for each one
+                df = read_repos_table(csv, repos_path, output_path)
+
+
 # Sprint 01
 l.info("Running Sprint 01")
 
@@ -68,11 +95,18 @@ if not exists(f"{output_path}/{first_step}.csv"):
     save_csv(first_step, table_headers, nodes)
 else:
     l.info(f"CSV file for '{first_step}' already exist. Skipping...")
-l.info("Finished Sprint 01, first step (1/4)")
 
-# Step 2
+# Making temporary directory to store cloned repositories
+repos_path = f"/tmp/repositories"
+if not exists(repos_path):
+    makedirs(repos_path)
+
+analyze(first_step)
+
+l.info("Finished Sprint 01")
+
 data_template = data_template.replace("user:gvanrossum language", "language")
-second_step = "python_repos"
+second_step = "_python_repos"
 if not exists(f"{output_path}/{second_step}.csv"):
     # First run
     query_02 = Query(url, headers, data_template)
@@ -88,36 +122,7 @@ if not exists(f"{output_path}/{second_step}.csv"):
     save_csv(second_step, table_headers, nodes)
 else:
     l.info(f"CSV file for '{second_step}' already exist. Skipping...")
-l.info("Finished Sprint 01, second step (2/4)")
 
-# Step 3
-# Making temporary directory to store cloned repositories
-repos_path = f"/tmp/repositories"
-if not exists(repos_path):
-    makedirs(repos_path)
+analyze(second_step)
 
-csv_dir = listdir(output_path)
-for csv in csv_dir:
-    if csv.endswith(".loc"):
-        i = 0
-        # Continuing from checkpoint
-        df = pd.read_csv(f"{output_path}/{csv}")
-        try:
-            while df.LoC.get(i) > -1 and i <= df.LoC.__len__():
-                i += 1
-                l.debug(f"i={i}")
-        except KeyError as e:
-            l.warning(f"Finished rows. | i={i} | e={e}")
-            continue
-        l.info(f"Continuing stopped job on {csv} line #{i}...")
-        # Cloning repositories and getting a list of LoC sum for each one
-        df = read_repos_table(csv, repos_path, output_path, i)
-    elif csv[:4] == "LoC_" or f"{csv}.loc" in csv_dir:
-        # Either already finished or still in progress. Skipping original file...
-        continue
-    else:
-        # Cloning repositories and getting a list of LoC sum for each one
-        df = read_repos_table(csv, repos_path, output_path)
-
-
-l.info("Finished Sprint 01, third step (3/4)")
+l.info("Finished Sprint 02")
