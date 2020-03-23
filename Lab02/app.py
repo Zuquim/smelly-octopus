@@ -58,7 +58,7 @@ def analyze(query_name: str):
                 # Continuing from checkpoint
                 df = pd.read_csv(f"{output_path}/{csv}")
                 try:
-                    while i <= len(df["LoC"]) and df["LoC"][i] not in [-1, -2, -404]:
+                    while i <= len(df["LoC"]) and df["LoC"][i] != -1:
                         i += 1
                         l.debug(f"i={i}")
                 except KeyError as e:
