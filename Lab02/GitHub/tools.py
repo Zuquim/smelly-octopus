@@ -1,5 +1,5 @@
 from csv import writer
-from datetime import datetime as dt
+from datetime import datetime as dt, timedelta
 from logging import DEBUG, INFO
 from os import getcwd, listdir, system
 from shutil import rmtree
@@ -140,9 +140,13 @@ def remove_directory(path: str, ans: str = "y"):
 def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_timeout: int = 1800):
     """Clone Git repository, analyze it using radon raw, calculate and return project LoC."""
 
+    dt_clone = dt.now()
     try:
         Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
     except GitCommandError as e:
+        if "Repository not found." in e:
+            l.error(f"Repository not found! | {e}")
+            return -404
         l.warning(f"Repository directory already exists. | {e}")
         if remove_directory(f"{repos_path}/{name}"):
             Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
@@ -150,11 +154,15 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
             l.info("Exiting...")
             notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name} #{index}")
             exit(0)
+
+    tdelta = str(dt.now() - dt_clone).split('.')[0]
     size = sys_cmd(["du", "-hs", f"{repos_path}/{name}"])
-    l.info(f"Cloned {name}")
-    notify_owner(f"#{index} | Cloned: {name} | Size: {size.split()[0]}")
+    log_msg = f"#{index} | Cloned: {name} || Size: {size.split()[0]} | Timedelta: {tdelta}"
+    l.info(log_msg.replace("||", "|"))
+    notify_owner(log_msg.replace(" || ", "\n"))
 
     # Analyzing LoC in each repository
+    dt_radon = dt.now()
     alarm(radon_timeout)  # Setting 30 min timeout for radon analysis
     try:
         out = sys_cmd(
@@ -171,8 +179,8 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
         return -2
     else:
         alarm(0)
+        tdelta = str(dt.now() - dt_radon).split('.')[0]
 
-    l.debug(f"Analyzed {name}. Repository size: {size.split()[0]}")
     # Summing total LoC for each repository
     # with open(f"{repos_path}/{name}.txt", "r") as f:
     #     out = f.read()
@@ -180,8 +188,9 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
     for line in out.splitlines():
         if " LOC:" in line:
             loc += int(line.split(": ")[1])
-    l.info(f"LoC for {name}: {loc}")
-    notify_owner(f"#{index} | Analyzed: {name} | LoC: {loc}")
+    log_msg = f"#{index} | Analyzed: {name} || LoC: {loc} | Timedelta: {tdelta}"
+    l.info(log_msg.replace("||", "|"))
+    notify_owner(log_msg.replace(" || ", "\n"))
     rmtree(f"{repos_path}/{name}")
     l.info(f"Removed repository directory ({repos_path}/{name})")
 
