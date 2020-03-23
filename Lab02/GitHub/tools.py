@@ -157,6 +157,7 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
                 exit(0)
         else:
             l.exception(f"Crashed! | {e}")
+            notify_owner(f"#{index} | App crashed!")
             exit(1)
 
     tdelta = str(dt.now() - dt_clone).split('.')[0]
