@@ -146,8 +146,15 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
         Git(repos_path).clone(f"{url.replace('https', 'git')}.git")
     except GitCommandError as e:
         if "Repository not found." in str(e):
-            l.error(f"Repository not found!")
+            log_msg = f"#{index} | Repository not found!"
+            l.error(log_msg)
+            notify_owner(log_msg)
             return -404
+        elif "Please make sure you have the correct access rights" in str(e):
+            log_msg = f"#{index} | Repository access is restricted!"
+            l.error(log_msg)
+            notify_owner(log_msg)
+            return -403
         elif " already exists and is not an empty directory." in str(e):
             l.warning(f"Repository directory already exists and it's not empty.")
             if remove_directory(f"{repos_path}/{name}"):
@@ -157,9 +164,9 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
                 notify_owner(f"Exited(0) script ln#150 @ {repos_path}/{name} #{index}")
                 exit(0)
         else:
-            l.exception(f"Crashed! | {e}")
-            notify_owner(f"#{index} | App crashed!")
-            exit(1)
+            l.exception(f"Unindentified error! | {e}")
+            notify_owner(f"#{index} | Unindentified error! | {e}")
+            return -500
 
     tdelta = str(dt.now() - dt_clone).split('.')[0]
     size = sys_cmd(["du", "-hs", f"{repos_path}/{name}"])
