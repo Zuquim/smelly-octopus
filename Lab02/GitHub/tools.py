@@ -6,6 +6,7 @@ from shutil import rmtree
 from signal import alarm, signal, SIGALRM
 from socket import gethostname
 from subprocess import Popen, PIPE
+from sys import exit
 
 import pandas as pd
 from git import Git
