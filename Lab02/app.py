@@ -82,7 +82,7 @@ l.info("Running Sprint 01")
 first_step = "guido_repos"
 if not exists(f"{output_path}/{first_step}.csv"):
     # First run
-    query_01 = Query(url, headers, data_template)
+    query_01 = Query(url, headers, query_guido)
     query_01, table_headers, nodes = first_run(query_01)
 
     # Getting nodes for the next pages
@@ -105,11 +105,10 @@ analyze(first_step)
 
 l.info("Finished Sprint 01")
 
-data_template = data_template.replace("user:gvanrossum language", "language")
 second_step = "python_repos"
 if not exists(f"{output_path}/{second_step}.csv"):
     # First run
-    query_02 = Query(url, headers, data_template)
+    query_02 = Query(url, headers, query_1k)
     query_02, table_headers, nodes = first_run(query_02)
 
     # Getting nodes for the next pages

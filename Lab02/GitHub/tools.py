@@ -20,9 +20,36 @@ l = setup_logger(name="tools", level=INFO)
 # Some constants
 output_path = f"{getcwd()}/output"
 
-data_template = """
+query_guido = """
+user(login: "gvanrossum") {
+        repositories(first: 50,isFork:false %s ) { 
+  totalCount
+  pageInfo {
+      hasNextPage
+      endCursor
+  }
+    nodes {
+        ... on Repository {
+          owner{login}
+          name
+          url
+          stargazers{totalCount}
+          watchers{totalCount}
+          forkCount
+          isFork
+          commitComments{totalCount}
+          releases{totalCount}
+          createdAt
+          primaryLanguage {name}
+        } 
+    }
+  }
+}  
+"""
+
+query_1k = """
 {
-  search(query: "user:gvanrossum language:python", type: REPOSITORY, first: 50, after:"!<REPLACE-ME>!") {
+  search(query: "language:python", type: REPOSITORY, first: 50, after:"!<REPLACE-ME>!") {
     repositoryCount
     pageInfo {
       hasNextPage
@@ -50,7 +77,7 @@ data_template = """
     resetAt
   }
 }
-    """
+"""
 
 
 class TimeoutException(Exception):  # Custom exception class
