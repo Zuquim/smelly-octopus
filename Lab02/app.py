@@ -11,10 +11,10 @@ from GitHub.tools import *
 
 l = setup_logger(
     name="main",
-    level=INFO,
+    level=DEBUG,
     logfile="lab02.log",
     fileLoglevel=DEBUG,
-    maxBytes=2e6,
+    maxBytes=1024000,
     backupCount=4,
 )
 
@@ -86,13 +86,14 @@ if not exists(f"{output_path}/{first_step}.csv"):
     query_01, table_headers, nodes = first_run(query_01)
 
     # Getting nodes for the next pages
-    query_01, nodes = get_me_a_thousand(query_01, nodes)
+    query_01, nodes = get_me_guidos(query_01, nodes)
 
     # Fixing node dictionaries
-    _, nodes = fix_dictionaries(query_01, nodes)
+    _, fixed_nodes = fix_dictionaries(query_01, nodes)
+    l.debug(f"Nodes: {nodes}")
 
     # Saving repositories data to CSV file inside 'output' directory
-    save_csv(first_step, table_headers, nodes)
+    save_csv(first_step, table_headers, fixed_nodes)
 else:
     l.info(f"CSV file for '{first_step}' already exist. Skipping...")
 
