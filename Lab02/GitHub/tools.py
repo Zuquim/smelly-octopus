@@ -1,12 +1,13 @@
 from csv import writer
 from datetime import datetime as dt, timedelta
 from logging import DEBUG, INFO
-from os import getcwd, listdir, system
+from os import getcwd, listdir, system, uname
 from shutil import rmtree
 from signal import alarm, signal, SIGALRM
 from socket import gethostname
 from subprocess import Popen, PIPE
 from sys import exit
+from typing import List
 
 import pandas as pd
 from git import Git
@@ -15,37 +16,44 @@ from logzero import setup_logger
 
 from .GraphQL import Query
 
-l = setup_logger(name="tools", level=INFO)
+l = setup_logger(name="tools", level=DEBUG)
+
+# Getting running environment
+hostname = uname().nodename
+os_name = uname().sysname
+if hostname == "heisenberg" or os_name == "Darwin":
+    radon_bin = f"{getcwd()}/../venv/bin/radon"
+else:
+    radon_bin = "radon"
 
 # Some constants
 output_path = f"{getcwd()}/output"
 
-query_guido = """
-user(login: "gvanrossum") {
-        repositories(first: 50,isFork:false %s ) { 
-  totalCount
-  pageInfo {
-      hasNextPage
-      endCursor
-  }
-    nodes {
-        ... on Repository {
-          owner{login}
-          name
-          url
-          stargazers{totalCount}
-          watchers{totalCount}
-          forkCount
-          isFork
-          commitComments{totalCount}
-          releases{totalCount}
-          createdAt
-          primaryLanguage {name}
-        } 
+query_guido = """{
+  user(login: "gvanrossum") {
+          repositories(first: 50, isFork: false) { 
+    totalCount
+    pageInfo {
+        hasNextPage
+        endCursor
     }
-  }
-}  
-"""
+      nodes {
+          ... on Repository {
+            name
+            url
+            stargazers{totalCount}
+            watchers{totalCount}
+            forkCount
+            isFork
+            commitComments{totalCount}
+            releases{totalCount}
+            createdAt
+            primaryLanguage {name}
+          } 
+      }
+    }
+  }  
+}"""
 
 query_1k = """
 {
@@ -113,11 +121,25 @@ def sys_cmd(cmd: list) -> str:
 
 def first_run(gql_query: Query):
     gql = gql_query
-    nodes = gql.json["data"]["search"]["nodes"]
+    try:
+        nodes = gql.json["data"]["search"]["nodes"]
+    except KeyError as e:
+        l.debug(f"Doing Guido's | Exception: {e}")
+        nodes = gql.json['data']['user']['repositories']['nodes']
     table_headers = nodes[0].keys()
     l.info(f"Total nodes after first run: {len(nodes)}")
 
     return gql, table_headers, nodes
+
+
+def get_me_guidos(gql_query: Query, node_list: list):
+    while gql_query.next_page():
+        gql_query.request()
+        l.debug(f"Total nodes after last run: {len(node_list)}")
+        node_list += gql_query.json['data']['user']['repositories']['nodes']
+    l.info(f"Total nodes after final run: {len(node_list)}")
+
+    return gql_query, node_list
 
 
 def get_me_a_thousand(gql_query: Query, node_list: list):
@@ -131,9 +153,17 @@ def get_me_a_thousand(gql_query: Query, node_list: list):
 
 
 def fix_dictionaries(gql_query: Query, node_list: list):
+    remove_list = []
     for i, node in enumerate(node_list):
         node_list[i] = gql_query.fix_dict(node)
+        if node["primaryLanguage"] != "Python":
+            remove_list.append(node_list[i])
+        else:
+            l.debug(f"Fixed node: {node_list[i]}")
     l.info(f"Fixed a total of {len(node_list)} node dictionaries.")
+    if len(remove_list) > 0:
+        [node_list.remove(node) for node in remove_list]
+        l.info(f"Removed {len(remove_list)} non Python nodes.")
 
     return gql_query, node_list
 
@@ -142,7 +172,7 @@ def age_in_seconds(created_at: str, format: str = "%Y-%m-%dT%H:%M:%SZ"):
     return (dt.today() - dt.strptime(created_at, format)).total_seconds()
 
 
-def save_csv(file_name: str, table_headers: list, node_list: list):
+def save_csv(file_name: str, table_headers: list, node_list: List[dict]):
     if ".csv" in file_name:
         file_name = file_name[len(file_name) - 4 :]
     with open(f"{output_path}/{file_name}.csv", "w") as f:
@@ -207,7 +237,7 @@ def clone_n_sum_loc(index: int, name: str, url: str, repos_path: str, radon_time
     try:
         out = sys_cmd(
             [
-                f"{getcwd()}/../venv/bin/radon",
+                radon_bin,
                 "raw",
                 # "-O", f"{repos_path}/{name}.txt",
                 f"{repos_path}/{name}",
