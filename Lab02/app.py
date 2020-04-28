@@ -11,10 +11,10 @@ from GitHub.tools import *
 
 l = setup_logger(
     name="main",
-    level=INFO,
+    level=DEBUG,
     logfile="lab02.log",
     fileLoglevel=DEBUG,
-    maxBytes=2e6,
+    maxBytes=1024000,
     backupCount=4,
 )
 
@@ -82,17 +82,18 @@ l.info("Running Sprint 01")
 first_step = "guido_repos"
 if not exists(f"{output_path}/{first_step}.csv"):
     # First run
-    query_01 = Query(url, headers, data_template)
+    query_01 = Query(url, headers, query_guido)
     query_01, table_headers, nodes = first_run(query_01)
 
     # Getting nodes for the next pages
-    query_01, nodes = get_me_a_thousand(query_01, nodes)
+    query_01, nodes = get_me_guidos(query_01, nodes)
 
     # Fixing node dictionaries
-    _, nodes = fix_dictionaries(query_01, nodes)
+    _, fixed_nodes = fix_dictionaries(query_01, nodes)
+    l.debug(f"Nodes: {nodes}")
 
     # Saving repositories data to CSV file inside 'output' directory
-    save_csv(first_step, table_headers, nodes)
+    save_csv(first_step, table_headers, fixed_nodes)
 else:
     l.info(f"CSV file for '{first_step}' already exist. Skipping...")
 
@@ -105,11 +106,10 @@ analyze(first_step)
 
 l.info("Finished Sprint 01")
 
-data_template = data_template.replace("user:gvanrossum language", "language")
 second_step = "python_repos"
 if not exists(f"{output_path}/{second_step}.csv"):
     # First run
-    query_02 = Query(url, headers, data_template)
+    query_02 = Query(url, headers, query_1k)
     query_02, table_headers, nodes = first_run(query_02)
 
     # Getting nodes for the next pages

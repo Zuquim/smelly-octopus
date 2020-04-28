@@ -1,6 +1,13 @@
 name,url,stargazers,watchers,forkCount,isFork,commitComments,releases,createdAt,primaryLanguage
-pegen,https://github.com/gvanrossum/pegen,147,17,19,False,2,0,2019-05-07T16:43:15Z,Python
-guidos_time_machine,https://github.com/gvanrossum/guidos_time_machine,50,11,2,False,0,0,2020-03-05T04:06:18Z,Python
+mypy,https://github.com/python/mypy,8208,175,1257,False,116,0,2012-12-07T13:30:23Z,Python
 ballot-box,https://github.com/gvanrossum/ballot-box,8,2,4,False,0,0,2015-03-13T23:41:12Z,Python
-pep550,https://github.com/gvanrossum/pep550,7,3,1,False,0,0,2017-09-05T21:59:49Z,Python
+cpython,https://github.com/fake-python/cpython,3,1,0,False,0,6,2015-11-05T12:07:26Z,Python
+make-stub-files,https://github.com/edreamleo/make-stub-files,20,3,3,False,0,0,2016-01-26T16:54:22Z,Python
+com2ann,https://github.com/ilevkivskyi/com2ann,50,6,1,False,0,0,2016-09-09T07:17:02Z,Python
+TatSu,https://github.com/neogeny/TatSu,148,13,35,False,1,13,2017-05-02T02:58:58Z,Python
 mypy-dummy,https://github.com/gvanrossum/mypy-dummy,6,2,0,False,0,0,2017-08-31T16:42:53Z,Python
+pep550,https://github.com/gvanrossum/pep550,7,3,1,False,0,0,2017-09-05T21:59:49Z,Python
+mypy_extensions,https://github.com/python/mypy_extensions,69,13,12,False,0,0,2019-01-14T23:37:26Z,Python
+pygl,https://github.com/neogeny/pygl,3,2,0,False,0,0,2019-04-27T10:47:30Z,Python
+pegen,https://github.com/gvanrossum/pegen,156,18,19,False,2,0,2019-05-07T16:43:15Z,Python
+guidos_time_machine,https://github.com/gvanrossum/guidos_time_machine,53,12,2,False,0,0,2020-03-05T04:06:18Z,Python

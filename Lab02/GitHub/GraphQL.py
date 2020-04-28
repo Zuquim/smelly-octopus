@@ -98,11 +98,20 @@ class Query:
         return self.data
 
     def next_page(self):
-        if self.json["data"]["search"]["pageInfo"]["hasNextPage"]:
-            self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
-            return self.json["data"]["search"]["pageInfo"]["endCursor"]
-        else:
-            return False
+        try:
+            if self.json["data"]["search"]["pageInfo"]["hasNextPage"]:
+                self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
+                return self.json["data"]["search"]["pageInfo"]["endCursor"]
+            else:
+                return False
+        except KeyError as e:
+            l.info(f"Doing Guido's | Exception: {e}")
+            if self.json['data']['user']['repositories']["pageInfo"]["hasNextPage"]:
+                self.new_query(
+                    self.json["data"]["user"]['repositories']["pageInfo"]["endCursor"])
+                return self.json["data"]["user"]['repositories']["pageInfo"]["endCursor"]
+            else:
+                return False
 
     def fix_dict(self, node: dict):
         try:
