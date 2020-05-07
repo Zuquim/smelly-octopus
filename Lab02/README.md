@@ -28,8 +28,8 @@ A partir do diretório raíz do projeto, execute:
 
 A partir do diretório raíz do projeto, execute:
 
-- `docker build --rm --no-cache --pull -t zuquim-labex:latest .`
-- `docker run -it --rm --name zuquim-labex -v $PWD/output:/opt/output zuquim-labex`
+- `docker build --rm --no-cache --pull -t labex:latest .`
+- `docker run -it --rm --name labex -v $PWD/output:/opt/output labex`
 
 ### Método #3: [venv](https://docs.python.org/3.7/library/venv.html)
 
