@@ -3,27 +3,25 @@ from json import dumps
 from requests import post
 import time
 
-headers = {"Authorization": "token 09bc2ae56b5a5b7789d725a1aa64f679bd178ad6"}
+headers = {"Authorization": "token "}
 
 repositoriesQuery = """
-query repositoriesQuery{
-  search(type: REPOSITORY, query: "language:python", first: 100{AFTER}) {
+query repositoriesQuery {
+  search(type: REPOSITORY, first: 100, query: "stars:>100 created:>=2016-01-01 language:python"{AFTER}) {
     pageInfo {
       hasNextPage
       endCursor
     }
-    edges {
-      node {
-        ... on Repository {
-          id
-          nameWithOwner
-          url
-          stargazers {
-            totalCount
-          }
-          issues {
-            totalCount
-          }
+    nodes {
+      ... on Repository {
+        id
+        nameWithOwner
+        url
+        stargazers {
+          totalCount
+        }
+        issues {
+          totalCount
         }
       }
     }
@@ -34,8 +32,8 @@ query repositoriesQuery{
 issuesQuery = """
 query example {
   repository(owner: "{OWNER}", name: "{NAME}"){
-    issues(first: 100, orderBy:{field: CREATED_AT, direction: ASC}{AFTERCURSOR}){
-  	  pageInfo{
+    issues(first: 10, orderBy:{field: CREATED_AT, direction: ASC}{AFTER}){
+      pageInfo{
         hasNextPage
         endCursor
       }
@@ -66,80 +64,78 @@ def runQuery(query):
         raise Exception("Query falhou! Codigo de retorno: {}. {}".format(request.status_code, query))
 
 def getAllRepositories(query):
-	finalQuery = query.replace("{AFTER}", "")
-	results = runQuery(finalQuery)
+  finalQuery = query.replace("{AFTER}", "")
+  result = runQuery(finalQuery)
 
-	totalPages = 1
-	currentEndCursor = results["data"]["search"]["pageInfo"]["endCursor"]
-	hasNextPage = results["data"]["search"]["pageInfo"]["hasNextPage"]
-	allResults = results["data"]["search"]["edges"]
+  totalPages = 1
+  hasNextPage = result["data"]["search"]["pageInfo"]["hasNextPage"]
+  currentEndCursor = result["data"]["search"]["pageInfo"]["endCursor"]
 
-	while hasNextPage and totalPages < 10:
-		finalQuery = query.replace("{AFTER}", ', after: "%s"' % currentEndCursor)
-		results = runQuery(finalQuery)
+  allResults = result["data"]["search"]["nodes"]
 
-		for result in results["data"]["search"]["edges"]:
-			allResults.append(result)
+  while hasNextPage and totalPages <= 10:
+    finalQuery = query.replace("{AFTER}", f', after: "{currentEndCursor}"')
+    result = runQuery(finalQuery)
 
-		totalPages += 1
-		hasNextPage = results["data"]["search"]["pageInfo"]["hasNextPage"]
-		currentEndCursor = results["data"]["search"]["pageInfo"]["endCursor"]
+    totalPages += 1
+    hasNextPage = result["data"]["search"]["pageInfo"]["hasNextPage"]
+    currentEndCursor = result["data"]["search"]["pageInfo"]["endCursor"]
+    
+    allResults += result["data"]["search"]["nodes"]
 
-	print(dumps(allResults, indent=4, sort_keys=True))
+  writeCSV("repositories.csv", allResults)
 
-	with open("repositories.csv", "w", newline = '') as file:
-	    csv = writer(file)
-	    for repo in allResults:
-	        csv.writerow(repo["node"].values())
+def getAllIssues(query):
+  with open("repositories.csv", "r", encoding="utf-8") as f:
+    lines = f.read()
+    for line in lines.splitlines():
+      line = line.split(",")
 
-def getAllIssues(issuesQuery):
-	with open("repositories.csv", "r", encoding="utf-8") as f:
-		lines = f.read()
-		for line in lines.splitlines():
-			line = line.replace('"', '').split(",")
-			nameWithOwner = line[1].split("/")
+      nameWithOwner = line[1].split("/")
+      owner = nameWithOwner[0]
+      name = nameWithOwner[1]
 
-			owner = nameWithOwner[0]
-			name = nameWithOwner[1]
+      idRepository = line[0]
 
-			finalQuery = issuesQuery.replace("{OWNER}", owner).replace("{NAME}", name).replace("{AFTERCURSOR}", "")
-			result = runQuery(finalQuery)
-			allResults = result["data"]["repository"]["issues"]["nodes"]
+      allResults = getRepositoryIssues(owner, name, query)
 
-			# allResults = getRepositoryIssues(owner, name)
+      for result in allResults:
+        result["idRepository"] = idRepository
+        result["owner"] = owner
+        result["name"] = name
 
-			print(dumps(allResults, indent=4, sort_keys=True))
+      writeCSV("issues.csv", allResults)
 
-			try:
-				with open("issues.csv", "a", newline = '', encoding="utf-8") as csv_file:
-					csv = writer(csv_file)
-					for issue in allResults:
-						csv.writerow([line[0], issue.values()])
-			except Exception as e: 
-				print(e)
+def getRepositoryIssues(owner, name, query):
+  finalQuery = query.replace("{OWNER}", owner).replace("{NAME}", name).replace("{AFTER}", "")
+  result = runQuery(finalQuery)
 
-def getRepositoryIssues(owner, name):
-	finalQuery = issuesQuery.replace("{OWNER}", owner).replace("{NAME}", name).replace("{AFTERCURSOR}", "")
-	result = runQuery(finalQuery)
+  totalPages = 1
+  currentEndCursor = result["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
+  hasNextPage = result["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]
 
-	totalPages = 1
-	currentEndCursor = result["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
-	hasNextPage = result["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]
-	allResults = result["data"]["repository"]["issues"]["nodes"]
+  allResults = result["data"]["repository"]["issues"]["nodes"]
 
-	while hasNextPage and totalPages < 10:
-		finalQuery = issuesQuery.replace("{OWNER}", owner).replace("{NAME}", name).replace("{AFTERCURSOR}", "")
-		result = runQuery(finalQuery)
-		allResults += result["data"]["repository"]["issues"]["nodes"]
+  while hasNextPage and totalPages <= 10:
+    finalQuery = query.replace("{OWNER}", owner).replace("{NAME}", name).replace("{AFTER}", f', after: "{currentEndCursor}"')
+    result = runQuery(finalQuery)
 
-		totalPages += 1
-		currentEndCursor = result["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
-		hasNextPage = result["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]
+    totalPages += 1
+    currentEndCursor = result["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
+    hasNextPage = result["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]
 
-	return allResults 
+    allResults += result["data"]["repository"]["issues"]["nodes"]
+
+  return allResults 
+
+def writeCSV(file, allResults):
+  with open(file, "a", newline = '', encoding="utf-8") as csv_file:
+      csv = writer(csv_file)
+      for result in allResults:
+          csv.writerow(result.values())
 
 def main():
- 	getAllRepositories(repositoriesQuery)
- 	getAllIssues(issuesQuery)
+  getAllRepositories(repositoriesQuery)
+  getAllIssues(issuesQuery)
 
 main()
