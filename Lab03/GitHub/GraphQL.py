@@ -136,7 +136,7 @@ class Query:
             self.data_template = self.data_template.replace("!<AFTER>!", end_cursor)
             self.data["query"] = self.data_template
 
-        # Setting node limit
+        # Setting node limit per page
         if n_issues and n_issues < self.max_per_page:
             self.data_template = self.data_template.replace(
                 f"first:{self.max_per_page},", f"first:{n_issues},"
