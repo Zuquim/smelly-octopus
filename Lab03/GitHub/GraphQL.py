@@ -47,7 +47,7 @@ issues_template = """
       name:"!<NAME>!"
     ){
     issues(
-        first:10,
+        first:50,
         orderBy:{
           field:CREATED_AT,
           direction:ASC
@@ -79,7 +79,7 @@ templates = {
 class Query:
     __slots__ = ["data", "data_template", "headers", "url", "response", "json"]
 
-    def __init__(self, url: str, headers: dict, data_template: str):
+    def __init__(self, url: str, headers: dict, data_template: str, auto_run: bool = False):
         # Initializing instance attributes
         self.data = {"query": ""}
         self.data_template = data_template
@@ -92,12 +92,15 @@ class Query:
         self.data["query"] = data_template.replace('"!<AFTER>!"', "null")
 
         # Running HTTP POST request
-        self.request()
+        if auto_run:
+            self.request()
 
     def setup_issues_query(self, owner: str, name: str):
         # Setup repository owner and name for issues query
-        self.data["query"] = self.data["query"].replace('"!<OWNER>!"', owner)
-        self.data["query"] = self.data["query"].replace('"!<NAME>!"', name)
+        self.data["query"] = self.data["query"].replace('!<OWNER>!', owner).replace('!<NAME>!', name)
+
+        # Running HTTP POST request
+        self.request()
 
     def request(self):
         # Running HTTP POST request
