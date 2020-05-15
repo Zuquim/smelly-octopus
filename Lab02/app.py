@@ -60,11 +60,11 @@ def analyze(query_name: str):
                 try:
                     while i <= len(df["LoC"]) and df["LoC"][i] != -1:
                         i += 1
-                        l.debug(f"i={i}")
+                        log.debug(f"i={i}")
                 except KeyError as e:
-                    l.warning(f"Finished rows. | i={i} | e={e}")
+                    log.warning(f"Finished rows. | i={i} | e={e}")
                     continue
-                l.info(f"Continuing stopped job on {csv} line #{i}...")
+                log.info(f"Continuing stopped job on {csv} line #{i}...")
                 # Cloning repositories and getting a list of LoC sum for each one
                 df = read_repos_table(csv, repos_path, output_path, i)
             elif csv[:4] == "LoC_" or f"{csv}.loc" in csv_dir:
