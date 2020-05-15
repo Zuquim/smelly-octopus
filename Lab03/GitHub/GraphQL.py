@@ -1,5 +1,6 @@
 from logging import INFO
 from sys import exit
+from typing import Optional
 
 from logzero import setup_logger
 from requests import post
@@ -14,7 +15,7 @@ repositories_template = (
     "      language:python"
     '      created:>=2016-01-01",'
     "      type:REPOSITORY,"
-    "      first:50,"
+    "      first:!<FIRST>!,"
     '      after:"!<AFTER>!"'
     "  ){"
     "    pageInfo{"
@@ -47,7 +48,7 @@ issues_template = """
       name:"!<NAME>!"
     ){
     issues(
-        first:50,
+        first:!<FIRST>!,
         orderBy:{
           field:CREATED_AT,
           direction:ASC
@@ -79,28 +80,47 @@ templates = {
 class Query:
     __slots__ = ["data", "data_template", "headers", "url", "response", "json"]
 
-    def __init__(self, url: str, headers: dict, data_template: str, auto_run: bool = False):
+    def __init__(
+            self,
+            url: str,
+            headers: dict,
+            data_template: str,
+            max_per_page: int = 50,
+            auto_run: bool = False
+    ):
         # Initializing instance attributes
-        self.data = {"query": ""}
-        self.data_template = data_template
         self.headers = headers
         self.url = url
         self.json = {}
         self.response = None
 
         # Setting up first query (the only one where 'after' is 'null')
-        self.data["query"] = data_template.replace('"!<AFTER>!"', "null")
+        self.data_template = data_template.replace(
+            '"!<AFTER>!"', "null").replace("!<FIRST>!", str(max_per_page))
+        self.data = {"query": self.data_template}
 
         # Running HTTP POST request
         if auto_run:
             self.request()
 
-    def setup_issues_query(self, owner: str, name: str):
+    def update_data_template(
+            self,
+            end_cursor: Optional[str] = None,
+            owner: Optional[str] = None,
+            name: Optional[str] = None
+    ):
         # Setup repository owner and name for issues query
-        self.data["query"] = self.data["query"].replace('!<OWNER>!', owner).replace('!<NAME>!', name)
+        if owner and name:
+            self.data_template = self.data_template.replace('!<OWNER>!', owner)
+            self.data_template = self.data_template.replace('!<NAME>!', name)
+            self.data["query"] = self.data_template
 
-        # Running HTTP POST request
-        self.request()
+        # GraphQL query definition (setting up parameter to get next page)
+        if end_cursor:
+            self.data_template = self.data_template.replace("!<AFTER>!", end_cursor)
+            self.data["query"] = self.data_template
+
+        return self.data
 
     def request(self):
         # Running HTTP POST request
@@ -134,25 +154,19 @@ class Query:
 
         return True
 
-    def new_query(self, end_cursor: str):
-        log.debug(f"end_cursor={end_cursor}")
-
-        # GraphQL query definition (setting up parameter to get next page)
-        self.data["query"] = self.data_template.replace("!<AFTER>!", end_cursor)
-
-        return self.data
-
     def next_page(self):
         try:
             if self.json["data"]["search"]["pageInfo"]["hasNextPage"]:
-                self.new_query(self.json["data"]["search"]["pageInfo"]["endCursor"])
+                self.update_data_template(
+                    self.json["data"]["search"]["pageInfo"]["endCursor"]
+                )
                 return self.json["data"]["search"]["pageInfo"]["endCursor"]
             else:
                 return False
         except KeyError as e:
-            log.info(f"Doing issues | Exception: {e}")
+            # log.info(f"Doing issues | Exception: {e}")
             if self.json["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]:
-                self.new_query(
+                self.update_data_template(
                     self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"])
                 return self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
             else:
