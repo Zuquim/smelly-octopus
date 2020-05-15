@@ -78,25 +78,40 @@ templates = {
 
 
 class Query:
-    __slots__ = ["data", "data_template", "headers", "url", "response", "json"]
+    __slots__ = [
+        "data",
+        "data_template",
+        "headers",
+        "url",
+        "response",
+        "json",
+        "n_issues",
+        "max_per_page",
+    ]
 
     def __init__(
             self,
             url: str,
             headers: dict,
             data_template: str,
+            n_issues: int,
             max_per_page: int = 50,
             auto_run: bool = False
     ):
         # Initializing instance attributes
         self.headers = headers
+        self.n_issues = n_issues
+        self.max_per_page = max_per_page
         self.url = url
         self.json = {}
         self.response = None
 
+        if n_issues < max_per_page:
+            self.max_per_page = n_issues
+
         # Setting up first query (the only one where 'after' is 'null')
         self.data_template = data_template.replace(
-            '"!<AFTER>!"', "null").replace("!<FIRST>!", str(max_per_page))
+            '"!<AFTER>!"', "null").replace("!<FIRST>!", str(self.max_per_page))
         self.data = {"query": self.data_template}
 
         # Running HTTP POST request
@@ -106,6 +121,7 @@ class Query:
     def update_data_template(
             self,
             end_cursor: Optional[str] = None,
+            n_issues: Optional[int] = None,
             owner: Optional[str] = None,
             name: Optional[str] = None
     ):
@@ -119,6 +135,14 @@ class Query:
         if end_cursor:
             self.data_template = self.data_template.replace("!<AFTER>!", end_cursor)
             self.data["query"] = self.data_template
+
+        # Setting node limit
+        if n_issues and n_issues < self.max_per_page:
+            self.data_template = self.data_template.replace(
+                f"first:{self.max_per_page},", f"first:{n_issues},"
+            )
+            self.data["query"] = self.data_template
+
 
         return self.data
 
@@ -166,8 +190,11 @@ class Query:
         except KeyError as e:
             # log.info(f"Doing issues | Exception: {e}")
             if self.json["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]:
+                self.n_issues -= self.max_per_page
                 self.update_data_template(
-                    self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"])
+                    end_cursor=self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"],
+                    n_issues=self.n_issues
+                )
                 return self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
             else:
                 return False
