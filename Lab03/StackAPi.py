@@ -21,6 +21,7 @@ def main():
                 "search/advanced",
                 title=title,
                 tagged=["python"],
+                fromdate="2016-01-01",
                 order="desc",
                 sort="votes",
                 pagesize=100,
