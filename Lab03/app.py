@@ -88,7 +88,11 @@ for id_, owner_name, n_issues in zip(
             max_per_page = 50
         # First run
         query_issue = Query(
-            url, headers, templates["issues"], max_per_page=max_per_page
+            url,
+            headers,
+            templates["issues"],
+            n_issues=n_issues,
+            max_per_page=max_per_page
         )
         query_issue.update_data_template(owner=owner, name=name)
         query_issue.request()
