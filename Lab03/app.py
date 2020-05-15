@@ -79,10 +79,14 @@ for id_, owner_name, n_issues in zip(
     name = owner_name.split("/")[1]
     if not exists(f"{output_path}/{owner}_{name}_issues.csv"):
         log.info(f"Getting issues for: {owner_name}")
-        # First run
+        # Skipping if issues=0
+        if n_issues < 1:
+            log.warning(f"Skipping {owner_name}. Zero issues found.")
+            continue
         max_per_page = n_issues
         if n_issues > 50:
             max_per_page = 50
+        # First run
         query_issue = Query(
             url, headers, templates["issues"], max_per_page=max_per_page
         )
