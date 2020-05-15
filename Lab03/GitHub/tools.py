@@ -63,7 +63,7 @@ def get_issues(gql_query: Query, node_list: list) -> tuple:
     while gql_query.next_page():
         gql_query.request()
         log.debug(f"Total nodes after last run: {len(node_list)}")
-        node_list += gql_query.json["data"]["search"]["nodes"]
+        node_list += gql_query.json["data"]["repository"]["issues"]["nodes"]
     log.info(f"Total nodes after final run: {len(node_list)}")
 
     return gql_query, node_list
