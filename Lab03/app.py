@@ -52,11 +52,14 @@ headers = {
 log.info("Getting repositories...")
 if not exists(f"{output_path}/repositories.csv"):
     # First run
-    query_repos = Query(url, headers, templates["repositories"], True)
+    query_repos = Query(url, headers, templates["repositories"], auto_run=True)
     query_repos, table_headers, nodes = first_run(query_repos)
 
     # Getting nodes for the next pages
     query_repos, nodes = get_repositories(query_repos, nodes)
+
+    # Fixing nodes' dictionaries
+    _, nodes = fix_dictionaries(query_repos, nodes)
 
     # Saving repositories data to CSV file inside 'output' directory
     save_csv("repositories", table_headers, nodes)
@@ -69,21 +72,32 @@ log.info("Getting issues...")
 # Getting repositories data
 df = pd.read_csv(f"{output_path}/repositories.csv")
 
-for id_, owner_name in zip(df["id"], df["nameWithOwner"]):
+for id_, owner_name, n_issues in zip(
+        df["id"], df["nameWithOwner"], df["all_issues"]
+):
     owner = owner_name.split("/")[0]
     name = owner_name.split("/")[1]
     if not exists(f"{output_path}/{owner}_{name}_issues.csv"):
         log.info(f"Getting issues for: {owner_name}")
         # First run
-        query_issue = Query(url, headers, templates["issues"])
-        query_issue.setup_issues_query(owner=owner, name=name)
+        max_per_page = n_issues
+        if n_issues > 50:
+            max_per_page = 50
+        query_issue = Query(
+            url, headers, templates["issues"], max_per_page=max_per_page
+        )
+        query_issue.update_data_template(owner=owner, name=name)
+        query_issue.request()
         query_issue, table_headers, nodes = first_run(query_issue)
 
         # Getting nodes for the next pages
-        query_issue, nodes = get_issues(query_issue, nodes)
+        query_issue, nodes = get_issues(query_issue, nodes, n_issues)
+
+        # Fixing nodes' dictionaries
+        _, nodes = fix_dictionaries(query_issue, nodes)
 
         # Saving issues data to CSV file inside 'output' directory
-        save_csv(f"{owner}_{name}_issues", table_headers, nodes)
+        save_csv(f"{owner}_{name}_issues", table_headers, nodes, "")
     else:
         log.info(f"CSV file for '{owner_name}' issues already exist. Skipping...")
 
