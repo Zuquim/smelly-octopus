@@ -1,4 +1,4 @@
-from csv import writer
+from csv import DictWriter
 from datetime import datetime as dt
 from logging import DEBUG, INFO
 from os import getcwd, listdir, system
@@ -41,16 +41,16 @@ def first_run(gql_query: Query) -> tuple:
     try:
         nodes = gql.json["data"]["search"]["nodes"]
     except KeyError as e:
-        log.debug(f"Doing issues | Exception: {e}")
+        # log.debug(f"Doing issues | Exception: {e}")
         nodes = gql.json["data"]["repository"]["issues"]["nodes"]
     table_headers = nodes[0].keys()
-    log.info(f"Total nodes after first run: {len(nodes)}")
+    log.debug(f"Total nodes after first run: {len(nodes)}")
 
     return gql, table_headers, nodes
 
 
-def get_repositories(gql_query: Query, node_list: list) -> tuple:
-    while gql_query.next_page():
+def get_repositories(gql_query: Query, node_list: List[dict], max: int = 1000) -> tuple:
+    while gql_query.next_page() and len(node_list) < max:
         gql_query.request()
         log.debug(f"Total nodes after last run: {len(node_list)}")
         node_list += gql_query.json["data"]["search"]["nodes"]
@@ -59,8 +59,8 @@ def get_repositories(gql_query: Query, node_list: list) -> tuple:
     return gql_query, node_list
 
 
-def get_issues(gql_query: Query, node_list: list) -> tuple:
-    while gql_query.next_page():
+def get_issues(gql_query: Query, node_list: List[dict], max: int = 1000) -> tuple:
+    while gql_query.next_page() and len(node_list) < max and len(node_list) < 1000:
         gql_query.request()
         log.debug(f"Total nodes after last run: {len(node_list)}")
         node_list += gql_query.json["data"]["repository"]["issues"]["nodes"]
@@ -69,17 +69,26 @@ def get_issues(gql_query: Query, node_list: list) -> tuple:
     return gql_query, node_list
 
 
+def fix_dictionaries(gql_query: Query, node_list: List[dict]) -> tuple:
+    for i, node in enumerate(node_list):
+        node_list[i] = gql_query.fix_dict(node)
+
+    return gql_query, node_list
+
+
 def age_in_seconds(created_at: str, format: str = "%Y-%m-%dT%H:%M:%SZ") -> float:
     return (dt.today() - dt.strptime(created_at, format)).total_seconds()
 
 
-def save_csv(file_name: str, table_headers: list, node_list: List[dict]):
+def save_csv(
+        file_name: str,
+        table_headers: List[str],
+        node_list: List[dict],
+        delimiter: str = ","
+):
     if not file_name.endswith(".csv"):
         file_name += ".csv"
     with open(f"{output_path}/{file_name}", "w") as f:
-        csv = writer(f)
-        csv.writerow(table_headers)
-        for repository in node_list:
-            log.debug(f"repository={repository}")
-            csv.writerow(repository.values())
-
+        csv = DictWriter(f, fieldnames=table_headers, delimiter=delimiter)
+        csv.writeheader()
+        csv.writerows(node_list)
