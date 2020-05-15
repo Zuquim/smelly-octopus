@@ -10,13 +10,13 @@ log = setup_logger(name="GraphQL", level=INFO)
 repositories_template = (
     "{"
     "  search("
-    '      query: "stars:>100",'
+    '      query:"stars:>100'
+    "      language:python"
+    '      created:>=2016-01-01",'
     "      type:REPOSITORY,"
     "      first:50,"
-    "      language:python,"
-    "      created:>=2016-01-01,"
     '      after:"!<AFTER>!"'
-    "  ) {"
+    "  ){"
     "    pageInfo{"
     "      hasNextPage"
     "      endCursor"
@@ -43,22 +43,22 @@ repositories_template = (
 issues_template = """
 {
   repository(
-      owner: "!<OWNER>!",
-      name: "!<NAME>!"
-    ) {
+      owner:"!<OWNER>!",
+      name:"!<NAME>!"
+    ){
     issues(
-        first: 10,
-        orderBy: {
-          field: CREATED_AT,
-          direction: ASC
+        first:10,
+        orderBy:{
+          field:CREATED_AT,
+          direction:ASC
         },
-        after: "!<AFTER>!"
+        after:"!<AFTER>!"
     ){
       pageInfo{
         hasNextPage
         endCursor
       }
-      nodes {
+      nodes{
         id
         title
         createdAt
@@ -135,7 +135,7 @@ class Query:
         log.debug(f"end_cursor={end_cursor}")
 
         # GraphQL query definition (setting up parameter to get next page)
-        self.data["query"] = self.data_template.replace("!<REPLACE-ME>!", end_cursor)
+        self.data["query"] = self.data_template.replace("!<AFTER>!", end_cursor)
 
         return self.data
 
