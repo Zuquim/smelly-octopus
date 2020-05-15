@@ -52,7 +52,7 @@ headers = {
 log.info("Getting repositories...")
 if not exists(f"{output_path}/repositories.csv"):
     # First run
-    query_repos = Query(url, headers, templates["repositories"])
+    query_repos = Query(url, headers, templates["repositories"], True)
     query_repos, table_headers, nodes = first_run(query_repos)
 
     # Getting nodes for the next pages
