@@ -94,7 +94,7 @@ class Query:
             url: str,
             headers: dict,
             data_template: str,
-            n_issues: int,
+            n_issues: Optional[int] = None,
             max_per_page: int = 50,
             auto_run: bool = False
     ):
@@ -106,8 +106,9 @@ class Query:
         self.json = {}
         self.response = None
 
-        if n_issues < max_per_page:
-            self.max_per_page = n_issues
+        if n_issues:
+            if n_issues < max_per_page:
+                self.max_per_page = n_issues
 
         # Setting up first query (the only one where 'after' is 'null')
         self.data_template = data_template.replace(
@@ -125,24 +126,24 @@ class Query:
             owner: Optional[str] = None,
             name: Optional[str] = None
     ):
+        data = self.data_template
         # Setup repository owner and name for issues query
         if owner and name:
             self.data_template = self.data_template.replace('!<OWNER>!', owner)
             self.data_template = self.data_template.replace('!<NAME>!', name)
-            self.data["query"] = self.data_template
+            data = self.data_template
 
         # GraphQL query definition (setting up parameter to get next page)
         if end_cursor:
-            self.data_template = self.data_template.replace("!<AFTER>!", end_cursor)
-            self.data["query"] = self.data_template
+            data = data.replace("!<AFTER>!", end_cursor)
 
         # Setting node limit per page
         if n_issues and n_issues < self.max_per_page:
-            self.data_template = self.data_template.replace(
+            data = data.replace(
                 f"first:{self.max_per_page},", f"first:{n_issues},"
             )
-            self.data["query"] = self.data_template
 
+        self.data["query"] = data
 
         return self.data
 
