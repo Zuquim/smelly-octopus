@@ -71,14 +71,15 @@ log.info("Got repositories!")
 log.info("Getting issues...")
 # Getting repositories data
 df = pd.read_csv(f"{output_path}/repositories.csv")
-
+c = 0
 for id_, owner_name, n_issues in zip(
         df["id"], df["nameWithOwner"], df["all_issues"]
 ):
     owner = owner_name.split("/")[0]
     name = owner_name.split("/")[1]
+    c += 1
     if not exists(f"{output_path}/{owner}_{name}_issues.csv"):
-        log.info(f"Getting issues for: {owner_name}")
+        log.info(f"#{c}/{len(df)}\tGetting issues for: {owner_name} | issues={n_issues}")
 
         # Skipping if issues=0
         if n_issues < 1:
@@ -112,6 +113,7 @@ for id_, owner_name, n_issues in zip(
         # Saving issues data to CSV file inside 'output' directory
         save_csv(f"{owner}_{name}_issues", table_headers, nodes, "")
     else:
-        log.info(f"CSV file for '{owner_name}' issues already exist. Skipping...")
+        log.info(f"#{c}/{len(df)}\tCSV file for '{owner_name}' issues already exist. Skipping...")
+        # log.debug(f"#{c}/{len(df)}\t{output_path}/{owner}_{name}_issues.csv")
 
 log.info("Got repositories!")
