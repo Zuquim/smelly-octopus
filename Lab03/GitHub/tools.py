@@ -52,9 +52,9 @@ def first_run(gql_query: Query) -> tuple:
 def get_repositories(gql_query: Query, node_list: List[dict], max: int = 1000) -> tuple:
     while gql_query.next_page() and len(node_list) < max:
         gql_query.request()
-        log.debug(f"Total nodes after last run: {len(node_list)}")
         node_list += gql_query.json["data"]["search"]["nodes"]
-    log.info(f"Total nodes after final run: {len(node_list)}")
+        log.debug(f"Total nodes after last run: {len(node_list)}")
+    # log.info(f"Total nodes after final run: {len(node_list)}")
 
     return gql_query, node_list
 
@@ -62,9 +62,9 @@ def get_repositories(gql_query: Query, node_list: List[dict], max: int = 1000) -
 def get_issues(gql_query: Query, node_list: List[dict], max: int = 1000) -> tuple:
     while gql_query.next_page() and len(node_list) < max and len(node_list) < 1000:
         gql_query.request()
-        log.debug(f"Total nodes after last run: {len(node_list)}")
         node_list += gql_query.json["data"]["repository"]["issues"]["nodes"]
-    log.info(f"Total nodes after final run: {len(node_list)}")
+        log.debug(f"Total nodes after last run: {len(node_list)}")
+    # log.info(f"Total nodes after final run: {len(node_list)}")
 
     return gql_query, node_list
 
