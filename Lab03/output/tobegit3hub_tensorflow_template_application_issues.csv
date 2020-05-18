@@ -1,0 +1,37 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNzg1MjU5OTI=libsvm data format2016-09-22T05:33:27Z2016-09-27T05:15:26ZTrue
+MDU6SXNzdWUxODE4Mjc4MzU=wrong in cancer_classifier.py2016-10-08T14:03:54Z2016-10-21T01:35:20ZTrue
+MDU6SXNzdWUxODY3NzI1MTA=The readme.md in grpc_service2016-11-02T11:11:42Z2016-12-14T09:54:37ZTrue
+MDU6SXNzdWUxODgyMjU3OTg=Question about valid_batch_data2016-11-09T11:33:52Z2016-11-28T03:44:04ZTrue
+MDU6SXNzdWUxOTE4NzE5MTc=Tensor slice is too large to serialize2016-11-27T17:00:08Z2016-12-14T09:52:37ZTrue
+MDU6SXNzdWUxOTE5MDYyNzE=Missing 'streaming_auc'2016-11-28T02:25:56Z2016-11-28T09:12:25ZTrue
+MDU6SXNzdWUxOTQzMTA4MzM=import tensorflow.serving.Model;2016-12-08T11:22:04Z2016-12-09T10:57:58ZTrue
+MDU6SXNzdWUxOTU0ODE1NjE=how can i use the trained model to predict my own data?2016-12-14T09:33:20Z2016-12-14T09:51:05ZTrue
+MDU6SXNzdWUxOTU2OTQ1MTI=KeyError: u'key'2016-12-15T01:42:44ZFalse
+MDU6SXNzdWUxOTgxNzkxMDI=InvalidArgumentError (see above for traceback): Cannot assign a device to node 'save/RestoreV2_8'2016-12-30T18:22:41ZFalse
+MDU6SXNzdWUyMDA5MzQxMzQ=Question about test.2017-01-16T05:27:56Z2017-11-22T08:06:10ZTrue
+MDU6SXNzdWUyMDE4NjY5MDg=test data file not found2017-01-19T13:55:23Z2017-01-22T05:00:30ZTrue
+MDU6SXNzdWUyMDU1MDYyOTc=error with sparse_softmax_cross_entropy_with_logits2017-02-06T07:31:50Z2017-05-24T06:54:23ZTrue
+MDU6SXNzdWUyMDU4NjQ2NDc=how can i use your code to train a candidate generation model 2017-02-07T11:49:43Z2017-02-12T04:57:59ZTrue
+MDU6SXNzdWUyMDg3MDExMDY=batch_normalization should be involved in Test mode2017-02-19T07:39:39ZFalse
+MDU6SXNzdWUyMTIzNzQ1MzE="Run with an error ""double free or corruption"""2017-03-07T09:25:29Z2017-03-10T04:32:44ZTrue
+MDU6SXNzdWUyMTkyMzM5MDk=cancer_classifier.py error2017-04-04T12:28:29Z2017-05-27T02:17:37ZTrue
+MDU6SXNzdWUyMjIzMjQ2MDM=Binary TensorFlow model server doesn't exist2017-04-18T07:19:46Z2017-05-27T02:37:57ZTrue
+MDU6SXNzdWUyMjQzOTMwMTU=benchmark_predict_client.py  doesn't exist2017-04-26T08:57:27Z2017-08-02T07:34:12ZTrue
+MDU6SXNzdWUyMjQ2ODEwNDg=请问您试过在redhat6.7版本中编译tensorflow serving么？2017-04-27T06:15:21Z2017-05-27T02:24:40ZTrue
+MDU6SXNzdWUyMzczOTU0MjU=feature size of a8a dataset may be wrong2017-06-21T02:11:06Z2017-06-21T07:18:55ZTrue
+MDU6SXNzdWUyNTA1MzU2MDc=how to support regression?2017-08-16T07:29:54Z2017-09-14T01:08:13ZTrue
+MDU6SXNzdWUyNTIyNzY4OTk=TF转化后的样本数据训练时 没有全部用上是什么原因？2017-08-23T13:09:55Z2017-08-24T12:47:52ZTrue
+MDU6SXNzdWUyNTc1ODYxNDE=java predict client problem2017-09-14T03:45:24ZFalse
+MDU6SXNzdWUyNzU5NzE2ODk=python predict client problem2017-11-22T07:43:27ZFalse
+MDU6SXNzdWUyNzk1MDMyNTg=how to use this project to fine tune or transfer learning 2017-12-05T19:37:53ZFalse
+MDU6SXNzdWUyODM0NDI0NzU=数组转换2017-12-20T03:57:38ZFalse
+MDU6SXNzdWUyOTU0NzYzODQ=Error while running CNN2018-02-08T11:25:56ZFalse
+MDU6SXNzdWUzMDMxNzQ3NzU="Model not getting generated ,getting the message as ""Do not export the model yet"" "2018-03-07T16:47:28Z2018-03-12T07:03:05ZTrue
+MDU6SXNzdWUzMDUwMDk4OTA=No module named tensorflow_serving.apis2018-03-14T03:22:53ZFalse
+MDU6SXNzdWUzMDUwMTU0Mjk=Cannot find file: ./tensorflow_model_server 2018-03-14T04:00:12Z2018-03-14T04:03:28ZTrue
+MDU6SXNzdWUzMDU0Nzc4NTU="grpc.framework.interfaces.face.face.ExpirationError: ExpirationError(code=StatusCode.DEADLINE_EXCEEDED, details=""Deadline Exceeded"")"2018-03-15T09:43:00ZFalse
+MDU6SXNzdWUzMDg1MDExNzE=https://github.com/tobegit3hub/tensorflow_template_application/tree/master/http_service2018-03-26T09:44:19ZFalse
+MDU6SXNzdWUzMTAzMjA4MDE=ERROR:root:Get the unsupported parameters, exit now2018-04-01T12:41:14Z2018-04-02T07:05:50ZTrue
+MDU6SXNzdWUzOTU0NDkzODQ=Python gRPC server is not reachable2019-01-03T03:45:28Z2019-01-03T06:19:09ZTrue
+MDU6SXNzdWU0NzIxMDYyMTI=DropOut PlaceHolder should be a scalar, how to construct it with tensorProto2019-07-24T06:39:49ZFalse

@@ -1,0 +1,25 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyOTM2NzQwODM=Conflict with other package names2018-02-01T20:34:03Z2018-02-01T21:01:37ZTrue
+MDU6SXNzdWUyOTM3NjU4NzE="FileNotFoundError('""%s"" is not a file.')"2018-02-02T03:56:11Z2018-02-02T14:14:22ZTrue
+MDU6SXNzdWUyOTM3NjcxMzQ=AssertionError: No linker candidates found.2018-02-02T04:05:53Z2018-02-02T12:50:45ZTrue
+MDU6SXNzdWUyOTM3ODM3ODE=NameError: global name 'FileNotFoundError' is not defined2018-02-02T06:11:54Z2018-02-02T15:44:24ZTrue
+MDU6SXNzdWUyOTM4Nzc2ODY=Improve error handling and logging2018-02-02T12:48:34Z2018-02-02T17:45:14ZTrue
+MDU6SXNzdWUyOTM5MzY3MTM="""AttributeError: 'file' object has no attribute 'buffer"""2018-02-02T16:01:37Z2018-02-02T16:14:19ZTrue
+MDU6SXNzdWUyOTQyNTEwNTQ=Error message isn't correctly formatted2018-02-05T01:37:34Z2018-02-05T13:54:59ZTrue
+MDU6SXNzdWUyOTQyNTE4MjI=Error when bundling a Godot binary2018-02-05T01:45:18Z2018-02-05T15:10:04ZTrue
+MDU6SXNzdWUyOTQ0OTE4MDM=Graphical applications cannot get the X11 display when run on older distributions than the base target2018-02-05T18:16:48Z2018-02-18T17:28:29ZTrue
+MDU6SXNzdWUyOTQ3MDc2Nzk=Including additional components from a package2018-02-06T10:30:50Z2018-03-08T13:32:28ZTrue
+MDU6SXNzdWUyOTQ5Mzc5OTg=generated sh file doesn't work with busybox tar2018-02-06T22:35:21Z2018-02-18T16:52:54ZTrue
+MDU6SXNzdWUyOTUwOTAxOTY=Docker benefits2018-02-07T10:47:45ZFalse
+MDU6SXNzdWUyOTk0ODcxODM=FATAL: kernel too old2018-02-22T19:56:40Z2018-02-22T21:47:33ZTrue
+MDU6SXNzdWUzMDE4MDQwMTA=Can I use exodus to run Dying Light on Arch Linux?2018-03-02T15:28:57Z2018-03-21T14:31:13ZTrue
+MDU6SXNzdWUzMDM3NzcyNzY=Make exodus compliant with XDG base directory specification2018-03-09T09:31:57Z2018-03-12T15:16:11ZTrue
+MDU6SXNzdWUzMTEyNTAwMzg=Include all observed dependency paths in `LD_LIBRARY_PATH`2018-04-04T14:18:25Z2018-04-04T15:07:28ZTrue
+MDU6SXNzdWUzMTIzMDgyNDQ=Manually added library dependencies should default to the entry point's linker2018-04-08T14:01:50Z2018-04-08T14:56:43ZTrue
+MDU6SXNzdWUzMTgzMDExMDM=pyinstaller --onefile output elf does not work2018-04-27T07:10:59ZFalse
+MDU6SXNzdWUzMjQxNDYzNDE=vfork2018-05-17T19:01:25Z2018-05-18T16:42:53ZTrue
+MDU6SXNzdWUzMjQ1NTgzNzU=execv on /proc/self/exe2018-05-18T21:32:16ZFalse
+MDU6SXNzdWUzNjE1MTExMTI=cannot handle x as a builtin2018-09-18T22:42:24Z2018-09-18T22:48:02ZTrue
+MDU6SXNzdWUzNjM1OTY3OTc=Dynamic discovery of dlopen'ed libraries?2018-09-25T14:06:06Z2018-09-25T14:36:20ZTrue
+MDU6SXNzdWU0MDA5MDkyOTY=Typo in the readme2019-01-18T22:13:49Z2019-01-23T19:39:52ZTrue
+MDU6SXNzdWU1Mjc0MTc5NTI=Drop toolchain path2019-11-22T21:14:46ZFalse

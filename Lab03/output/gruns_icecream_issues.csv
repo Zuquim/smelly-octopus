@@ -1,0 +1,28 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyOTcyNzYwNjY=Type, np.ndarray shape2018-02-14T22:59:26Z2018-03-12T09:04:31ZTrue
+MDU6SXNzdWUyOTc2MTYwODY=Icecream should return it's args2018-02-15T22:15:42Z2018-02-16T22:12:31ZTrue
+MDU6SXNzdWUyOTc2Mzg5OTE=Logo license2018-02-15T23:53:44Z2018-02-17T11:45:15ZTrue
+MDU6SXNzdWUyOTgwMjAxNTA=ValueError when importing icecream with alias2018-02-17T17:13:58Z2018-02-21T07:52:26ZTrue
+MDU6SXNzdWUyOTk0NDI0NDM=Add this lib to the wiki at PythonDebuggingTools2018-02-22T17:33:09Z2018-03-02T23:57:20ZTrue
+MDU6SXNzdWUyOTk2MjE2ODA=IC error with class representation broken with unicode2018-02-23T07:26:49Z2018-02-26T02:18:33ZTrue
+MDU6SXNzdWUyOTk2MjM5MDQ=Add configuration to turn off ic2018-02-23T07:39:06Z2018-02-25T08:53:40ZTrue
+MDU6SXNzdWUzMDIyMTc3NTA=Stack Traces2018-03-05T09:01:16Z2018-05-12T09:04:15ZTrue
+MDU6SXNzdWUzMDI0OTM1NTA=Testing whether 'v == ic', should be whether 'v is ic'2018-03-05T22:42:14Z2018-03-12T06:49:54ZTrue
+MDU6SXNzdWUzMDg2OTIxMDE=Integrating colors into printing2018-03-26T18:50:26Z2019-02-15T23:44:48ZTrue
+MDU6SXNzdWUzMDkyNzQxNjY=OSError：could not get source code2018-03-28T08:48:26Z2018-04-19T06:47:25ZTrue
+MDU6SXNzdWUzMTc2MDkxMjg=First release.2018-04-25T12:36:32Z2018-05-15T18:43:24ZTrue
+MDU6SXNzdWUzMjAxMjU0MDA=prettyprint dictionaries2018-05-04T00:48:37Z2018-05-07T06:26:27ZTrue
+MDU6SXNzdWUzMjMzNTY3MDQ=Tests log on stderr2018-05-15T19:44:09Z2018-05-15T21:20:07ZTrue
+MDU6SXNzdWUzMjQ2NTY2Mjg=Add option to skip show of source code2018-05-19T20:09:03Z2018-06-07T23:58:44ZTrue
+MDU6SXNzdWUzMjkyODg5MjI=Check Syntax with PyCodestyle2018-06-05T03:25:54Z2018-06-21T09:05:18ZTrue
+MDU6SXNzdWUzODE4NzQ4MzE=irondb2018-11-17T15:52:04Z2018-11-20T02:35:31ZTrue
+MDU6SXNzdWU0MTEzNjEyNDE=IndentationError: unexpected indent2019-02-18T08:45:37Z2019-10-26T06:51:27ZTrue
+MDU6SXNzdWU0Mzk1MzAwNzU=Call icecream without having to import it each time.2019-05-02T10:50:33ZFalse
+MDU6SXNzdWU0NDM1OTY0NDM=Add an easy way to write output to a file.2019-05-13T20:52:47ZFalse
+MDU6SXNzdWU0NDQxODE0MjE=Allow ic to be used as a decorator2019-05-15T00:20:21ZFalse
+MDU6SXNzdWU0NzE5NTQ2ODE=Fix inline list comprehensions2019-07-23T21:17:02Z2019-10-25T18:59:36ZTrue
+MDU6SXNzdWU0OTgwMzMzMDU=Broken coloring for boolean in command prompt2019-09-25T03:57:34ZFalse
+MDU6SXNzdWU0OTkxOTQ1ODM=print() is 68 times faster than ic()2019-09-27T02:02:16Z2019-10-06T18:26:56ZTrue
+MDU6SXNzdWU1MDAxNjEyMzc=Not working with namedtuple2019-09-30T09:34:46Z2019-09-30T14:10:28ZTrue
+MDU6SXNzdWU1MDMxNDA0NjA=IPython magic %time break ic2019-10-06T18:28:24Z2019-10-06T20:08:23ZTrue
+MDU6SXNzdWU1MTg2MzY2MzI=Doesn't work with pytest2019-11-06T17:58:49Z2019-11-14T07:25:45ZTrue

@@ -1,0 +1,39 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNzk2MDE1NzM=(Python 2.7) predict_proba throws AttributeError2016-09-27T20:17:21Z2016-09-27T21:00:45ZTrue
+MDU6SXNzdWUxNzk2MTAwMzc=(Py3) missing requirements2016-09-27T20:50:47Z2016-09-27T22:37:09ZTrue
+MDU6SXNzdWUxNzk2MTIyOTk=(Py3) bad command line in examples2016-09-27T20:59:49Z2016-09-27T22:40:10ZTrue
+MDU6SXNzdWUxNzk2NjMwODg=Integer parsing error upon First Sampling 2016-09-28T02:04:07Z2016-10-01T15:45:51ZTrue
+MDU6SXNzdWUxNzk2NjYwNjM="Issue with ""whereami predict | say"""2016-09-28T02:31:18Z2016-09-28T05:04:57ZTrue
+MDU6SXNzdWUxNzk4NTgxMjI=Windows 10: ValueError: Found array with 0 feature(s) (shape=(100, 0)) while a minimum of 1 is required.2016-09-28T18:58:21Z2017-04-23T14:51:44ZTrue
+MDU6SXNzdWUxODAwNTYxNDI=OSX error2016-09-29T13:55:27Z2016-10-02T03:34:44ZTrue
+MDU6SXNzdWUxODAxMjU5MjY=[Python2] FileNotFoundError is not defined2016-09-29T18:27:50Z2016-10-01T13:38:37ZTrue
+MDU6SXNzdWUxODA0NzIxMzE=no module name sklearn2016-10-01T18:33:11ZFalse
+MDU6SXNzdWUxODA1MTA2MjA=invalid literal for int() with base 10: '86  1'2016-10-02T12:45:23Z2016-10-02T15:51:51ZTrue
+MDU6SXNzdWUxODA5Njk4OTU=nmcl: could not creat nmclient object2016-10-04T18:32:38Z2016-10-04T19:04:27ZTrue
+MDU6SXNzdWUxODEzOTQyNTg=Embedd in Python Code2016-10-06T11:52:09Z2017-04-23T15:03:05ZTrue
+MDU6SXNzdWUxODE0MjU4MzM=Provide feedback on wrong localization2016-10-06T14:11:02ZFalse
+MDU6SXNzdWUxOTg5NDg0NDc=Ubuntu:ValueError: need more than 1 value to unpack2017-01-05T12:48:26Z2017-01-09T15:36:24ZTrue
+MDU6SXNzdWUyMDcwOTA4NTU=Access Point: ValueError: not enough values to unpack (expected 4, got 1)2017-02-12T23:21:50Z2017-02-13T21:55:58ZTrue
+MDU6SXNzdWUyMTM5OTg2MzM=windows10,python2.7 error:UTF-16 surrogate2017-03-14T08:26:41ZFalse
+MDU6SXNzdWUyMjA0ODE5OTM=ValueError: Sample sequence X is empty2017-04-09T16:30:53Z2017-04-09T17:31:58ZTrue
+MDU6SXNzdWUyMjA1NjkyMzk=Add option to rename locations2017-04-10T08:18:17Z2017-04-14T12:41:00ZTrue
+MDU6SXNzdWUyMjA1ODczMDc=Allow to set several location regions2017-04-10T09:31:52ZFalse
+MDU6SXNzdWUyMjA2ODM4NjI=Not working in Python 3.62017-04-10T15:35:20Z2017-04-10T15:45:17ZTrue
+MDU6SXNzdWUyMjA4OTAyNjg=zsh: command not found: display_info2017-04-11T09:25:21Z2018-06-18T20:48:56ZTrue
+MDU6SXNzdWUyMjA5MTUwMjE=Unrecognized Arguments -n2017-04-11T11:03:28Z2017-04-11T12:13:47ZTrue
+MDU6SXNzdWUyMjE3MTk5NjA=How can I tell if I'm in an unknown location?2017-04-14T01:13:16ZFalse
+MDU6SXNzdWUyMjE3MjAwMzU=What can I do with this?2017-04-14T01:14:08ZFalse
+MDU6SXNzdWUyMjIwMTQzNTU=failed building wheels for Numpy and Scipy2017-04-16T14:52:12Z2017-04-16T16:26:51ZTrue
+MDU6SXNzdWUyMjIxNzk4Nzg=Does not refresh locations between each sample (Win 10)2017-04-17T17:29:42ZFalse
+MDU6SXNzdWUyMjI0NDUyNzA="ValueError: Valid presets for class_weight include ""auto"" and ""subsample"". Given ""balanced""."2017-04-18T14:57:37Z2017-04-18T15:02:14ZTrue
+MDU6SXNzdWUyMjI5ODUwNTQ=nonfunctional due to alternative wifi device name2017-04-20T08:17:08Z2017-07-25T08:47:11ZTrue
+MDU6SXNzdWUyMzY2Mjk0ODI=Don't show stacktrace when using Ctrl-C2017-06-17T01:12:21Z2017-06-17T11:17:09ZTrue
+MDU6SXNzdWUyOTMwMzEzMDg=missing documentation for mac 10.11.62018-01-31T04:56:54ZFalse
+MDU6SXNzdWUyOTMyODQ4MTY=add a time dimension to locations?2018-01-31T19:36:52ZFalse
+MDU6SXNzdWUyOTQ3NDMyODQ=Reset knowledge2018-02-06T12:34:42Z2018-02-06T13:25:51ZTrue
+MDU6SXNzdWUzNTQxMjgwNjk=Update dependencies2018-08-26T20:52:34ZFalse
+MDU6SXNzdWUzODQ5NTMwNjA=UnicodeDecodeError when learning2018-11-27T19:35:39Z2018-11-28T12:30:18ZTrue
+MDU6SXNzdWU0MDMwMzE2MjE=ValueError: n_splits=10 cannot be greater than the number of members in each class.2019-01-25T07:06:54ZFalse
+MDU6SXNzdWU0MTAyOTA5MDE=Locations lose trailing 't' or 'x'2019-02-14T13:07:19ZFalse
+MDU6SXNzdWU0MjUyNzIxMjg=How can I track my phone?2019-03-26T07:54:35ZFalse
+MDU6SXNzdWU1ODMyOTQ2ODk=Does deleting {{location}}.txt files affect the model?2020-03-17T20:58:08Z2020-03-17T23:37:38ZTrue

@@ -1,0 +1,15 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzOTI4Njg3MTE=5_show_confmat.py where?2018-12-20T03:14:35Z2018-12-20T03:16:23ZTrue
+MDU6SXNzdWUzOTM3MzU2Mjg=QQ群修改密码了吗？2018-12-23T09:24:12ZFalse
+MDU6SXNzdWUzOTM4MzYzMjA=第二章预训练训练的模型acc是60%？2018-12-24T08:38:00Z2019-01-08T02:21:41ZTrue
+MDU6SXNzdWUzOTQxNzY0MzM=模型权重初始化并非小随机数，使用的是kaiming初始化2018-12-26T14:15:41ZFalse
+MDU6SXNzdWUzOTQyNzA0NDE=3.4学习率调整策略 这个时没有相应的代码吗2018-12-27T01:39:14ZFalse
+MDU6SXNzdWUzOTg1NjMwNjE=勘误2019-01-12T15:23:35ZFalse
+MDU6SXNzdWU0MTU5MTc2NTI=建议2019-03-01T02:54:50ZFalse
+MDU6SXNzdWU0MjQ1MTAxMjg=在数据预处理时，我们应该用源数据的平均值和标准差来初始化吗？2019-03-23T15:08:09ZFalse
+MDU6SXNzdWU0MzAwNDQ5ODE=没有看到第五部分代码啊，怎么运行5_show__confmat.py2019-04-06T15:29:16ZFalse
+MDU6SXNzdWU0NjYzMjgyMjc=main.py中的max_epoch=1是不是有问题啊 。话说博主的训练出来的精确率是多少。2019-07-10T14:02:08ZFalse
+MDU6SXNzdWU0OTIwNTczMDU=split_dataset 路径提取那里有问题2019-09-11T07:08:55ZFalse
+MDU6SXNzdWU1MDYxODQ0NTg=train_loader加载数据训练的时候只加载了500个？2019-10-12T13:02:59ZFalse
+MDU6SXNzdWU1MDYyNzU5NTg=4.4节 运行梯度代码，可视化weights结果不是分布而是一个直线2019-10-13T05:15:05Z2019-10-13T05:55:45ZTrue
+MDU6SXNzdWU1MzYyNDIwNjU=请教一个训练的问题2019-12-11T09:23:22ZFalse

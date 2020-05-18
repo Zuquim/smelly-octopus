@@ -1,0 +1,19 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMzA3NDc5MTg=Dummy issue2017-05-23T15:23:38Z2017-07-08T07:53:25ZTrue
+MDU6SXNzdWUyNzU2NjUxNTk=dummy2017-11-21T10:47:14Z2017-12-16T16:08:28ZTrue
+MDU6SXNzdWUyNzYyNDk1NjE=ModuleNotFoundError: No module named 'params' 2017-11-23T02:04:44Z2017-12-16T16:08:11ZTrue
+MDU6SXNzdWUyOTQ3NTUzODI=NTN about prepare_data function2018-02-06T13:16:30Z2018-02-06T13:22:01ZTrue
+MDU6SXNzdWUyOTY3NjEyODI=AttributeError: 'Tensor' object has no attribute 'T'2018-02-13T14:43:47Z2018-02-16T11:03:39ZTrue
+MDU6SXNzdWUzMTIyMzU2MzY=Undefined names2018-04-07T19:29:07Z2019-03-07T03:54:57ZTrue
+MDU6SXNzdWUzMTIzMDUzNjY=ABCNN  some .npy files missed2018-04-08T13:22:21ZFalse
+MDU6SXNzdWUzMTQwMTk2MTY=neural tensor network data2018-04-13T08:45:09ZFalse
+MDU6SXNzdWUzMTQxNTU1Njc=pip cannot find StandardScaler2018-04-13T15:36:35ZFalse
+MDU6SXNzdWUzMTQyMzE3MDk=No module named dl2018-04-13T19:54:50ZFalse
+MDU6SXNzdWUzMTQ0MTk2NTU=Add License2018-04-15T14:19:31ZFalse
+MDU6SXNzdWUzMTQ1OTAwNTE=Released version v1.12018-04-16T10:27:37ZFalse
+MDU6SXNzdWUzMzg4OTUyNzQ=Explanation of the ntn_Eval  file in the implementation of the neural tensor network2018-07-06T10:52:48ZFalse
+MDU6SXNzdWUzNzk1Nzc0MzU=ImportError: No module named 'dl_layers'2018-11-11T23:44:39Z2018-11-14T23:23:07ZTrue
+MDU6SXNzdWU0MDUwNjA3Nzk=No matching distribution found for StandardScaler2019-01-31T03:08:54Z2019-02-02T06:52:29ZTrue
+MDU6SXNzdWU0MTI1ODM4ODE=MACorr dataset2019-02-20T19:12:32ZFalse
+MDU6SXNzdWU0MjQ1NjI1NjA=test.ref 2019-03-24T01:12:50ZFalse
+MDU6SXNzdWU0Mjk2OTA5OTg="StandardScaler.transform is throwing error ""ValueError: Expected 2D array, got 1D array instead:"""2019-04-05T10:37:43ZFalse

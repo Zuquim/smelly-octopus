@@ -1,0 +1,26 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMTkxMjYxMTE=Non python install2018-05-01T06:14:15Z2018-05-03T16:10:26ZTrue
+MDU6SXNzdWUzMTk0MjU1NTI=python 3 support2018-05-02T06:33:11Z2019-03-20T12:31:15ZTrue
+MDU6SXNzdWUzNTc1MTAyMzE=Suggestion: Add some automated testing like Travis CI, Circle CI, Appveyor2018-09-06T06:16:07Z2018-11-08T17:37:34ZTrue
+MDU6SXNzdWU0MTQ5MjY0ODk=mixed indentations and inconsistency2019-02-27T03:21:17Z2019-03-13T21:02:26ZTrue
+MDU6SXNzdWU0MTUwMjQ1MTc=add .gitignore2019-02-27T09:27:36Z2019-03-13T21:02:36ZTrue
+MDU6SXNzdWU0MjA3MTc3NzI=The to-do list2019-03-13T21:01:48ZFalse
+MDU6SXNzdWU0MjIyODc4NjY=bypass uac - WSReset2019-03-18T15:38:44Z2019-03-23T15:03:28ZTrue
+MDU6SXNzdWU0MjM2MTkzNjY=Travis CI currently builds the app but does not run it2019-03-21T08:41:32Z2019-03-22T13:25:08ZTrue
+MDU6SXNzdWU0MjM4NTU2ODI=error: bundle-files 1 not yet supported on win642019-03-21T17:32:50Z2019-03-22T07:48:03ZTrue
+MDU6SXNzdWU0MjQ1MjI0NTg=Can we run --use commands in the automated tests?2019-03-23T17:04:32Z2019-03-26T07:31:31ZTrue
+MDU6SXNzdWU0MjQ4MDQ5NDk=sys.exit(1) should be called when a use fails2019-03-25T09:41:24Z2019-06-03T11:20:10ZTrue
+MDU6SXNzdWU0MjU5NzY2MjY=UAC functions - Auto-clean is broken2019-03-27T13:58:41Z2019-03-27T20:55:49ZTrue
+MDU6SXNzdWU0MjY0MDQ4ODk=error2019-03-28T10:08:39Z2019-03-28T15:31:37ZTrue
+MDU6SXNzdWU0MjY0NDI1NDA=Let's use argparse2019-03-28T11:32:10Z2019-04-22T10:59:14ZTrue
+MDU6SXNzdWU0NTEwNDI4NjA=Always notify2019-06-01T04:21:26Z2019-06-02T15:51:41ZTrue
+MDU6SXNzdWU0NTk1NjMwMzY=How this tool is use??2019-06-23T11:00:58Z2019-08-14T08:48:29ZTrue
+MDU6SXNzdWU0NjQ0OTAyOTg=persis and techniques2019-07-05T06:52:45Z2019-08-14T08:48:36ZTrue
+MDU6SXNzdWU0ODUyNDI3NDM=Broken function2019-08-26T13:39:43Z2019-08-29T21:05:24ZTrue
+MDU6SXNzdWU0ODc5MTkwMDE=Help2019-09-01T18:52:27Z2019-09-01T19:27:29ZTrue
+MDU6SXNzdWU0ODkxNzgyODI=Elevate to SYSTEM using mofcomp2019-09-04T13:58:29Z2019-09-04T19:01:19ZTrue
+MDU6SXNzdWU1MTM1Njg5MTQ=Error using the payload example you mentioned in the other issue2019-10-28T21:30:30Z2019-10-28T21:54:21ZTrue
+MDU6SXNzdWU1NDU0NTk2Nzk=use windows sc.exe to elevate from admin privilegs.2020-01-05T19:57:52Z2020-01-05T20:08:18ZTrue
+MDU6SXNzdWU1NzQ0NTYyMTQ=convert to exe with pyinstaller, output not work2020-03-03T06:56:12Z2020-03-29T00:38:23ZTrue
+MDU6SXNzdWU1ODk1ODU1MzA=Travis-ci tests fails with python32020-03-28T14:16:41Z2020-03-28T16:28:56ZTrue
+MDU6SXNzdWU1OTExNDA4ODI=Sometimes WinPwnage quits after successfully executing payload2020-03-31T14:08:36ZFalse

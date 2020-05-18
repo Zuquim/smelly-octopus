@@ -1,0 +1,27 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWU0MjYyNjE5MDI=`python3 baseline/train_renderer.py` call fails2019-03-28T02:12:22Z2019-03-28T04:58:35ZTrue
+MDU6SXNzdWU0MzA1NDczNzU=trained model and example how to use?2019-04-08T16:34:03Z2019-04-10T17:41:12ZTrue
+MDU6SXNzdWU0MzA2NjQ5MTk=training2019-04-08T21:22:33Z2019-04-18T05:28:44ZTrue
+MDU6SXNzdWU0Mzc3OTIzOTg=Undefined name 'init' in actor.py2019-04-26T18:25:24Z2019-05-02T11:23:56ZTrue
+MDU6SXNzdWU0Mzk0MTc1Mzg=How were straight strokes, circles and triangles generated?2019-05-02T03:53:23Z2019-05-02T11:24:09ZTrue
+MDU6SXNzdWU0NTQxNTQyNTg=only support the pictures size of 128x128?2019-06-10T12:49:39Z2019-06-12T09:09:15ZTrue
+MDU6SXNzdWU0NTg5NzI1NDU=Renderer input features2019-06-21T02:07:23Z2019-06-24T03:15:49ZTrue
+MDU6SXNzdWU0NjI5MDk2NTk=Output strokes per iteration only.2019-07-01T21:00:53Z2019-07-02T09:12:25ZTrue
+MDU6SXNzdWU0NjM1NTEzMzA=cleanup2019-07-03T05:28:47Z2019-07-10T08:24:10ZTrue
+MDU6SXNzdWU0NjQwNDgwMjc=some typos2019-07-04T03:55:01Z2019-07-04T06:32:41ZTrue
+MDU6SXNzdWU0NjQwODc1Nzg=spectral normalization GAN2019-07-04T06:32:56Z2019-07-26T01:39:37ZTrue
+MDU6SXNzdWU0NjU2MDc1Nzk=does your code include action batching?2019-07-09T07:05:07Z2019-07-26T01:39:41ZTrue
+MDU6SXNzdWU0NjYxMzE1Mzg=Would you please provide download link in Baidu netdisk?2019-07-10T06:49:55Z2019-07-10T08:41:23ZTrue
+MDU6SXNzdWU0ODgxOTY3MjI=Decoding of strokes2019-09-02T13:41:47Z2019-09-03T06:03:07ZTrue
+MDU6SXNzdWU0OTQ1Mjk1OTA=So glad to see that I'm credited.2019-09-17T10:09:58Z2019-09-17T10:34:31ZTrue
+MDU6SXNzdWU0OTQ5NDcwMzg=Run out of memory2019-09-18T02:15:55Z2019-09-26T06:20:07ZTrue
+MDU6SXNzdWU0OTU1MTMxNjE=can't work out what versions I need of the dependencies2019-09-19T00:24:11Z2019-10-07T10:36:16ZTrue
+MDU6SXNzdWU0OTc2MjA4OTQ=Possibility to output SVG instead of PNG2019-09-24T11:13:06Z2019-10-25T09:11:32ZTrue
+MDU6SXNzdWU1MDEyNDE1OTk=About stroke generation2019-10-02T02:32:53Z2019-10-25T09:11:25ZTrue
+MDU6SXNzdWU1MTM4ODY5NDQ=What is the meaning of training the Neural Renderer？2019-10-29T12:37:05Z2019-11-12T00:42:51ZTrue
+MDU6SXNzdWU1NDE5NzYzMjE=The differences between `env_batch` and `batch_size`2019-12-24T03:36:48Z2020-01-27T07:43:40ZTrue
+MDU6SXNzdWU1NDIwMzMyNDU=The default setting only supports L2 loss as reward2019-12-24T07:53:11Z2019-12-29T01:47:16ZTrue
+MDU6SXNzdWU1NDMxMTgwNzQ=Stroke opacity2019-12-28T10:39:06Z2020-01-27T07:43:52ZTrue
+MDU6SXNzdWU1NDU0NDA5ODE=Why using weight norm rather than batch norm in discriminator?2020-01-05T16:56:23Z2020-01-27T07:43:35ZTrue
+MDU6SXNzdWU1NzI1MDY0OTM=What is the effect that add reward or not on Q value?2020-02-28T04:06:35Z2020-03-12T18:09:24ZTrue
+MDU6SXNzdWU2MDk1MTA3Mzg=Any other reward function2020-04-30T02:17:18ZFalse

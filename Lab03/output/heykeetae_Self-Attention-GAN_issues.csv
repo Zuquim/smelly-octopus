@@ -1,0 +1,46 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMjc5ODY3ODU=about the gamma parameter2018-05-31T04:07:35ZFalse
+MDU6SXNzdWUzMjgxMjg2ODQ=Hello, I'm confused about you training 2018-05-31T13:00:19Z2018-06-01T02:57:32ZTrue
+MDU6SXNzdWUzMjgzMTg4NTU=Tensorboard Logger missing2018-05-31T22:27:19Z2018-06-01T02:57:52ZTrue
+MDU6SXNzdWUzMjgzNTEwMzY=two-timescale update rule (TTUR)2018-06-01T01:38:16Z2018-06-01T03:50:36ZTrue
+MDU6SXNzdWUzMjg1OTc5ODI=the imsize2018-06-01T17:18:02Z2018-06-06T07:34:13ZTrue
+MDU6SXNzdWUzMjkzMTk4Njk=large image generation will take a lot of memory.2018-06-05T06:37:53Z2018-06-08T06:17:50ZTrue
+MDU6SXNzdWUzMzAxNzI0MzU=Is there a bug in Self_Attn module?2018-06-07T08:41:04Z2018-06-08T06:17:44ZTrue
+MDU6SXNzdWUzMzE0NTA0ODE=about out of memory2018-06-12T06:13:13Z2018-06-14T16:23:01ZTrue
+MDU6SXNzdWUzMzE0NTQ1Njg=Does it make sense to do spectral normalization before batch normalization?2018-06-12T06:31:56ZFalse
+MDU6SXNzdWUzMzIxMzgyMzA=Missing tester file2018-06-13T19:49:33Z2018-07-25T17:27:43ZTrue
+MDU6SXNzdWUzMzIzOTgwMTg=Is this a writing error: attention.permute(0,1,2)?2018-06-14T13:14:54Z2018-06-14T16:22:33ZTrue
+MDU6SXNzdWUzMzY5MDEzODQ=I want to change 'imsize'.2018-06-29T07:59:30ZFalse
+MDU6SXNzdWUzMzc5OTk2MTk=Added tensorboard logger2018-07-03T17:56:34ZFalse
+MDU6SXNzdWUzMzgxMjQ4MDI=RuntimeError: Found 0 files in subfolders of: ./data/CelebA/2018-07-04T04:16:13Z2018-07-04T07:48:23ZTrue
+MDU6SXNzdWUzMzgxNjY3NjA=Generator class why use Self_Attn( 128, 'relu')? Can I use other number?2018-07-04T07:52:05Z2018-07-05T04:03:52ZTrue
+MDU6SXNzdWUzMzkzMjMyMDk=Who can explain how much better after adding Self-Attention?2018-07-09T06:43:03ZFalse
+MDU6SXNzdWUzNDIxODQwOTU=Does this code supports multi-class datasets?2018-07-18T05:41:08ZFalse
+MDU6SXNzdWUzNDM1MjU4NTE=About the attention map2018-07-23T07:55:53ZFalse
+MDU6SXNzdWUzNDcyOTM5MDQ=hinge loss2018-08-03T07:46:12ZFalse
+MDU6SXNzdWUzNDk4ODI4NzI=d_iters seems not being used 2018-08-13T04:17:27ZFalse
+MDU6SXNzdWUzNTEyNDM0NzI=Which Loss for CelebA Results?2018-08-16T14:59:17Z2018-08-24T13:45:55ZTrue
+MDU6SXNzdWUzNTIxNDM5ODU=In the 1*1*1 convlution, should we need to set the bias/b = 0?2018-08-20T13:49:22ZFalse
+MDU6SXNzdWUzNjg5MDgzMjU=How to use in 3D conv?2018-10-11T00:45:17ZFalse
+MDU6SXNzdWUzNzU3Nzg2Njk=Has this implementation reproduced the results of the original paper?2018-10-31T03:03:55Z2018-11-06T15:58:21ZTrue
+MDU6SXNzdWUzNzc2ODQxMjk=Hello,heykeetae,has this implement implied conditional batch normalization? It seems that not support multi-class image generation.2018-11-06T04:04:12ZFalse
+MDU6SXNzdWUzNzc5NjQyMzM=i think the implementation  of WGAN-GP loss is wrong2018-11-06T17:53:53ZFalse
+MDU6SXNzdWUzNzg1NzEzOTM=I want to train the model by cifar-10 using batch size=128, but there is negative  gamma emerged. Is it influence the results generated?2018-11-08T04:09:51ZFalse
+MDU6SXNzdWUzODQ2ODczMzU=I add self_Attn to another network , but it causes cuda error : out of memory2018-11-27T08:59:53ZFalse
+MDU6SXNzdWUzODk5MDI5MzE=new data set2018-12-11T18:48:21ZFalse
+MDU6SXNzdWUzOTUxMDMzMjI=Spectral norm on Generator2019-01-01T18:32:30ZFalse
+MDU6SXNzdWUzOTUxOTQ1MjA=Gumbel Softmax?2019-01-02T09:49:21ZFalse
+MDU6SXNzdWUzOTU1NjgzNDQ=class conditional batch norm not implemented2019-01-03T13:13:17ZFalse
+MDU6SXNzdWU0MDExMDc2MTE=FID and IS 2019-01-20T15:18:03ZFalse
+MDU6SXNzdWU0MTEzMTc3MDY=test class missing2019-02-18T06:16:48ZFalse
+MDU6SXNzdWU0MTYzNTE1OTQ=Variable image size.2019-03-02T03:21:46Z2019-05-11T05:47:34ZTrue
+MDU6SXNzdWU0MTczMDUwNjU=permute twice? 2019-03-05T13:43:32ZFalse
+MDU6SXNzdWU0MjcwMTc5MzY=256*2562019-03-29T14:36:46ZFalse
+MDU6SXNzdWU0MzA3Nzc4NjM=Cannot Download CelebA dataset2019-04-09T05:47:04ZFalse
+MDU6SXNzdWU0NDI1NDc1OTA=is there no activation on self attn layer?2019-05-10T05:44:17ZFalse
+MDU6SXNzdWU0NDQ5MDkxODY=Softmax2019-05-16T11:45:37Z2019-06-26T12:51:50ZTrue
+MDU6SXNzdWU0NTI5NzcwOTI=AttributeError: module 'torch.nn' has no attribute 'ModuleDict'2019-06-06T11:26:17Z2019-06-06T13:42:09ZTrue
+MDU6SXNzdWU0Nzg5ODAzMjc=Weird Error while using multi GPU.2019-08-09T13:12:57ZFalse
+MDU6SXNzdWU1MDgzMTcxMTI=about visualization code2019-10-17T08:27:17ZFalse
+MDU6SXNzdWU1NjA5MTI2NzE=  About：AttributeError: 'Conv2d' object has no attribute 'weight'2020-02-06T10:19:23ZFalse
+MDU6SXNzdWU1Njc0MjI5MjQ=dataset structure2020-02-19T09:14:34ZFalse

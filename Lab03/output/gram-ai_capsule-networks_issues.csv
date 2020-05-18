@@ -1,0 +1,29 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNzE0NjU4MDI=cuda runtime error2017-11-06T12:54:45Z2017-11-06T13:11:52ZTrue
+MDU6SXNzdWUyNzE3MzIyMDA=visdom exception2017-11-07T07:18:42Z2017-11-07T08:51:21ZTrue
+MDU6SXNzdWUyNzI3MDE1NTc=How to cite this repo ?2017-11-09T19:57:06Z2017-11-10T06:52:16ZTrue
+MDU6SXNzdWUyNzI3OTUzMDY=Training break at epoch 327 [ Reproducable] 2017-11-10T01:58:57Z2018-01-10T11:16:13ZTrue
+MDU6SXNzdWUyNzMzMTgzNzk=OSError: [Errno 16] Device or resource busy: '.nfs000000009886bd5100000235' 2017-11-13T05:57:35Z2017-12-28T10:49:13ZTrue
+MDU6SXNzdWUyNzY4NTk5NDI=Extra softmax layer2017-11-26T21:52:16ZFalse
+MDU6SXNzdWUyNzk0MjE0NDU=Technical doubts regarding implementation2017-12-05T15:40:02ZFalse
+MDU6SXNzdWUyODAwMDk2NjQ=Error during forward pass2017-12-07T05:49:41Z2017-12-08T06:07:43ZTrue
+MDU6SXNzdWUyODUzNDc3OTA=How to explain the operator '@' of numpy???2018-01-02T02:54:34Z2018-01-02T07:03:45ZTrue
+MDU6SXNzdWUyODUzNjkxNDE=Is there any error about the softmax operation?2018-01-02T07:30:13ZFalse
+MDU6SXNzdWUyODYxOTY2ODE=Code for SVHN dataset?2018-01-05T05:48:23ZFalse
+MDU6SXNzdWUyOTEzMzgwNTE=RuntimeError on line 1132018-01-24T19:52:27ZFalse
+MDU6SXNzdWUyOTIzMTQzMDI=Is squashing used correctly on this line?2018-01-29T07:59:44Z2018-01-29T08:53:03ZTrue
+MDU6SXNzdWUzMDA2NDcyNDk=Syntax error: invalid syntax on line 65 2018-02-27T14:16:05ZFalse
+MDU6SXNzdWUzMDMyMjY5NDU=AttributeError: module 'torch.sparse' has no attribute 'torch'2018-03-07T19:22:05ZFalse
+MDU6SXNzdWUzMTMxNTk4OTk=Just a quick question on the dynamic routing's similarity measurment2018-04-11T03:20:52Z2018-05-31T03:47:50ZTrue
+MDU6SXNzdWUzMjI1NjAxNzg=Why dim=2 here? I guess the softmax is taken over all capsules in the layer above, so shouldn't that be dim=0?2018-05-13T03:16:53ZFalse
+MDU6SXNzdWUzMzEwMDUwNjk=Deviations of this implementation from the original paper2018-06-10T21:43:11ZFalse
+MDU6SXNzdWUzODYzODAyOTU=How should I set num_route_nodes?2018-11-30T22:54:11ZFalse
+MDU6SXNzdWUzOTE5NzM4MDQ= Can it support pytorch version 0.4 or latest?2018-12-18T02:45:42ZFalse
+MDU6SXNzdWU0MDY5MjM3NTQ=How to replace dataset and change dimensions2019-02-05T18:49:49ZFalse
+MDU6SXNzdWU0MDkwMDQ0OTI=RuntimeError: The size of tensor a (16) must match the size of tensor b (10) at non-singleton dimension 12019-02-11T22:22:53ZFalse
+MDU6SXNzdWU0NjU3Njc2Njc=Can the 8 32-channel conv be replaced with a single 256-channel conv in PrimaryCapsule?2019-07-09T13:01:25ZFalse
+MDU6SXNzdWU0Nzc5NTA3MzI=MLP Capsules ?2019-08-07T14:05:32Z2019-08-09T04:20:35ZTrue
+MDU6SXNzdWU0OTEwOTQxMzA=the visdom window has nothing to show2019-09-09T13:23:58ZFalse
+MDU6SXNzdWU1MTQxNzU5ODk=Squash function2019-10-29T19:43:07ZFalse
+MDU6SXNzdWU1MjY5MTk4MzM=Try my implementation2019-11-22T00:38:09ZFalse
+MDU6SXNzdWU1NDE3MzI2NTk=@ operator2019-12-23T12:24:18ZFalse

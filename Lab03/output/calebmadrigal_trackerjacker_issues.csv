@@ -1,0 +1,21 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMDYxODg3MTY=Cool project, perhaps also for RPi2018-03-17T20:41:37ZFalse
+MDU6SXNzdWUzMDYyNDQ5OTY=import yaml instead of pyaml?2018-03-18T14:28:57Z2018-03-18T19:22:41ZTrue
+MDU6SXNzdWUzMTY2NjUyNzY=Slight issue on Kali Linux 20182018-04-23T05:23:20ZFalse
+MDU6SXNzdWUzMjIzMzYyNTE=Monitor mode - suggestions2018-05-11T15:21:24ZFalse
+MDU6SXNzdWUzNTA0MDQ4NTA=module 'os' has no attribute 'getuid'2018-08-14T12:23:17Z2018-08-14T13:47:17ZTrue
+MDU6SXNzdWUzNTA0NDM0MjA=Error installing v1.8.1 on MacOS High Sierra 10.13.6 - Python 3.72018-08-14T14:04:28ZFalse
+MDU6SXNzdWUzNTE1NTkwOTY=Traceback error after install on Elementary OS (ubuntu)2018-08-17T11:30:14Z2018-10-05T18:25:13ZTrue
+MDU6SXNzdWUzNTE3OTk5NTY=Failed to build trackerjacker :  Ubuntu 18.04 Bionic Beaver2018-08-18T07:44:04Z2018-10-05T18:19:44ZTrue
+MDU6SXNzdWUzNTE5MTM3OTg=Pip3 installation failed2018-08-19T16:00:38Z2018-08-19T16:20:08ZTrue
+MDU6SXNzdWUzNTIyNzczMjQ=Feature Request: Output to CSV2018-08-20T20:07:11ZFalse
+MDU6SXNzdWUzNTIzMzQzMjI=Unable to install due to ruamel.yaml error2018-08-20T23:43:46Z2018-10-05T18:34:16ZTrue
+MDU6SXNzdWUzNTI0MDEzOTk=Map does not work on Centos72018-08-21T06:25:50Z2018-10-05T18:17:14ZTrue
+MDU6SXNzdWUzNTYzMjA2NTk=UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 1904: ordinal not in range(128)2018-09-02T22:57:05ZFalse
+MDU6SXNzdWUzODIyMzg5MTQ=Logo Design Offer as Open Source Contribution2018-11-19T14:27:07ZFalse
+MDU6SXNzdWUzODQzMTQ1MDg=Probe Requests2018-11-26T12:45:35ZFalse
+MDU6SXNzdWU0NDAyOTE4MzU=Update oui.txt file2019-05-04T06:44:00Z2019-06-22T19:05:20ZTrue
+MDU6SXNzdWU0NDEzODIyNTc=Randomized MAC address2019-05-07T18:21:37ZFalse
+MDU6SXNzdWU0OTg2MTQ5MTQ=Failed to run on Arch Linux/BlackArch2019-09-26T02:19:44ZFalse
+MDU6SXNzdWU1MDgzMzUxMjA=OSX Catalina - Scapy2019-10-17T09:00:45ZFalse
+MDU6SXNzdWU1OTg1Mjk3Mzg=Test2020-04-12T17:12:17Z2020-05-01T20:04:56ZTrue

@@ -1,0 +1,33 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWU1MjYzOTAyNDA=获取美股数据失败2019-11-21T06:23:30Z2019-11-25T01:18:07ZTrue
+MDU6SXNzdWU1NTg1MjgzNjE=epidemic_163 not returning data in expected format2020-02-01T11:38:01Z2020-02-04T13:57:01ZTrue
+MDU6SXNzdWU1NTg1Mjg5MjA=epidemic_dxy crashes on national and regional queries2020-02-01T11:42:14Z2020-02-01T22:42:18ZTrue
+MDU6SXNzdWU1NTg2MTgwNDE=epidemic_dxy crashes on some regional queries2020-02-02T00:02:19Z2020-02-03T07:19:30ZTrue
+MDU6SXNzdWU1NTk3NTA3NjI=akshare throws exeception2020-02-04T14:20:27Z2020-02-04T14:40:04ZTrue
+MDU6SXNzdWU1NjAwMDI0NTI=bond ytm historical data2020-02-04T21:55:52Z2020-02-05T08:27:03ZTrue
+MDU6SXNzdWU1NjAzOTk4NDc=bond_china_yield issue and suggestion2020-02-05T14:15:32Z2020-02-05T14:45:19ZTrue
+MDU6SXNzdWU1NjA3NzkzODU=macro_china_cpi_yearly missing forecast values2020-02-06T04:57:08Z2020-02-08T00:44:39ZTrue
+MDU6SXNzdWU1NjEwNTMyMDI=speculation sentiments2020-02-06T14:36:16Z2020-02-08T00:44:18ZTrue
+MDU6SXNzdWU1NjIxMDE3NTg=live data2020-02-09T00:53:41Z2020-02-15T04:12:37ZTrue
+MDU6SXNzdWU1NjU5MDM3NzU=new data: econ idicator2020-02-16T13:16:46Z2020-02-16T14:17:21ZTrue
+MDU6SXNzdWU1Njc0Njg5MDM="ak.epidemic_baidu(indicator=""历史"") not working for two days"2020-02-19T10:28:47Z2020-02-22T11:12:33ZTrue
+MDU6SXNzdWU1Njg3NzE4OTc=JSONDecodeError  when import akshare as ak2020-02-21T07:00:20Z2020-02-25T07:25:41ZTrue
+MDU6SXNzdWU1Nzc5MDY3MTg=US Equity data fetch error2020-03-09T13:24:17Z2020-03-10T02:18:52ZTrue
+MDU6SXNzdWU1ODQxMTE1NTA=import akshare get JSONDecodeError: ('Unknown identifier', 'tml')2020-03-19T02:04:51Z2020-03-20T12:13:30ZTrue
+MDU6SXNzdWU1ODc1NDI1Nzg=return None when function gets nothing, but not Error2020-03-25T08:58:43Z2020-03-27T09:19:02ZTrue
+MDU6SXNzdWU1OTI0ODIxOTI=获取上期所日线行情数据不准确2020-04-02T09:20:03Z2020-04-03T09:13:30ZTrue
+MDU6SXNzdWU1OTI3MDgyNjc=期货获取某交易日某品种的持仓排名榜数据不正确2020-04-02T15:11:40Z2020-04-03T09:13:39ZTrue
+MDU6SXNzdWU1OTM3MzU5MDU=index_name isn't usable in currency_hist_df2020-04-04T03:38:17Z2020-04-04T11:23:04ZTrue
+MDU6SXNzdWU1OTM5Mzk5ODA=return wrong date in fund_em_info2020-04-04T16:08:43Z2020-04-04T22:06:58ZTrue
+MDU6SXNzdWU2MDE2MzEyMzM=Parameter description of migration_area_baidu in the document has an error2020-04-17T01:04:19Z2020-04-17T12:39:50ZTrue
+MDU6SXNzdWU2MDE2MzcxNzY=Parameter *end_date* in *migration_scale_baidu* is not work2020-04-17T01:23:44Z2020-04-17T12:40:46ZTrue
+MDU6SXNzdWU2MDIzNjc3NzY=pip 安装问题2020-04-18T03:31:40Z2020-04-18T04:30:00ZTrue
+MDU6SXNzdWU2MDczMTk5OTk=A minor issue for redundancy in code examples of the official documentation2020-04-27T07:50:06Z2020-04-27T08:12:56ZTrue
+MDU6SXNzdWU2MDk2Mzk4NjI='Unknown identifier', 'arry'2020-04-30T06:48:01Z2020-04-30T14:42:56ZTrue
+MDU6SXNzdWU2MTE3NjQ5OTc=epidemic_history return wrong data2020-05-04T10:24:54Z2020-05-04T10:53:02ZTrue
+MDU6SXNzdWU2MTM3MjMxMTM=akshare.futures.requests_fun 模块的错误捕捉bug2020-05-07T02:11:17Z2020-05-07T09:43:23ZTrue
+MDU6SXNzdWU2MTQ1NDA3OTQ=The column name of the output parameter is wrong2020-05-08T06:42:09Z2020-05-08T07:08:42ZTrue
+MDU6SXNzdWU2MTUwNzQ4MTE=是否有方法可以在初始化阶段禁止GET数据2020-05-09T02:48:52Z2020-05-09T12:06:23ZTrue
+MDU6SXNzdWU2MTU1NzQzNzM=Get the time of the Last trading day2020-05-11T04:14:59Z2020-05-11T10:03:42ZTrue
+MDU6SXNzdWU2MTU2MDkyMzM="fund_em_graded_fund_info  Add ""accumulated net value"""2020-05-11T05:54:58Z2020-05-11T09:39:36ZTrue
+MDU6SXNzdWU2MTYzOTQ1NjY=建议增加股票的财务数据，季报年报等2020-05-12T06:25:20Z2020-05-12T09:29:00ZTrue

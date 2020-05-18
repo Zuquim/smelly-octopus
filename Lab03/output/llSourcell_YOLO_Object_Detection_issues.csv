@@ -1,0 +1,30 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNzQ3MDc1NzE=Error in module darkflow.cython_utils.nms2017-11-17T00:04:04Z2017-11-23T22:56:34ZTrue
+MDU6SXNzdWUyNzQ3NzI4NTA=How to use GPU on iMac with ATI Radeon2017-11-17T07:12:11ZFalse
+MDU6SXNzdWUyNzQ5ODQ5MjU=No module named darkflow.cli2017-11-17T20:19:17ZFalse
+MDU6SXNzdWUyNzgzOTg2MjU=ModuleNotFoundError: No module named 'darkflow.cython_utils.cy_yolo_findboxes'2017-12-01T08:57:41ZFalse
+MDU6SXNzdWUyNzg2Njc2Mzg=Can't train with GPU on Windows102017-12-02T08:40:36Z2017-12-07T00:31:05ZTrue
+MDU6SXNzdWUyODA3ODg5OTU=ImportError: No module named 'nms'2017-12-10T07:10:57ZFalse
+MDU6SXNzdWUyODg1ODY1MDE=flow not recognised2018-01-15T13:00:12Z2018-01-29T06:48:32ZTrue
+MDU6SXNzdWUzMDI4Mzk5NjQ=Error: [WinError 3] The system cannot find the path specified: 'C:\\Microsoft Visual Studio 14.0\\VC\\PlatformSDK\\lib'2018-03-06T19:46:46Z2018-03-06T22:49:54ZTrue
+MDU6SXNzdWUzMDQ5ODUzNDI='.' is not recognized and flow is not recognized2018-03-14T00:46:54ZFalse
+MDU6SXNzdWUzMTA1MjIwNDU=tensorflow is installed still getting below error2018-04-02T15:50:39ZFalse
+MDU6SXNzdWUzMTIyMjA1Njc=Question on yolo backward function2018-04-07T16:16:23ZFalse
+MDU6SXNzdWUzMTQ2MDI0NjY=while training - loss parameter almost doesnt decrease2018-04-16T11:05:16ZFalse
+MDU6SXNzdWUzMjA2NTg3Mzc=this is the error for python flow --h.2018-05-07T02:56:28ZFalse
+MDU6SXNzdWUzMjc0NDk0OTc=Training on your own dataset2018-05-29T19:07:37ZFalse
+MDU6SXNzdWUzNDcwODcyNTc=Tenserboard --log2018-08-02T16:32:44ZFalse
+MDU6SXNzdWUzNDkzNzM4NTA=Camera is not turn on 2018-08-10T04:40:59ZFalse
+MDU6SXNzdWUzNTcwODQyOTE=ModuleNotFoundError: No module named 'nms'2018-09-05T06:34:19ZFalse
+MDU6SXNzdWUzNjQzNDI2MjA=dataset prepration2018-09-27T07:38:17ZFalse
+MDU6SXNzdWUzODc2MTM3NTU=How to run trained yolov2 model (.pb file) in python2018-12-05T06:37:32Z2018-12-06T07:12:20ZTrue
+MDU6SXNzdWUzODg1NjM3ODA=How to count detected object?2018-12-07T09:06:44ZFalse
+MDU6SXNzdWUzOTM2MDQwMzk=flow: --model unknown option2018-12-21T22:09:22ZFalse
+MDU6SXNzdWUzOTg1MTUyMzU=executing error = exec(compile(f.read(), __file__, 'exec'))2019-01-12T03:14:47ZFalse
+MDU6SXNzdWU1MjY0MTc1MzM="Error only when I converted to exe, ""ModuleNotFoundError: No module named 'darkflow.cython_utils.nms' "". Otherwise while running python file through prompt is working fine."2019-11-21T07:36:44ZFalse
+MDU6SXNzdWU1NDUxMzA4NDg=AttributeError: module 'nms' has no attribute '__pyx_capi__'2020-01-03T19:35:53ZFalse
+MDU6SXNzdWU1NTUwNzM4NzI=does this detect objects in night time conditions?2020-01-25T11:23:25ZFalse
+MDU6SXNzdWU1NjQ0MzcyMjM=building 'darkflow.cython_utils.nms' extension error: Unable to find vcvarsall.bat 2020-02-13T04:47:15ZFalse
+MDU6SXNzdWU1NzgzNjAwNTE=How to train own dataset 2020-03-10T06:12:47ZFalse
+MDU6SXNzdWU1ODU4MTA0MTA=GeorgeAI Windows10 for yolov32020-03-22T20:56:02ZFalse
+MDU6SXNzdWU2MTI3NzgxMjY=Image detection2020-05-05T17:39:47ZFalse

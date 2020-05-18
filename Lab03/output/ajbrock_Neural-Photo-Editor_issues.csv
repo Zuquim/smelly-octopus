@@ -1,0 +1,16 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNzg5NDA0NzY=Which library versions are used?2016-09-23T18:14:55ZFalse
+MDU6SXNzdWUxNzg5NDE0Mzk=CPU support2016-09-23T18:19:45ZFalse
+MDU6SXNzdWUxNzkwODUyMTI=Easier option to not use cuDNN2016-09-25T13:05:27Z2016-09-29T07:54:16ZTrue
+MDU6SXNzdWUxNzkxNTk4MjM="""fuel-download celeba"" returns Dropbox HTML"2016-09-26T07:44:57ZFalse
+MDU6SXNzdWUxNzk4NTEwNTM=IDEA: Option to save changed image as the new ground-truth image2016-09-28T18:30:07Z2016-09-29T20:55:17ZTrue
+MDU6SXNzdWUxODA0ODY2MzM=Failed to interpret file IAN_simple.npz as a pickle2016-10-01T23:50:50Z2016-10-02T20:57:33ZTrue
+MDU6SXNzdWUxODc0MjYwNTI=Numpy fails to interpret IAN_Simple.npz?2016-11-04T20:04:11Z2016-11-04T20:48:14ZTrue
+MDU6SXNzdWUxODg0OTQ2ODA=Failed to interpret file 'IAN_simple.npz' as a pickle2016-11-10T12:22:52Z2016-11-10T12:26:11ZTrue
+MDU6SXNzdWUxOTAwNDY0NDg=Pretrained model npz files are empty2016-11-17T13:27:09ZFalse
+MDU6SXNzdWUyNDc4NTg0Nzg=Possibly incorrect implementation of Batch Renorm2017-08-03T22:56:52ZFalse
+MDU6SXNzdWUyNjIyMzUxNTI=IOError: Failed to interpret file 'IAN_simple.npz' as a pickle2017-10-02T21:30:26Z2017-10-02T22:22:55ZTrue
+MDU6SXNzdWUzMjY3OTI1NzM=Theano optimization failed2018-05-27T06:56:35ZFalse
+MDU6SXNzdWUzMjc4NTc2Mzc=No module named path2018-05-30T18:57:16Z2018-05-31T21:16:12ZTrue
+MDU6SXNzdWUzMjgyOTQwMDQ=trained faces are all blury and seems not learnt2018-05-31T20:56:04ZFalse
+MDU6SXNzdWU0MDE3MzE5MjU= No module named CAcheckpoints2019-01-22T12:00:43ZFalse

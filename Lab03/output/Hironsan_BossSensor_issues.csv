@@ -1,0 +1,30 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxODQyMTYwMTg=ImagePreprocessing2016-10-20T12:29:42ZFalse
+MDU6SXNzdWUxOTM0MjUyOTA=Info to be added2016-12-05T07:01:41Z2016-12-05T07:13:09ZTrue
+MDU6SXNzdWUxOTc0NTE5NDU=memory problem?2016-12-24T07:00:16ZFalse
+MDU6SXNzdWUxOTgwMTQyMDg=Error when checking : expected convolution2d_input_12016-12-29T14:19:17ZFalse
+MDU6SXNzdWUxOTkzMzg4MDM=No model.h52017-01-07T03:47:34Z2017-01-07T03:55:04ZTrue
+MDU6SXNzdWUxOTk1MDE5MTQ=how many pictures are used to train2017-01-09T08:50:22ZFalse
+MDU6SXNzdWUyMDA4MDI5NTQ=Readme: install instructions are not clear2017-01-14T13:19:16ZFalse
+MDU6SXNzdWUyMDA4NTU0MDI=Python camera_reader.py error occurs2017-01-15T08:05:46ZFalse
+MDU6SXNzdWUyMDIwOTcyMTI=recognition boss failed2017-01-20T09:50:03ZFalse
+MDU6SXNzdWUyMDIzNjAxNDc=Little help with great thanks: I got many issues2017-01-22T04:50:04ZFalse
+MDU6SXNzdWUyMDQwMzY5MDA=Is there any way to improve the training accuracy?2017-01-30T15:13:03ZFalse
+MDU6SXNzdWUyMDY5NzY3OTg=pip install -r requirements.txt2017-02-11T12:22:48Z2017-02-11T15:36:29ZTrue
+MDU6SXNzdWUyMDY5OTE4ODI=ZeroDivisionError: integer division or modulo by zero2017-02-11T16:42:45Z2017-02-11T18:49:14ZTrue
+MDU6SXNzdWUyMDgwNDIwMTM=UnboundLocalError: local variable 'epoch_logs' referenced before assignment2017-02-16T07:33:44ZFalse
+MDU6SXNzdWUyMTA3MzY1MDE=Which MacOSX Version is Optimal for this installation ?2017-02-28T09:49:52ZFalse
+MDU6SXNzdWUyMTMyNzYwODQ=how to conceal camera?2017-03-10T08:30:33ZFalse
+MDU6SXNzdWUyMTM2MTMwMjU=run boss_train.py error2017-03-12T15:49:31Z2019-03-22T10:32:04ZTrue
+MDU6SXNzdWUyMTk4Nzk4OTg=IOError: Unable to create file 2017-04-06T12:18:15ZFalse
+MDU6SXNzdWUyMjE0MzA4NjM=OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /io/opencv/modules/imgproc/src/color.cpp, line 97482017-04-13T01:02:00ZFalse
+MDU6SXNzdWUyMjc2NjI3NTI=local variable 'epoch_logs' referenced before assignment2017-05-10T12:28:24ZFalse
+MDU6SXNzdWUyMjg2OTE1NDg=run camera.py error2017-05-15T11:59:43ZFalse
+MDU6SXNzdWUyNDA1MzI5ODU=detecting problem in finally2017-07-05T04:05:02ZFalse
+MDU6SXNzdWUzMDUwNDUxMzk=Problems in boss_train.py2018-03-14T07:08:44ZFalse
+MDU6SXNzdWUzMDYzMjU3MTk=Can this project work on Windows102018-03-19T03:54:32ZFalse
+MDU6SXNzdWUzOTI5MzQxNDc=牛逼2018-12-20T08:13:58ZFalse
+MDU6SXNzdWU0Mzk5NjI5NzM=No matter who comes, the it always remind me boss is approaching!2019-05-03T09:29:34ZFalse
+MDU6SXNzdWU1MjU2MTI4Nzg=ModuleNotFoundError: No module named 'PyQt4'2019-11-20T06:56:46ZFalse
+MDU6SXNzdWU1NDYyMTc1NTE=Problems about './store/model.h5'2020-01-07T10:55:39ZFalse
+MDU6SXNzdWU1OTQ2MDQ2OTU=Why do you divide the data set like this?2020-04-05T19:21:32ZFalse

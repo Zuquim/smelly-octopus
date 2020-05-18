@@ -1,0 +1,14 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWU0ODI5ODgyNzk=Enable training with segment_labels.2019-08-20T17:27:59ZFalse
+MDU6SXNzdWU0ODI5OTA5MzU=segment_eval_inference.py broken after the header addition to submission file.2019-08-20T17:34:04ZFalse
+MDU6SXNzdWU0ODMxMzUxMzM=Move Google Cloud python version to 3.5.2019-08-20T23:58:14ZFalse
+MDU6SXNzdWU0ODQ3ODA5OTQ=top_k in eval.py not working as expected.2019-08-24T05:28:22ZFalse
+MDU6SXNzdWU0ODQ3ODI1MDU=Migrate get_segments function to use tf API for performance upgrade.2019-08-24T05:51:56ZFalse
+MDU6SXNzdWU0ODU0Mjg4OTI=Allow running Segment-level eval together with video-level eval.2019-08-26T20:15:25Z2019-09-12T22:57:55ZTrue
+MDU6SXNzdWU0OTc2MDEzNTg=is it possible to do ASR by using this dataset? 2019-09-24T10:31:13ZFalse
+MDU6SXNzdWU1MDMxOTYyMjQ=ModuleNotFoundError: No module named 'eval_util'2019-10-07T01:49:27ZFalse
+MDU6SXNzdWU1MzY1MDg1Njg=feature_extractor_test2019-12-11T17:18:06ZFalse
+MDU6SXNzdWU1NDY3OTE3ODc=mean average precision calculator bug2020-01-08T11:04:14ZFalse
+MDU6SXNzdWU1NTIyNTg1NTA=Hi, I tried this rgb feature extractor, and found the result was quite different from mediapipe's2020-01-20T12:03:40ZFalse
+MDU6SXNzdWU2MDAxNDYyNDk=img and audio feature python version2020-04-15T09:13:59ZFalse
+MDU6SXNzdWU2MTk4MjQ0NzQ=how big is the data? 2020-05-17T23:43:54ZFalse

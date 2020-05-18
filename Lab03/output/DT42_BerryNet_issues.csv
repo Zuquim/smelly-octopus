@@ -1,0 +1,34 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMjQ4NzIyNjk=Update README2017-04-27T18:26:28Z2017-10-09T16:59:45ZTrue
+MDU6SXNzdWUyMjg0NTc2MTA=Failed to start detection_server.service2017-05-13T08:09:57Z2017-05-13T13:19:23ZTrue
+MDU6SXNzdWUyMzAxMTUwOTk=IP camera access to user name and password2017-05-19T23:58:29Z2017-05-21T11:13:09ZTrue
+MDU6SXNzdWUyMzAxOTgwMTc=Add Video/ Live Stream Analysis2017-05-21T05:24:33Z2017-10-09T17:32:22ZTrue
+MDU6SXNzdWUyMzAyMjExMjI= the IP camera access the user name and password2017-05-21T13:32:01Z2017-10-09T17:34:05ZTrue
+MDU6SXNzdWUyNDkwNTk5NTk=frame rate on 1080HD?2017-08-09T14:58:04Z2017-10-03T02:45:53ZTrue
+MDU6SXNzdWUyNjA1NTcyMzM=results of ipcamera2017-09-26T09:37:43Z2019-10-27T07:22:33ZTrue
+MDU6SXNzdWUyNjk1ODUwMzc=what do i need to do when run ./configure?2017-10-30T12:40:35Z2018-07-09T11:48:10ZTrue
+MDU6SXNzdWUyNzA0NzcxMTE=Simply Doesnt Work !!2017-11-01T22:44:35Z2017-12-14T14:33:14ZTrue
+MDU6SXNzdWUyNzQwMTcyNzc=detectord.py OSError: [Errno 2] No such file or directory2017-11-15T02:53:00Z2017-11-30T15:34:36ZTrue
+MDU6SXNzdWUyNzQzNDY0Mzk=No log errors, but inference fails (x.jpg.done is 0 bytes).  Status shows 2 services failed.2017-11-15T23:50:55Z2018-07-09T12:03:34ZTrue
+MDU6SXNzdWUyNzYzNjY4MTM=nothing visible in the webpage; errors at launch2017-11-23T13:01:48Z2017-11-30T15:08:00ZTrue
+MDU6SXNzdWUyNzYzOTczMDc=Undocumented configuration for config.js2017-11-23T14:38:12ZFalse
+MDU6SXNzdWUyNzc2OTI4Mjk=patch file maybe outdated2017-11-29T09:59:31Z2017-11-30T15:05:31ZTrue
+MDU6SXNzdWUyNzkzODI1Mzk=Raspberry Pi 3 Crash issue2017-12-05T13:53:06Z2018-01-18T05:00:55ZTrue
+MDU6SXNzdWUyODQzNzExOTA=All services reporting failure, code=exited, status=8, service entered failed state.2017-12-24T16:18:26Z2018-07-09T11:54:33ZTrue
+MDU6SXNzdWUyODkzMzk2NDU=About reading the log2018-01-17T16:58:23Z2018-07-09T12:00:30ZTrue
+MDU6SXNzdWUyODkzNTg2Njg=MQTT service not work 2018-01-17T17:58:19Z2018-07-09T11:52:43ZTrue
+MDU6SXNzdWUyOTM4MDI3NjY=inference not working2018-02-02T07:58:30Z2018-07-09T11:42:18ZTrue
+MDU6SXNzdWUyOTY3NzE2NzA=Failed installation.  npm ERR! opencv@6.0.0 install:2018-02-13T15:11:57Z2018-07-08T15:17:24ZTrue
+MDU6SXNzdWUyOTg3MDk3NjY=N: See apt-secure(8) manpage for repository creation and user configuration details.2018-02-20T18:59:20Z2018-07-08T15:15:10ZTrue
+MDU6SXNzdWUzMDM5ODA3OTg=can we run this BerryNet on an intel atom processor2018-03-09T21:08:47Z2018-04-19T20:03:29ZTrue
+MDU6SXNzdWUzMTA3NTA1Nzk=Install BerryNet : Can you provide and .img file for raspberry PI3B 2018-04-03T09:00:58Z2018-07-09T11:49:39ZTrue
+MDU6SXNzdWUzMTYwMTg3MjM=not able to get detected image on web ui2018-04-19T19:56:44Z2018-07-09T11:57:05ZTrue
+MDU6SXNzdWUzNjUxMDk5Mzk=Fails to read image from USB camera by OpenCV2018-09-29T08:10:36Z2019-10-27T07:20:57ZTrue
+MDU6SXNzdWUzODMwNTgzMjE=cant see camera2018-11-21T10:44:32Z2019-10-27T07:17:50ZTrue
+MDU6SXNzdWU0MzUzNjcyMjI=Raspberry Pi3+ Install Doesn't Work2019-04-20T07:36:10Z2019-10-27T07:19:49ZTrue
+MDU6SXNzdWU1NTg0ODI3MTg=Error in updating the pkg or installing 2020-02-01T05:04:29Z2020-02-02T07:08:27ZTrue
+MDU6SXNzdWU1NjQwMTI3NjE=3.9.0 depends on darknet which is not available in BerryNet repo2020-02-12T13:49:40Z2020-04-05T04:16:34ZTrue
+MDU6SXNzdWU1ODU2MzQ3MjA=Missing dependencies in setup.py2020-03-22T03:10:25ZFalse
+MDU6SXNzdWU1ODU2NDAwNjM=cpu_extension content has been merged into MKLDNN plugin since OpenVINO 2020.12020-03-22T04:01:36Z2020-03-22T04:15:28ZTrue
+MDU6SXNzdWU1ODU2NDI5NTM=Use opencv in distribution instead of berrynet-repo for bionic2020-03-22T04:27:23Z2020-04-05T04:03:24ZTrue
+MDU6SXNzdWU1OTg0MDkzNzY=Change dependency python3-opengl to freeglut32020-04-12T04:39:44ZFalse

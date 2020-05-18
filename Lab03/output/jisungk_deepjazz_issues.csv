@@ -1,0 +1,18 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNDU0NzA0MDI=no logo in README2016-04-03T08:36:09Z2016-04-03T09:31:39ZTrue
+MDU6SXNzdWUxNDU5MTUwMTI=Generation seems to have changed after refactoring2016-04-05T07:33:50Z2016-04-05T22:48:18ZTrue
+MDU6SXNzdWUxNTQ5MTk4NDQ=SoundCloud is blocked in mainland China, YouTube is accessible2016-05-15T17:31:01Z2016-05-15T17:41:04ZTrue
+MDU6SXNzdWUxNjM3Nzk2NzM=Updated header2016-07-05T06:27:06Z2016-07-05T06:27:10ZTrue
+MDU6SXNzdWUxOTc0NjE2NDQ=[feature request] make the preprocessing more generic2016-12-24T12:42:31ZFalse
+MDU6SXNzdWUyMDAwMjYwNDM=TypeError: __init__() got an unexpected keyword argument 'mode'2017-01-11T07:59:17Z2017-01-11T08:07:00ZTrue
+MDU6SXNzdWUyMDExNjUyMzI=Train the Model with Other Midi Music2017-01-17T03:06:41Z2017-01-20T03:21:42ZTrue
+MDU6SXNzdWUyMTM2MTMxNDE=ValueError: need more than 0 values to unpack2017-03-12T15:51:28ZFalse
+MDU6SXNzdWUyMTYxNTAwOTA=Does anyone face the same issue?2017-03-22T17:34:59ZFalse
+MDU6SXNzdWUyNTM3NzM1Mzc=Could not convert string to float2017-08-29T19:17:00ZFalse
+MDU6SXNzdWUyOTYxMjM4MzI=songbird.ai  is not loading2018-02-10T18:53:48ZFalse
+MDU6SXNzdWUzMDUzNjk5NjU=How to locate Melody Piece index? (melody_stream = midi_data[5])2018-03-14T23:59:01ZFalse
+MDU6SXNzdWUzNTIxMjY4NjY=Prevent overfitting2018-08-20T13:06:54ZFalse
+MDU6SXNzdWUzNjQ2NDM2NzQ=VERSION#'s 2018-09-27T20:36:52ZFalse
+MDU6SXNzdWU0MDE2NzUwNzQ=TypeError: __init__() got an unexpected keyword argument 'mode'2019-01-22T09:37:24Z2019-01-22T10:02:22ZTrue
+MDU6SXNzdWU0MjY0NTQzOTk=music21.exceptions21.StreamException: attempting to access index 0 while elements is of size 02019-03-28T12:02:12ZFalse
+MDU6SXNzdWU0MzgwMzgxMDg=cannot import name 'izip_longest'2019-04-28T09:53:52Z2019-05-21T08:43:05ZTrue

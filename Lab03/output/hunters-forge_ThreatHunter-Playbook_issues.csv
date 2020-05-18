@@ -1,0 +1,13 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyODUyNTY4NjY=Typos in atomic Sysmon configs results in a failure to parse2017-12-31T13:13:50Z2017-12-31T16:59:47ZTrue
+MDU6SXNzdWUyODUyNTY5OTY=RegistryEvent Details element is not supported in Sysmon 3.40 config schema2017-12-31T13:17:03Z2017-12-31T16:57:27ZTrue
+MDU6SXNzdWUyODUyNTcwODM=Typo in FileCreate rule in T1138_appcompat.xml2017-12-31T13:19:15Z2017-12-31T16:57:27ZTrue
+MDU6SXNzdWUyOTQ4MTcxNjA=Typo In T1117_regsvr32.xml Rule2018-02-06T16:10:28Z2018-02-06T22:30:03ZTrue
+MDU6SXNzdWUyOTgyMDUyNjQ=Can you please help with this query ?2018-02-19T09:17:34Z2018-10-08T21:52:39ZTrue
+MDU6SXNzdWUzMDE0MTk3MDU=Dead link2018-03-01T14:15:55Z2018-05-04T23:19:50ZTrue
+MDU6SXNzdWUzMTk1Mjg1Nzc=Contact2018-05-02T12:16:58Z2018-05-05T13:21:25ZTrue
+MDU6SXNzdWUzMjA0NzM5NTY=Additional msbuild.exe detection2018-05-05T02:55:06ZFalse
+MDU6SXNzdWUzNDMxMDczOTk=T1185 - Man in the Browser missing from Windows Collection2018-07-20T13:27:19Z2019-08-18T05:08:31ZTrue
+MDU6SXNzdWUzOTcyOTEwNjY=T1015 - Accessibility Features - Possible Fix to Current Hunt2019-01-09T09:52:51ZFalse
+MDU6SXNzdWU0NjYzNjk4OTU=In-Memory Mimikatz OverPass-The-Hash2019-07-10T15:16:37Z2019-08-18T05:07:12ZTrue
+MDU6SXNzdWU1ODAxMTAyNDM=Link - Results to Page 4042020-03-12T17:45:15ZFalse

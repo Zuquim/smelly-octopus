@@ -1,0 +1,20 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyODI2NjM5NTU=pre-trained model and images is 404 2017-12-17T02:02:34Z2017-12-19T01:54:58ZTrue
+MDU6SXNzdWUyODI3MDEwMjQ=Disgusting2017-12-17T15:21:44ZFalse
+MDU6SXNzdWUyODI3NjEwMzk=Can give the running demo2017-12-18T04:20:57ZFalse
+MDU6SXNzdWUyODI4MzI2OTY=has obvious signs of similar ps2017-12-18T10:36:26ZFalse
+MDU6SXNzdWUyODMwNTA3MzU=Alternative face encoding algorithm2017-12-18T23:04:49Z2017-12-19T18:36:25ZTrue
+MDU6SXNzdWUyODMwODA5OTk=Unable to download the whole project code?2017-12-19T02:01:13Z2020-04-02T17:35:57ZTrue
+MDU6SXNzdWUyODMwOTU3MjI=FileNotFoundError: [Errno 2] No such file or directory: 'data/cage'2017-12-19T03:44:08Z2017-12-20T04:10:42ZTrue
+MDU6SXNzdWUyODMxMjg2MjE=No Training Data2017-12-19T07:29:05ZFalse
+MDU6SXNzdWUyODMxNzk0OTc=Dead project ? Let's move on2017-12-19T10:38:45ZFalse
+MDU6SXNzdWUyODMyMTQ1NzI=Amount of RAM needed?2017-12-19T12:40:04ZFalse
+MDU6SXNzdWUyODM2MTA2Njg=: cannot connect to X server??2017-12-20T15:58:58ZFalse
+MDU6SXNzdWUyODQ2NzYyMTk=it's OOM if i use tensorflow-gpu. Did i do something wrong?2017-12-27T08:39:35ZFalse
+MDU6SXNzdWUyODUwMTQ4MDc=So when i want to swap a new face to target face , i need to train from start?2017-12-29T00:41:38Z2017-12-31T02:53:59ZTrue
+MDU6SXNzdWUyOTQyMDM4NjE=Links for downloads in README not working2018-02-04T15:08:09ZFalse
+MDU6SXNzdWUyOTUzMTAyNzI=/r/deepfakes banned and moved2018-02-07T22:06:04ZFalse
+MDU6SXNzdWUzMTQyNDgxMDU=go by race2018-04-13T20:56:42ZFalse
+MDU6SXNzdWU0MjU0OTcyNjE=How to prepare my train data？2019-03-26T15:43:39ZFalse
+MDU6SXNzdWU0NzIzNDY2OTM=How would you add a discriminator component2019-07-24T15:23:50ZFalse
+MDU6SXNzdWU0OTY2MzY1MDE=Does it depend on the model(trained on one data set) whether I can reuse it on another data?2019-09-21T09:35:00ZFalse

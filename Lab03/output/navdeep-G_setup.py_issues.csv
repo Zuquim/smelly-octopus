@@ -1,0 +1,30 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNTM0MjM3NTM=Cannot read the the version file 2017-08-28T19:02:02Z2017-08-29T03:01:38ZTrue
+MDU6SXNzdWUyNTM0MzM4MTE=Include multiple examples2017-08-28T19:40:45Z2017-08-29T00:57:50ZTrue
+MDU6SXNzdWUyNTM0NjMwMTY=What is `setup.py` and why would I want one?2017-08-28T21:30:58Z2017-08-29T03:08:24ZTrue
+MDU6SXNzdWUyNTM0OTIwNTY=Don't encourage Python2 support :)2017-08-29T00:08:43Z2017-08-29T01:20:55ZTrue
+MDU6SXNzdWUyNTM1MDYzNzE=Use twine and wheel --universal 2017-08-29T01:57:27Z2017-08-29T03:08:12ZTrue
+MDU6SXNzdWUyNTM2MzAzNDE=Introduce setup.cfg2017-08-29T11:58:10Z2017-09-01T16:48:24ZTrue
+MDU6SXNzdWUyNTM2OTYxNjM=[question] What about parsing requirements.txt?2017-08-29T14:59:37Z2017-08-29T17:09:59ZTrue
+MDU6SXNzdWUyNTM3Nzk2MDY=Dankeschön/Thanks2017-08-29T19:38:36Z2017-08-30T06:42:06ZTrue
+MDU6SXNzdWUyNTM4NzYwMzg=public domain2017-08-30T04:37:20Z2017-08-31T15:01:43ZTrue
+MDU6SXNzdWUyNTQ1MjM5OTY=License file doesn't match description in readme2017-09-01T03:10:00Z2017-09-01T03:45:01ZTrue
+MDU6SXNzdWUyNTQ1NDgwNzk=use_scm_version = True2017-09-01T06:28:52Z2017-09-04T16:01:33ZTrue
+MDU6SXNzdWUyNTUyNjMzNjU=Deprecated API?2017-09-05T12:40:39Z2017-09-07T20:08:34ZTrue
+MDU6SXNzdWUyNTU0MTA5MjY="Should a license in the ""license"" and ""classifiers"" be the same?"2017-09-05T21:13:56Z2017-09-07T20:07:38ZTrue
+MDU6SXNzdWUyNTU1NDMyMDE=FileNotFoundError not available in python22017-09-06T09:45:24Z2017-09-07T14:18:38ZTrue
+MDU6SXNzdWUyNjA1OTUxOTM=How about automatically updating version?2017-09-26T11:51:07Z2018-02-26T22:55:43ZTrue
+MDU6SXNzdWUyNjYyNzkzNzM=PyPI upload appears to require 'wheel' installation2017-10-17T21:08:52Z2018-02-26T22:55:28ZTrue
+MDU6SXNzdWUyNjczMzU4OTM=Use of a version tuple2017-10-21T00:25:19Z2017-12-11T12:13:05ZTrue
+MDU6SXNzdWUyNzE2MDgzNjQ=Connection error on upload2017-11-06T20:24:30Z2017-11-08T15:26:32ZTrue
+MDU6SXNzdWUyODU5NTM3MDg=suggestion: add example about using c/cpp extension?2018-01-04T11:21:27Z2018-02-26T22:56:06ZTrue
+MDU6SXNzdWUzMDA1MTg5NTE=Version bump as part of setup.py?2018-02-27T07:22:09Z2019-02-14T11:57:01ZTrue
+MDU6SXNzdWUzMDU4MTMxNTk=How to include additional packages in setup.py2018-03-16T06:11:56Z2019-02-14T11:56:18ZTrue
+MDU6SXNzdWUzMDc5MDc2NjU=.travis.yml setup2018-03-23T05:31:14ZFalse
+MDU6SXNzdWUzMDgxMTgzNTU=Support rendering project description from Markdown 2018-03-23T17:30:44Z2018-07-16T03:06:41ZTrue
+MDU6SXNzdWUzMTM5NjM2MzQ=Consider adding examples for extras_require2018-04-13T04:12:40Z2019-10-30T03:49:41ZTrue
+MDU6SXNzdWUzMTU3MTgxNTE="Remove reference to ""The Hitchhiker's Guide to Packaging"""2018-04-19T03:48:27Z2019-02-14T19:09:58ZTrue
+MDU6SXNzdWUzMjA5NDkyNjE=Missing comma in setup kwargs2018-05-07T20:40:26Z2018-07-03T14:24:26ZTrue
+MDU6SXNzdWUzMzIxMTg5MTc=One of the parameters is missing a comma in the setup() call.2018-06-13T18:49:58Z2019-01-07T20:25:07ZTrue
+MDU6SXNzdWUzNzk3NTEyNTU=Non-universal wheel2018-11-12T12:18:07Z2019-02-14T17:22:28ZTrue
+MDU6SXNzdWU1NTE1OTU3NDE=Unix dependencies2020-01-17T19:36:04ZFalse

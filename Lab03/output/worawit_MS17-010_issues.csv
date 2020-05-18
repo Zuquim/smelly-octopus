@@ -1,0 +1,35 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMzY5NjQ0OTg=include CVE(s) please2017-06-19T17:31:38Z2017-07-25T15:51:37ZTrue
+MDU6SXNzdWUyMzcwOTU0Mzk=Problem with mysmb.py2017-06-20T05:20:49Z2017-07-25T15:53:46ZTrue
+MDU6SXNzdWUyMzcyNjk3MjE=EternalBlue7 Crashing Server 20082017-06-20T16:23:30Z2017-07-25T15:57:35ZTrue
+MDU6SXNzdWUyMzc0OTE4Mjg=Problem in mysmb.py2017-06-21T10:45:27Z2017-07-25T15:58:59ZTrue
+MDU6SXNzdWUyNDI0NTgwMTU=send payload with zzz_exploit.py2017-07-12T17:33:05Z2017-07-25T15:59:11ZTrue
+MDU6SXNzdWUyNDMyOTM4MjI=zzz_exploit.py can't work properly but eternalblue_exploit7.py work well,tested on win7_x642017-07-17T04:17:49Z2017-07-25T16:00:15ZTrue
+MDU6SXNzdWUyNDM5MDA3MDY=zzz_exploit.py i have this result but...2017-07-19T01:57:16Z2017-07-25T16:02:44ZTrue
+MDU6SXNzdWUyNDUxOTcxNzQ=PyInstaller or Py2Exe2017-07-24T20:20:13Z2017-07-25T16:02:30ZTrue
+MDU6SXNzdWUyNDk4NjY1MDg=what is the difference between this and psexec?2017-08-13T10:56:03ZFalse
+MDU6SXNzdWUyNTA0NjgxNzk=Windows 8.1 Unexpected Alignment Error2017-08-15T23:36:36ZFalse
+MDU6SXNzdWUyNTA2NTY5NjA=TypeError on mysmb.py.2017-08-16T14:55:15ZFalse
+MDU6SXNzdWUyNTYxOTIxMzM=Connection reset by peer2017-09-08T09:21:31ZFalse
+MDU6SXNzdWUyNjkwODU3NDM=ImportError: No module named impacket2017-10-27T12:11:19ZFalse
+MDU6SXNzdWUyNzAyNzk4MDY=TypeError: send_trans() got an unexpected keyword argument 'noAnswer'2017-11-01T11:31:47ZFalse
+MDU6SXNzdWUyNzA1NjY5MTc=i have a lof of wrongs ,can you help me?2017-11-02T08:14:43ZFalse
+MDU6SXNzdWUyNzE0ODM4Mzg=How to execute it on WAN for testing purposes only2017-11-06T13:57:58ZFalse
+MDU6SXNzdWUyNzUzOTY0NDI=how to install those exploits to fuzzbunch ? 2017-11-20T15:33:18ZFalse
+MDU6SXNzdWUyNzkxNzc1Mjg=Any ip = error2017-12-04T22:41:10ZFalse
+MDU6SXNzdWUyODQxNzAyMTg=Ive created a helper script and simplified compilation process2017-12-22T14:00:54ZFalse
+MDU6SXNzdWUyOTA2NjQzODU=INVALID_PARAMETER2018-01-23T00:18:06ZFalse
+MDU6SXNzdWUyOTQxNjgwMzc=how to compile and use eternalblue_kshellcode_xxx.asm for the eternalblue_exploit7.py？2018-02-04T04:06:00ZFalse
+MDU6SXNzdWUyOTY5OTY1NTA=Can I use my own shellcode2018-02-14T07:11:28ZFalse
+MDU6SXNzdWUzMDA4OTkyNjM=What are the files to delete after successful compromise?2018-02-28T05:42:14ZFalse
+MDU6SXNzdWUzMDcxMzExNjI=ERRDOS, code: ERRnomem(Insufficient server memory to perform the requested function2018-03-21T06:22:52ZFalse
+MDU6SXNzdWUzMTg4NjU3NDc= login() takes at most 6 arguments (7 given)2018-04-30T11:56:52Z2018-04-30T11:58:39ZTrue
+MDU6SXNzdWUzMTkyODQwNDk=MYSMB error2018-05-01T18:34:15ZFalse
+MDU6SXNzdWUzMjA2ODgyNDU=impacket.nmb.NetBIOSError2018-05-07T06:28:59ZFalse
+MDU6SXNzdWUzNjQyODI4Njc=what is shellcode_file in eternalblue_exploit7.py?2018-09-27T02:39:35ZFalse
+MDU6SXNzdWUzODY1NTY5NDE=Windows 20002018-12-02T12:53:00ZFalse
+MDU6SXNzdWU0NDQyNzQ5NjY=Mysmb error2019-05-15T07:17:49Z2019-05-15T07:55:56ZTrue
+MDU6SXNzdWU0ODIwMzE1Mjc=[*] Exploit completed, but no session was created2019-08-18T20:03:16Z2020-04-09T19:43:31ZTrue
+MDU6SXNzdWU0OTQ5NDY2NTk=Windows Server 2012 r2 Standard Crashes2019-09-18T02:14:22ZFalse
+MDU6SXNzdWU1NjY2OTIxNzg=Could i use a connected IPC conn to ?2020-02-18T07:11:49ZFalse
+MDU6SXNzdWU1ODYzOTk3ODY=checker error 2020-03-23T17:46:59ZFalse

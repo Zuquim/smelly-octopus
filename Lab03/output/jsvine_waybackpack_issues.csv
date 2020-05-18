@@ -1,0 +1,18 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNTI4Njc3Mjc=Short sleep on 5032016-05-03T20:33:21Z2016-05-03T21:28:55ZTrue
+MDU6SXNzdWUxNTI5NDAzODY=Uniques only2016-05-04T06:41:34Z2016-05-10T13:25:57ZTrue
+MDU6SXNzdWUxNTI5NDA1OTI=Download whole site2016-05-04T06:43:37ZFalse
+MDU6SXNzdWUxNTM0ODMyOTQ=Follow redirects2016-05-06T15:58:55Z2016-05-10T13:26:06ZTrue
+MDU6SXNzdWUxNTQzNDM5NzE=IndexError: list index out of range with v0.3.02016-05-11T21:11:05Z2016-05-11T21:26:08ZTrue
+MDU6SXNzdWUxNTU5NjE0ODg=Wildcard url queries2016-05-20T13:19:44Z2016-05-23T16:54:14ZTrue
+MDU6SXNzdWUxNjkxMjA1MzI=Connection errors aren't caught2016-08-03T12:33:58Z2016-09-01T01:50:58ZTrue
+MDU6SXNzdWUyMDQ0MzIwMTk=Update readme version #2017-01-31T21:42:28Z2017-02-07T03:25:14ZTrue
+MDU6SXNzdWUyNDc5MzY1NjA=Not able to download a website from wayback2017-08-04T08:24:25Z2017-08-04T11:35:55ZTrue
+MDU6SXNzdWUyNTY1MTU5OTA=Saving url query string in filename2017-09-10T15:01:03ZFalse
+MDU6SXNzdWUzMzQxODg0MDg="Empty index.html with ""found capture at xxxxxxxxxx"""2018-06-20T17:56:12Z2018-06-21T14:05:35ZTrue
+MDU6SXNzdWUzNTU3NDYzMDc=Status code 403 causes JSONDecodeError2018-08-30T20:42:36ZFalse
+MDU6SXNzdWUzNjMzMjc1Njk='Invalid Syntax Error'2018-09-24T21:28:27Z2018-09-25T02:57:35ZTrue
+MDU6SXNzdWU0MTc1NTgyOTI=503 error2019-03-05T23:58:18Z2019-03-17T02:25:24ZTrue
+MDU6SXNzdWU0NzM4MDE3NzI=Is there a way to limit the downloads to just zip files?2019-07-29T00:14:09Z2019-07-30T02:04:45ZTrue
+MDU6SXNzdWU0NzYxMTUxOTM=Is the project still alive?2019-08-02T10:37:22Z2019-08-02T14:14:24ZTrue
+MDU6SXNzdWU2MTU1MTk5NTk=Handle 503 when not from server overload2020-05-11T01:09:37ZFalse

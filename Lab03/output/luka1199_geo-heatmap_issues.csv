@@ -1,0 +1,25 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWU1MjczODM2OTA=When running under WSL, heatmap.html opens in w3m browser2019-11-22T19:49:18Z2019-11-24T00:56:19ZTrue
+MDU6SXNzdWU1Mjc1MDE1MTQ=Can't finish generating.2019-11-23T03:14:12Z2019-11-23T23:39:59ZTrue
+MDU6SXNzdWU1Mjc2MTA1MDA=JSONDecodeError2019-11-23T21:17:03ZFalse
+MDU6SXNzdWU1Mjc5NzM3Nzg=TypeError: __init__() got an unexpected keyword argument 'max_value'2019-11-25T09:58:53Z2019-11-25T16:04:12ZTrue
+MDU6SXNzdWU1Mjg4MDYzMDg=Google Photos Integration - Suggestion2019-11-26T15:39:36ZFalse
+MDU6SXNzdWU1MzAyMjkyMjc=Load data from multiple location data files2019-11-29T09:00:02Z2019-11-30T18:32:31ZTrue
+MDU6SXNzdWU1MzAyMzA3Nzc=Add OpenStreetMap copyright2019-11-29T09:03:43Z2019-11-29T16:23:16ZTrue
+MDU6SXNzdWU1MzAyMzEyNzc=Add argparse for arguments and features in the future2019-11-29T09:04:56Z2019-11-30T16:36:50ZTrue
+MDU6SXNzdWU1MzAyNjE4NjU=Optimizations for loading KML data2019-11-29T10:10:12Z2019-12-01T21:32:39ZTrue
+MDU6SXNzdWU1MzA0MjU4Nzk=Create a Flask App for easier interaction2019-11-29T16:32:48Z2019-11-30T20:59:46ZTrue
+MDU6SXNzdWU1MzA1Nzk5Mjk=Add option to stream data for users with memory problems2019-11-30T13:35:54Z2019-12-10T15:50:27ZTrue
+MDU6SXNzdWU1MzA2MTI2MDc=Carriage return in script throws error on Linux2019-11-30T18:10:27Z2019-11-30T18:10:37ZTrue
+MDU6SXNzdWU1MzA2MTMyMTg=Non English formatted google services data2019-11-30T18:15:39Z2019-11-30T18:15:50ZTrue
+MDU6SXNzdWU1MzA2MTY3ODY=Add option to specify a time span for the location data2019-11-30T18:51:52Z2019-11-30T20:07:28ZTrue
+MDU6SXNzdWU1MzA2Mzk3NjI=Error: list indexes must be integers or slides, not strings2019-11-30T22:53:03Z2019-11-30T23:12:56ZTrue
+MDU6SXNzdWU1MzQ3MDIzMTk=Memory Error when Loading JSON Data2019-12-09T05:36:07Z2019-12-09T05:38:11ZTrue
+MDU6SXNzdWU1MzUzNjIzMjA=Still getting MemoryError after installing a 64bit version2019-12-09T21:57:16Z2019-12-15T11:52:59ZTrue
+MDU6SXNzdWU1MzU3NTc4NzQ=Add option to print out stats about your data after loading2019-12-10T14:15:24ZFalse
+MDU6SXNzdWU1MzYwNDkzNTc=2 Google Accounts2019-12-10T23:17:35Z2019-12-15T11:52:30ZTrue
+MDU6SXNzdWU1MzY5MTg0OTI=Animation Option2019-12-12T11:24:15ZFalse
+MDU6SXNzdWU1MzY5NjUyNTE=progressbar error whilst streaming json file2019-12-12T13:03:13Z2019-12-15T11:52:14ZTrue
+MDU6SXNzdWU1MzY5NzQwMzY=Combine multiple location data files2019-12-12T13:20:50Z2019-12-15T11:52:03ZTrue
+MDU6SXNzdWU1Mzc2MzEzNzI=Could not locate runnable browser2019-12-13T16:06:13Z2019-12-15T11:51:52ZTrue
+MDU6SXNzdWU1Mzg2MDA4MzY=Remove personal information2019-12-16T19:16:53Z2019-12-16T23:21:36ZTrue

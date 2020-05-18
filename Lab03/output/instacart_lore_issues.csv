@@ -1,0 +1,31 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMDE2NzM0ODk='module' object has no attribute 'keras'  in python2.72018-03-02T07:09:33Z2018-03-03T03:38:25ZTrue
+MDU6SXNzdWUzMDQwNTQxMzU=Unsupported Locale Setting on Windows2018-03-10T08:40:57Z2018-04-21T02:54:36ZTrue
+MDU6SXNzdWUzMDc0OTY4OTM=lore init exception2018-03-22T03:50:48Z2018-03-22T08:43:27ZTrue
+MDU6SXNzdWUzMDkzNTcxMDc=Docker support?2018-03-28T13:01:48Z2018-04-21T02:54:47ZTrue
+MDU6SXNzdWUzMTIyNTE0MTU=Docs failing2018-04-07T23:07:34Z2018-10-21T17:14:03ZTrue
+MDU6SXNzdWUzMTQ5MDIwOTc=Typo in setup.py2018-04-17T04:35:54Z2018-04-19T02:47:08ZTrue
+MDU6SXNzdWUzNDA5NDk4NjY=Should be env.require()?2018-07-13T09:36:45Z2018-07-13T15:29:22ZTrue
+MDU6SXNzdWUzNDMxNTk5ODA=save_weights fails when large number of input features are present2018-07-20T15:54:15ZFalse
+MDU6SXNzdWUzNDQwOTM2NjI=inspect.getargspec doesn't return expected arguments from decorated fit methods2018-07-24T15:39:07ZFalse
+MDU6SXNzdWUzNDQ2NjUxMTQ=Unable to launch lore after installing2018-07-26T01:47:57Z2018-07-26T08:05:34ZTrue
+MDU6SXNzdWUzNDQ3MzE4NDc=lore server &2018-07-26T07:47:30Z2018-07-27T17:31:44ZTrue
+MDU6SXNzdWUzNDQ3NDAxMzY=zipimport.ZipImportError: can't decompress data; zlib not available2018-07-26T08:14:25Z2018-07-28T02:03:47ZTrue
+MDU6SXNzdWUzNDY5MjU1OTc=Is it not fully adapted to Win?2018-08-02T09:11:55ZFalse
+MDU6SXNzdWUzNDczODc5ODA=Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA2018-08-03T13:03:14Z2018-08-03T13:24:22ZTrue
+MDU6SXNzdWUzNDczOTU0MTE=AttributeError: module 'lore.pipelines' has no attribute 'hold'2018-08-03T13:25:23Z2018-08-04T03:16:37ZTrue
+MDU6SXNzdWUzNDkyODY1Nzg='lore init' error on centos72018-08-09T20:53:25ZFalse
+MDU6SXNzdWUzNDk4OTg0MTU=how to use   model.hyper_parameter_search() method?2018-08-13T06:08:26ZFalse
+MDU6SXNzdWUzNTA4MDQ4MzM=empty dir, get error on init about 'already exists in this directory'2018-08-15T13:15:05Z2018-08-20T16:31:56ZTrue
+MDU6SXNzdWUzNTE2MzQ2MTQ=anaconda environment?2018-08-17T15:16:28ZFalse
+MDU6SXNzdWUzNzI2OTM5Mzc=XGboost estimator will throw error when multiple evaluation metrics are given2018-10-22T20:49:42ZFalse
+MDU6SXNzdWUzNzI2OTYyMzc=stratify implementation in holdout pipeline2018-10-22T20:55:26Z2018-10-31T16:52:21ZTrue
+MDU6SXNzdWUzNzQ1NTk3OTc=Your machine learning stuff is not good at its job2018-10-26T21:53:28Z2018-10-27T04:25:41ZTrue
+MDU6SXNzdWUzNzU2ODc5MTA=Lore+MLFlow2018-10-30T20:51:52ZFalse
+MDU6SXNzdWU0MDM0NzgwOTQ=Proper place to specify what prediction is2019-01-26T20:06:34Z2019-01-28T10:49:32ZTrue
+MDU6SXNzdWU0MDk2OTg2MTg=vi editing mode doesn't work in `lore console`2019-02-13T09:09:53ZFalse
+MDU6SXNzdWU0MjM4ODE2MjI=`lore test` is not setting `LORE_ENV=test` properly2019-03-21T18:33:04ZFalse
+MDU6SXNzdWU0NDQyNTQ5Mzg=Automate model training with Airflow?2019-05-15T06:15:46ZFalse
+MDU6SXNzdWU0ODI0NTYyODc=Linter freaks out by @timed decorator2019-08-19T18:16:51Z2019-08-20T20:38:55ZTrue
+MDU6SXNzdWU2MDk3Mjc3ODU=Support of CatBoost2020-04-30T08:52:35ZFalse
+MDU6SXNzdWU2MTEwOTI0MDc=Instacart lore2020-05-02T02:47:53Z2020-05-02T04:34:17ZTrue

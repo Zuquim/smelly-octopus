@@ -1,0 +1,18 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNzQ5Nzc4Mzk=Adding images for Readme, nothing to see here2017-11-17T19:51:29Z2017-11-17T19:55:52ZTrue
+MDU6SXNzdWUyODUzNjcwMzI=requestiumResponse.xpath don't respect to requests.Response' s encoding setting2018-01-02T07:10:42ZFalse
+MDU6SXNzdWUyODU0MjY0NzY=How to get the changed tagname ?2018-01-02T13:13:14Z2018-01-03T07:27:28ZTrue
+MDU6SXNzdWUyODU2OTUwNDk=Wish reopen  driver automatically  after I closed driver manually2018-01-03T14:00:57Z2018-01-12T20:11:04ZTrue
+MDU6SXNzdWUyODY0NjMwNDg=Login Taobao use transfer_driver_cookies_to_session, but the session is invalid2018-01-06T06:10:25ZFalse
+MDU6SXNzdWUyODkzMzk1MzU=Allow the Requestium session to replace its Selenium driver with an external driver instance2018-01-17T16:58:06ZFalse
+MDU6SXNzdWUyODk1MzQyMzk=How to implement webdriver.Remote() function？2018-01-18T07:49:36ZFalse
+MDU6SXNzdWUzMDg0Mjc1NTI=how to set chorme path2018-03-26T04:11:06ZFalse
+MDU6SXNzdWUzMTQzMDE4MDY=Why not synchronize the request header between  selenium and requests ?2018-04-14T05:43:35ZFalse
+MDU6SXNzdWUzMTk4NjE0NjE=Switch cookies from Session to driver not working on Instagram2018-05-03T10:14:51ZFalse
+MDU6SXNzdWUzNzk1MTIxNzY=How to add chromeoptions like selenium?2018-11-11T11:07:34ZFalse
+MDU6SXNzdWUzOTQ3ODc2OTM=Thank you  for making this tool2018-12-29T11:27:43ZFalse
+MDU6SXNzdWU0NDIzOTM4MjA=error with transfer_session_cookies_to_driver()  2019-05-09T19:23:54ZFalse
+MDU6SXNzdWU0NjMyOTIxNzI=DeprecationWarning: use options instead of chrome_options2019-07-02T15:23:05Z2019-07-02T16:16:50ZTrue
+MDU6SXNzdWU0NzAyMTMzNTI=Is remote webdriver supported?2019-07-19T08:52:49ZFalse
+MDU6SXNzdWU1NjIyMTE5OTM=Empty cookies <RequestsCookieJar[]>2020-02-09T17:40:02Z2020-02-10T15:56:42ZTrue
+MDU6SXNzdWU2MDg1MDc1MTY=How to support IE browser2020-04-28T18:00:06ZFalse

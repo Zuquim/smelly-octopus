@@ -1,0 +1,38 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWU1OTM3NTgzNTk=A question2020-04-04T06:42:25Z2020-04-06T14:15:10ZTrue
+MDU6SXNzdWU1OTQ0NjczODE=TensorFlow version2020-04-05T13:53:52Z2020-04-05T15:57:32ZTrue
+MDU6SXNzdWU1OTUwNDY5MTk=Why reimplemented results are so terrible?2020-04-06T11:47:28Z2020-04-07T07:57:24ZTrue
+MDU6SXNzdWU1OTUzODY1NzQ=Crop Area differences between frames in sequence, may be related to aberrations in mask.2020-04-06T19:55:49Z2020-04-06T22:28:23ZTrue
+MDU6SXNzdWU1OTU2MDM5Mjg=demo image is perfect but for my image it has some problem.2020-04-07T05:35:13Z2020-04-10T15:07:53ZTrue
+MDU6SXNzdWU1OTYzNDQ5NTQ=can it run from video to video?2020-04-08T06:39:48Z2020-04-09T22:54:13ZTrue
+MDU6SXNzdWU1OTY0MjIzNzc=Where is the code for to perturb B?2020-04-08T09:01:54Z2020-04-08T19:20:40ZTrue
+MDU6SXNzdWU1OTY5MTgxMzg=question about  datasets2020-04-08T23:16:16Z2020-04-20T14:59:11ZTrue
+MDU6SXNzdWU1OTY5ODcyNTU=shape miss，After Update（4.8）2020-04-09T03:04:55Z2020-04-09T22:54:37ZTrue
+MDU6SXNzdWU1OTcwNjIwNjE=What does rcnn=np.delete(rcnn, range(reso[0],reso[0]+K), 0) do?2020-04-09T06:50:53Z2020-04-10T05:54:04ZTrue
+MDU6SXNzdWU1OTc0NDA0MzA=weird output from image pre processing2020-04-09T17:30:45Z2020-04-10T05:53:35ZTrue
+MDU6SXNzdWU1OTc3OTcyNTQ=Question about video result2020-04-10T09:34:20Z2020-04-13T01:51:01ZTrue
+MDU6SXNzdWU1OTc4OTg5NDE=What's the point of M = {I,I,I,I}?2020-04-10T13:50:57Z2020-04-10T18:29:37ZTrue
+MDU6SXNzdWU1OTc4OTk4NzA=repeat downloading the deeplab model file2020-04-10T13:52:52Z2020-04-10T19:50:46ZTrue
+MDU6SXNzdWU1OTc5MjIwNjg=What's the inspiration behind the supervised loss function?2020-04-10T14:38:16Z2020-04-10T17:39:51ZTrue
+MDU6SXNzdWU1OTc5NzY3NTk=scipy missing from requirements2020-04-10T16:30:10Z2020-04-10T16:36:07ZTrue
+MDU6SXNzdWU1OTgwNzk5Mzk=What does it mean to set α = 1 everywhere for GReal?2020-04-10T20:27:29Z2020-04-11T05:52:19ZTrue
+MDU6SXNzdWU1OTgyNDI0Nzc=windows env conda support?2020-04-11T10:56:48Z2020-04-23T02:08:32ZTrue
+MDU6SXNzdWU1OTkyMTU2MzI=Higher Crop Resolution + Congrats!2020-04-14T00:30:53Z2020-04-15T15:11:26ZTrue
+MDU6SXNzdWU1OTkzODM3MDg=Why use your own backgrounds?2020-04-14T08:17:15Z2020-04-15T15:17:53ZTrue
+MDU6SXNzdWU1OTk1MTMzNjc=What is the time about the training code to share?2020-04-14T11:51:28Z2020-04-23T02:07:39ZTrue
+MDU6SXNzdWU1OTk1OTEzODU=Background-Matting without CUDA?2020-04-14T13:53:56Z2020-04-15T20:13:15ZTrue
+MDU6SXNzdWU2MDE2NDQ0Mjc=There are two person in front of camer, always missing one.2020-04-17T01:48:22Z2020-04-17T10:18:49ZTrue
+MDU6SXNzdWU2MDIxNDg0OTc=Colab notebook2020-04-17T18:11:11Z2020-04-22T19:27:09ZTrue
+MDU6SXNzdWU2MDYwNjU3NzM=memory increased  considerably2020-04-24T06:07:24ZFalse
+MDU6SXNzdWU2MDYzMTQwNjE=Self supervised target background for composition2020-04-24T13:28:20Z2020-05-14T09:47:51ZTrue
+MDU6SXNzdWU2MDgwMjQ4ODk=No person case2020-04-28T04:58:03ZFalse
+MDU6SXNzdWU2MTAzMDI5NzQ=Output foreground vs original foreground2020-04-30T18:43:08Z2020-05-03T08:47:23ZTrue
+MDU6SXNzdWU2MTE4OTE5MDI=Assertion failed2020-05-04T13:52:20Z2020-05-09T05:14:20ZTrue
+MDU6SXNzdWU2MTM5MDk5NDg=Error occured while I running code on my video, some limits to video or misconfig enviorment?2020-05-07T09:29:40ZFalse
+MDU6SXNzdWU2MTQ0MzIzODQ=Is the matting real-time?2020-05-08T00:57:44Z2020-05-08T22:01:58ZTrue
+MDU6SXNzdWU2MTQ2MDc5Mzk=Question: Why the multi frame feature was not used? Typo?2020-05-08T08:55:19ZFalse
+MDU6SXNzdWU2MTYzMTUyMDI=which py file contains the CS Block? thank you2020-05-12T02:42:48ZFalse
+MDU6SXNzdWU2MTY0NzA3NDQ=It seems that motion cues didn't contribute the network2020-05-12T08:38:26Z2020-05-17T22:25:40ZTrue
+MDU6SXNzdWU2MTg4NDUyNzg=Question: why should we predict foreground color?2020-05-15T09:53:33Z2020-05-17T22:31:34ZTrue
+MDU6SXNzdWU2MTg5MDk5NjI=Could you share the adobe matting dataset?2020-05-15T11:48:35ZFalse
+MDU6SXNzdWU2MTk0ODc4MzQ=How to make this work real time2020-05-16T14:29:56ZFalse

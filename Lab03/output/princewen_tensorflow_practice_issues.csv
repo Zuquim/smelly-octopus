@@ -1,0 +1,56 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMzI3Mjg0Mzg=model ncf 中的NCF_input.py 中第40行逻辑是否有问题？2018-06-15T10:45:08Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzMzQ3Mjk1MDE=demo中的数据没有2018-06-22T03:09:42Z2018-07-30T16:24:11ZTrue
+MDU6SXNzdWUzNDA0ODA4NjY=dynamic_decoder出现负值？2018-07-12T03:57:51Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNDM1OTMzMDY=运行出错2018-07-23T11:27:08Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNDQyNzE3NDY=训练集验证集结果差别大2018-07-25T02:46:29Z2018-07-30T16:23:39ZTrue
+MDU6SXNzdWUzNDg3MjM5OTQ=SeqGAN问题2018-08-08T13:23:07Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNDkwMTY4MTc=请问可以提供一下GBDT+LR数据的数据文件吗？2018-08-09T07:53:04Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNDk5NDM2MTg=强化学习的例子能否以推荐item的数据为例2018-08-13T09:00:42Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNjE5ODA2NDc=运行错误，求帮助2018-09-20T01:06:43Z2018-09-23T05:02:41ZTrue
+MDU6SXNzdWUzNzAwNDI4NDY=tf.get_variable_scope().reuse_variables()2018-10-15T08:01:23Z2018-12-11T03:12:39ZTrue
+MDU6SXNzdWUzNzgzMTc3MTQ=seq2seq的176行Dense()全连接的参数少了一个。2018-11-07T14:43:20Z2018-11-07T14:53:13ZTrue
+MDU6SXNzdWUzNzgzMjYxNjM=seq2seq 332行 代码有问题，训练用的source和target的batch重复了。2018-11-07T15:02:16Z2018-11-19T08:11:02ZTrue
+MDU6SXNzdWUzNzg3MzkyNTU=maybe some bugs?2018-11-08T13:49:53ZFalse
+MDU6SXNzdWUzNzk2Mzk2MDE=link broken2018-11-12T06:33:50Z2018-11-19T08:10:50ZTrue
+MDU6SXNzdWUzODA5Nzk5OTc=reshape in RNN_dynamic2018-11-15T03:05:47Z2018-11-19T08:10:37ZTrue
+MDU6SXNzdWUzODgwMzU5OTA=请教一个问题2018-12-06T02:58:47ZFalse
+MDU6SXNzdWUzODg1NTE3MjQ=发现代码存在问题，验证了python2发现的2018-12-07T08:27:33Z2018-12-11T03:12:15ZTrue
+MDU6SXNzdWUzODg4OTczNzE=请教一个关于decode_input的问题2018-12-08T07:43:25ZFalse
+MDU6SXNzdWUzOTAxOTExODQ=请教一下2018-12-12T11:51:29ZFalse
+MDU6SXNzdWU0MDYwNjQ0OTA=你好，请教一下Basic-NCF-Demo使用的数据集是哪个？是FM中使用的MovieLens100k Datase或者是NCF原来那篇paper中的数据集吗？2019-02-03T08:15:34ZFalse
+MDU6SXNzdWU0MTg2NjI0NDM=DKN demo问题2019-03-08T07:14:31Z2019-03-08T07:23:04ZTrue
+MDU6SXNzdWU0MTk5NzQyNTk=gan中generate的代码是不是有问题？2019-03-12T13:03:13ZFalse
+MDU6SXNzdWU0MjA5Mzk4MzM=_like_rnncell失效的问题2019-03-14T10:30:44ZFalse
+MDU6SXNzdWU0MjQ5NjE1ODY=你给的AC代码有一个错误！2019-03-25T15:20:23ZFalse
+MDU6SXNzdWU0MjUxOTYyNDk=请问bpr中的u.data在哪里?2019-03-26T02:23:59ZFalse
+MDU6SXNzdWU0Mzg3MzUxNzI=我刚接触，请问这个程序本来就没有输出结果吗2019-04-30T11:42:55ZFalse
+MDU6SXNzdWU0NDA0MjE3MzI=recommendation\GBDT+LR-Demo没有data数据2019-05-05T09:13:01ZFalse
+MDU6SXNzdWU0NTA2ODg1MTk=basic-nfm-demo中的nfm文件类名有误2019-05-31T08:52:09ZFalse
+MDU6SXNzdWU0NTIzODU0OTc=程序在线预测效率如何？2019-06-05T08:53:21ZFalse
+MDU6SXNzdWU0NTk3MzgwNTk=请教一个MADDPG的问题2019-06-24T07:39:53ZFalse
+MDU6SXNzdWU0Njg0MTc1MTM=特征处理2019-07-16T02:38:53ZFalse
+MDU6SXNzdWU0NzEwNjAwOTc=请教一个noisy-net dqn的问题2019-07-22T12:11:46ZFalse
+MDU6SXNzdWU0NzE1NzUzMTY=the para random_state=1024, how to get,  any number ok？2019-07-23T09:08:54ZFalse
+MDU6SXNzdWU0NzUwMDgwNjY=File not found2019-07-31T08:32:50Z2019-07-31T08:47:33ZTrue
+MDU6SXNzdWU0NzgyMzE1MTE=tensorflow_practice/nlp/chat_bot_seq2seq_attention/predict.py 缺失文件2019-08-08T03:27:03ZFalse
+MDU6SXNzdWU0ODE5ODE2MjU=数据集2019-08-18T11:12:13ZFalse
+MDU6SXNzdWU0ODIxOTY3MzQ=a bug in dis.py2019-08-19T09:16:46ZFalse
+MDU6SXNzdWU0ODcyNjk1Njk=din这一块,self.logits = i_b + d_layer_3_i 这一步和阿里的论文网路结构不同啊，论文是直接三层全链接后sigmod得到logits的值，为何要加一个i_b啊2019-08-30T03:39:39ZFalse
+MDU6SXNzdWU1MDUyNDAwNjY=Will it work on Windows2019-10-10T12:32:47ZFalse
+MDU6SXNzdWU1MDUyNTEzOTQ=where get data for recommendation code2019-10-10T12:52:51ZFalse
+MDU6SXNzdWU1MDc2OTI2NTQ=关于IRGAN的问题2019-10-16T08:21:49ZFalse
+MDU6SXNzdWU1MTEwNDY4Mzg=关于ncf2019-10-23T03:22:18ZFalse
+MDU6SXNzdWU1MTY5MzgzNzQ=关于NCF创建迭代器2019-11-04T02:58:51ZFalse
+MDU6SXNzdWU1MTc0NjMyODc=楼主的chat_bot_seq2seq_attention能跑起来吗？2019-11-04T23:31:38ZFalse
+MDU6SXNzdWU1MTc1MjQwNDA=高冷楼主不回答问题2019-11-05T03:13:01Z2019-11-26T08:25:01ZTrue
+MDU6SXNzdWU1MTc1ODc3NDQ=session-based recommendation2019-11-05T07:13:59ZFalse
+MDU6SXNzdWU1MzE5OTQ3MjY=A3C计算V（St+1）的target_v存在bug2019-12-03T13:43:54ZFalse
+MDU6SXNzdWU1NDIyNzU4OTI=请问DKN各位可以运行吗？需要怎样的计算资源？2019-12-25T07:09:13ZFalse
+MDU6SXNzdWU1NDI3NjI4MTI=Bug in RL/Policy_Gradient/RL_brain.py2019-12-27T06:24:20Z2019-12-31T03:15:21ZTrue
+MDU6SXNzdWU1NDMyMTQ5NDI=gbdt+lr问题2019-12-28T15:42:38ZFalse
+MDU6SXNzdWU1NDg1MjgzNzQ=DKN中数据预处理，TransE.cpp无法运行2020-01-12T06:21:24ZFalse
+MDU6SXNzdWU2MDkxMjM0NDI=DCG的问题2020-04-29T14:55:12ZFalse
+MDU6SXNzdWU2MTE5NzY2NjU=这个变量应该设置成trainable=False2020-05-04T15:45:57Z2020-05-05T04:18:19ZTrue
+MDU6SXNzdWU2MTIzMzA5MzQ=这块应该每次进来重新置0吧2020-05-05T04:35:15Z2020-05-05T11:46:58ZTrue
+MDU6SXNzdWU2MTMyODQ0Mzk=FFM这个实现有问题吧. 这个值每次都会被更新吧2020-05-06T12:33:40ZFalse

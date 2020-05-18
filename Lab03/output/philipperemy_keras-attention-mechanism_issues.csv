@@ -1,0 +1,37 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMzYwMzAzMzc=get_activations not producing list2017-06-14T22:42:36Z2017-06-15T01:25:14ZTrue
+MDU6SXNzdWUyMzY1NTg4MjE=Is this Reshape step redundant?2017-06-16T18:26:38Z2017-06-19T02:01:28ZTrue
+MDU6SXNzdWUyMzgwNDIzNDA=attention_lstm.py does not work for Theano backend2017-06-23T05:11:57Z2017-06-29T00:50:40ZTrue
+MDU6SXNzdWUyMzk4MDQwNzg=attention_lstm.py and Tensorflow2017-06-30T14:56:37Z2017-08-12T13:26:07ZTrue
+MDU6SXNzdWUyNDAzMDM1OTU=use attention_3d_block in many to many mapping2017-07-04T03:39:09Z2017-07-04T08:01:34ZTrue
+MDU6SXNzdWUyNDUyNjY5MDM=fig 2017-07-25T02:22:52Z2017-07-25T10:52:06ZTrue
+MDU6SXNzdWUyNTMxOTM4MzI=possible bug in attention_lstm.py2017-08-27T22:16:50Z2017-09-14T01:19:42ZTrue
+MDU6SXNzdWUyNzg0NDIyMjE=2D LSTM attention2017-12-01T11:47:46Z2017-12-18T16:07:43ZTrue
+MDU6SXNzdWUyODkwMzM1NTM= SINGLE_ATTENTION_VECTOR = false2018-01-16T19:48:25Z2020-01-25T02:47:00ZTrue
+MDU6SXNzdWUyOTc2NzM0OTU=Many to many sequence generation2018-02-16T03:37:12Z2020-03-19T05:53:30ZTrue
+MDU6SXNzdWUzMDIyNjQ0MzE=Questions on implementation details2018-03-05T11:27:44Z2020-03-25T13:16:40ZTrue
+MDU6SXNzdWUzMDI2ODUzOTk=这个是CNN版本的attention吗？2018-03-06T12:40:59Z2020-01-25T02:45:07ZTrue
+MDU6SXNzdWUzMDMxOTQ1ODM=bucketing problem2018-03-07T17:41:40Z2020-03-19T05:54:34ZTrue
+MDU6SXNzdWUzMTUzNTUwOTk=IndexError: list index out of range2018-04-18T07:03:47Z2020-01-25T02:46:36ZTrue
+MDU6SXNzdWUzMjAyMzYyNjA=some confusions.2018-05-04T11:10:52Z2020-01-25T02:46:02ZTrue
+MDU6SXNzdWUzMjQ5NDU3MTc=How to visualise as 2dimensional heatmap?2018-05-21T14:52:41Z2020-03-19T07:21:08ZTrue
+MDU6SXNzdWUzMzMwMDkyMTA=Attention Visualization2018-06-16T19:21:40Z2020-03-19T07:22:12ZTrue
+MDU6SXNzdWUzMzY4OTYwOTU=How to implement Multi-Hop Attention using Keras?2018-06-29T07:40:16Z2020-03-20T10:13:15ZTrue
+MDU6SXNzdWUzMzc1NTYyNTY=You code is outdated!2018-07-02T15:04:11Z2020-01-25T02:40:55ZTrue
+MDU6SXNzdWUzNDMwNzI4NjM=Is this attention is applicable for use with the encoder/decoder mechanism?2018-07-20T11:28:38Z2020-03-19T07:38:21ZTrue
+MDU6SXNzdWUzNTQxNTg3MTA=why Permute before attention dense layer in attention_3d_block?2018-08-27T02:29:45Z2020-02-03T10:30:34ZTrue
+MDU6SXNzdWUzNzYxODc2NTE=One to One keras model with Attention in Keras 2018-10-31T22:41:19Z2018-11-25T22:18:30ZTrue
+MDU6SXNzdWU0Mjc1MzYzNTM=get_activations use  multi-input data, does not work.2019-04-01T06:41:15Z2020-01-25T02:47:53ZTrue
+MDU6SXNzdWU0NDY0MTkwOTk=why add a Dense(64) layer after the attention layer2019-05-21T05:08:30Z2020-01-25T02:47:20ZTrue
+MDU6SXNzdWU0NTUyOTAxNTE=How to do Stacked LSTM with attention using this framework ?2019-06-12T15:45:38Z2020-02-03T10:29:49ZTrue
+MDU6SXNzdWU0NTcwMDA4MzQ=papers using dense attention mechanism2019-06-17T15:30:03Z2020-01-25T02:48:23ZTrue
+MDU6SXNzdWU0NTcwMDQ2OTI=What is the logic behind the attention layer?2019-06-17T15:37:54Z2020-01-25T02:42:31ZTrue
+MDU6SXNzdWU0NjgxMDA1NzY=visualizing soft attention2019-07-15T12:31:17Z2020-03-19T07:39:22ZTrue
+MDU6SXNzdWU0OTE0MjE1MzY=TypeError: 'module' object is not callable2019-09-10T02:52:00Z2020-01-24T11:44:03ZTrue
+MDU6SXNzdWU1NTk2MjY1ODE=what is the meaning of the second parameter in dot([], [1, 1], name='context_vector')2020-02-04T10:32:01Z2020-03-19T07:45:29ZTrue
+MDU6SXNzdWU1NjEwNzU4NTk=where is dense attention implementation ？2020-02-06T15:11:07Z2020-02-07T11:32:49ZTrue
+MDU6SXNzdWU1NjIxMjcwMTY=ask a problem about your code2020-02-09T05:47:45Z2020-03-20T11:11:37ZTrue
+MDU6SXNzdWU1OTgyMTExMTU=attention implementation help for OCR2020-04-11T07:33:05ZFalse
+MDU6SXNzdWU2MDY4MzM2NjA=Visualizing attention weights with input arrays2020-04-25T18:59:02Z2020-04-30T14:46:10ZTrue
+MDU6SXNzdWU2MTAxOTgyMDQ=Restricting attention weights to domain2020-04-30T16:10:27ZFalse
+MDU6SXNzdWU2MTUzMDg1MTk=Hiddent state parameter, what really should be passed? 2020-05-10T03:36:34Z2020-05-10T04:19:43ZTrue

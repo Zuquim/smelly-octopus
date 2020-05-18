@@ -1,0 +1,23 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMjA0ODQ0MDg=Data Set2017-04-09T17:10:38Z2017-08-28T08:38:00ZTrue
+MDU6SXNzdWUyMzE4MzA1MDQ=Error at line 1302017-05-27T21:54:47Z2017-09-14T10:34:02ZTrue
+MDU6SXNzdWUyNDgyNDcyMTk=ImportError: cannot import name 'downsample'2017-08-06T13:27:50Z2017-08-28T09:03:14ZTrue
+MDU6SXNzdWUyNTQ1NDE3MTM=undefined symbol: _ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev2017-09-01T05:44:40Z2017-10-24T20:40:27ZTrue
+MDU6SXNzdWUyNzQ4NjU4NTY=TypeError: 'zip' object is not subscriptable2017-11-17T13:31:21Z2017-11-20T01:41:25ZTrue
+MDU6SXNzdWUyODM5NTc5NzQ=Saving a network2017-12-21T17:52:00Z2018-04-19T05:38:39ZTrue
+MDU6SXNzdWUyOTM2Nzg3MzA=Syntax Error2018-02-01T20:50:16Z2018-04-19T05:37:08ZTrue
+MDU6SXNzdWUzMDIwNDg1NzU=the cost of regularization in Network2.py total_cost should not in the loop?2018-03-04T01:35:23Z2018-04-19T05:43:35ZTrue
+MDU6SXNzdWUzMjQ0NjI5MTg=replace sigmoid with relu, but useless2018-05-18T15:49:37Z2018-09-27T07:23:15ZTrue
+MDU6SXNzdWUzNjg5NzA4NjU='ascii' codec can't decode byte 0x90 in position 614: ordinal not in range(128)2018-10-11T06:28:55ZFalse
+MDU6SXNzdWUzNjk4ODExMTM=lmbda in update_mini_batch2018-10-14T08:42:40ZFalse
+MDU6SXNzdWUzODA5OTg3Mjc=Missing sigmoid_prime()2018-11-15T04:47:24ZFalse
+MDU6SXNzdWUzODQyMzkzNDQ=repeated calculation problem2018-11-26T09:23:13ZFalse
+MDU6SXNzdWU0MTk2MTg4OTE="Resolving ""AttributeError: module 'numpy.core.multiarray' has no attribute '_get_ndarray_c_version'"" on Python 3.7.2 using numpy 1.1.6"2019-03-11T18:26:49ZFalse
+MDU6SXNzdWU0MjczNDkxNzM='zip' object is not subscriptable2019-03-31T02:17:09ZFalse
+MDU6SXNzdWU0OTE3MzkyNTA=Custom BackPropagation & Neural Network architecture for a Regression problem2019-09-10T15:17:02ZFalse
+MDU6SXNzdWU1MTk1MDE4NTY=variable assigned  but never used2019-11-07T20:44:25Z2019-11-07T20:52:17ZTrue
+MDU6SXNzdWU1MzA2MTk1OTQ=theano warnings with latest version2019-11-30T19:20:14ZFalse
+MDU6SXNzdWU1NzQ3MDAyODE=_pickle.UnpicklingError: invalid load key, '\x00'.2020-03-03T14:18:05ZFalse
+MDU6SXNzdWU1OTYzMjk1Mzk=Not working! 2020-04-08T06:01:14ZFalse
+MDU6SXNzdWU1OTg2NjA4ODk=ValueError: shapes (15,728) and (784,1) not aligned: 728 (dim 1) != 784 (dim 0)2020-04-13T04:11:38Z2020-04-13T06:03:45ZTrue
+MDU6SXNzdWU2MTk4MTI0ODg=Futurewarning: Using a non-tuple sequence for multidimensional indexing is deprecated2020-05-17T22:37:00ZFalse

@@ -1,0 +1,16 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMzI0ODc0Njg=Option to output to GIF/MP4?2018-06-14T17:03:41Z2018-06-14T21:14:25ZTrue
+MDU6SXNzdWUzMzI1MzMxNTk=readme fails to mention WHICH ansi escape sequences are supported2018-06-14T19:26:28Z2018-06-14T19:28:33ZTrue
+MDU6SXNzdWUzMzI1NDk2MDA=Python3 devel requirement2018-06-14T20:18:43Z2018-06-15T22:02:36ZTrue
+MDU6SXNzdWUzMzI2NjA3NDI=Windows cmd.exe and Powershell support2018-06-15T06:33:10ZFalse
+MDU6SXNzdWUzMzI2Nzk2ODQ=Process and play in separate calls2018-06-15T07:57:06Z2018-06-15T22:02:10ZTrue
+MDU6SXNzdWUzMzI4MTk1Mjc=No such file or directory error2018-06-15T15:29:20ZFalse
+MDU6SXNzdWUzMzI4ODM1Mzk=Why?2018-06-15T19:05:42Z2018-06-15T20:42:11ZTrue
+MDU6SXNzdWUzMzI4OTIwNzk=Subgif feature2018-06-15T19:39:00Z2018-06-16T00:58:38ZTrue
+MDU6SXNzdWUzMzI5Njk2ODk=Support saving generated data to a file for local playback 2018-06-16T08:00:08ZFalse
+MDU6SXNzdWUzMzMwMzAxMjc=Support for Raspberry Pi2018-06-17T02:38:55ZFalse
+MDU6SXNzdWUzMzM1NzgxODA=Error:  get error in testing2018-06-19T08:55:31ZFalse
+MDU6SXNzdWUzMzkxNzg3NDA=AttributeError: 'NoneType' object has no attribute 'group' when using remote gif URL2018-07-07T22:14:11ZFalse
+MDU6SXNzdWUzNDE4NzAyMDE=ZeroDivisionError: float division by zero2018-07-17T11:01:23ZFalse
+MDU6SXNzdWUzODU2OTAzOTU=--export does not work with local files2018-11-29T11:27:49ZFalse
+MDU6SXNzdWUzOTYwODEzMDY=--export cuts off right half of gif when using -c2019-01-04T21:57:15ZFalse

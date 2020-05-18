@@ -1,0 +1,17 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMzM2NTQyMDg=Doesn't work - pathname2url Windows compatibility2017-06-05T17:19:15Z2017-06-06T11:07:20ZTrue
+MDU6SXNzdWUyMzM5MTYzODA=Unicode error2017-06-06T14:44:52Z2017-06-09T20:36:22ZTrue
+MDU6SXNzdWUyMzY2NTUwNjk=Your SQLite3 library does not support FTS42017-06-17T11:22:36Z2017-06-23T06:51:27ZTrue
+MDU6SXNzdWUyODUwMzY0MTM="An error occurs because ""Content-Length"" does not exist"2017-12-29T05:32:06Z2018-01-13T07:35:14ZTrue
+MDU6SXNzdWUyOTIwNDc5Mjk=Error if you search for Kernel 4.0.22018-01-26T22:14:44Z2018-01-30T16:17:11ZTrue
+MDU6SXNzdWUyOTc1Mjc3Njc=How do you use the exploit?2018-02-15T17:18:07Z2018-02-26T16:38:04ZTrue
+MDU6SXNzdWUzMzE2NDU0NTA=getsploit --update failed2018-06-12T15:42:12Z2018-07-06T09:35:36ZTrue
+MDU6SXNzdWUzMzE3NDQ0NDM=result of getsploit command2018-06-12T20:37:43Z2018-06-13T12:24:25ZTrue
+MDU6SXNzdWUzNDgwNDc4OTk=Download error2018-08-06T19:13:07Z2018-08-11T08:06:40ZTrue
+MDU6SXNzdWU0MDk2MjQxNjc=UpdateAPI is broken for a week2019-02-13T04:42:56Z2019-02-16T08:51:09ZTrue
+MDU6SXNzdWU0MjU2Mjc3MzY=[Not critical] Escape spaces when the API key entering2019-03-26T20:15:44ZFalse
+MDU6SXNzdWU0NDk1MDg4MjY="os.makedirs ""exist_ok"" does not exist in Python 2"2019-05-28T22:39:52Z2019-05-30T09:07:51ZTrue
+MDU6SXNzdWU0NDk1MTAxNjk=Please provide a real offline mode2019-05-28T22:44:39Z2019-05-30T09:02:58ZTrue
+MDU6SXNzdWU0NzY3ODcyMzY=Multiple CVEs failed with cvelist argument2019-08-05T10:39:06ZFalse
+MDU6SXNzdWU0NzY3ODc1MjY=Feature request2019-08-05T10:39:49ZFalse
+MDU6SXNzdWU1NzQ0OTQzNzY=Issue with local update2020-03-03T08:21:21ZFalse

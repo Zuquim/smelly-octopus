@@ -1,0 +1,35 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMjMzNzA5Mjk=How to make a placeholder for the dnc state?2017-04-21T12:37:29Z2017-04-21T16:18:29ZTrue
+MDU6SXNzdWUyMjQxODY3MTQ=Failed to initialize a dnc state with batch size=12017-04-25T15:52:06Z2017-04-26T15:40:45ZTrue
+MDU6SXNzdWUyMjQzODI2NzA=Scalable DNC2017-04-26T08:21:20Z2017-05-02T09:01:53ZTrue
+MDU6SXNzdWUyMjQzODgyNDk=ipython train.py -- --memory_size=64 --num_bits=8 --max_length=3 NotFoundError 2017-04-26T08:41:26Z2017-04-27T16:55:37ZTrue
+MDU6SXNzdWUyMjQ4NDU5MjI=GPU usage2017-04-27T16:44:11Z2017-05-03T19:34:19ZTrue
+MDU6SXNzdWUyMjUyMDYwNzU=Word embedding usage2017-04-28T22:17:57Z2017-05-02T08:56:15ZTrue
+MDU6SXNzdWUyMjUzNDY1NDA=Output vector inconsistent with the nature paper?2017-04-30T18:55:48Z2017-05-02T08:53:29ZTrue
+MDU6SXNzdWUyMjUzNzU1NzU=Simple comparisons with other rnn core models2017-05-01T02:42:46Z2017-05-02T08:53:00ZTrue
+MDU6SXNzdWUyMjU2NzA2MzY=range of key_strengths2017-05-02T11:43:43Z2017-05-03T09:22:36ZTrue
+MDU6SXNzdWUyMjYxNDQxNjk=write to memory with multiple write heads2017-05-03T23:38:42Z2017-05-04T09:13:13ZTrue
+MDU6SXNzdWUyMzE4OTA1OTM=Replacing sorted allocation with weighted softmax2017-05-28T19:59:09Z2018-01-02T11:40:11ZTrue
+MDU6SXNzdWUyMzI0ODM2ODA=dynamic batch size not work2017-05-31T07:56:24Z2018-01-02T11:44:08ZTrue
+MDU6SXNzdWUyMzU0MDUyODA=Stacked DNC2017-06-13T00:48:12Z2018-01-02T11:40:19ZTrue
+MDU6SXNzdWUyNDM1ODczNTk=The version of sonnet2017-07-18T03:12:09Z2017-07-19T03:17:22ZTrue
+MDU6SXNzdWUyNDM5ODI5Mzk=Error running the repeat-copy example: 'TypeError: cell must be an instance of RNNCell'2017-07-19T09:46:15Z2017-07-20T08:51:27ZTrue
+MDU6SXNzdWUyNDY5NDM5Mjk=wherer is the official code release  as the paper promised?2017-08-01T03:17:21Z2018-01-02T11:47:57ZTrue
+MDU6SXNzdWUyNDgxMzA3Mzg=Confusion about the memory module2017-08-04T22:22:37Z2017-08-07T16:00:40ZTrue
+MDU6SXNzdWUyNjM5MTc1Nzk=You can avoid the top_k and allow usage to be differentiable2017-10-09T14:35:55Z2018-01-02T11:48:06ZTrue
+MDU6SXNzdWUyOTgwMzgxODE=Can i use dnc with speech signals?2018-02-17T21:32:44Z2018-05-14T10:52:25ZTrue
+MDU6SXNzdWUzMDQ2MzI2MDI=Installation does not work2018-03-13T05:25:45Z2018-03-13T20:11:35ZTrue
+MDU6SXNzdWUzMDQ4ODQ5NDI=Can you post a modified version in which you can chose any task of your choice, not only the input reconstruction?2018-03-13T18:30:55Z2018-06-27T10:45:11ZTrue
+MDU6SXNzdWUzMDUwNTk4MTA=Orange python widget inputs and output?2018-03-14T08:15:09Z2018-05-14T11:00:13ZTrue
+MDU6SXNzdWUzMDU2NTMzMTk=I seen tf.nn.dynamic_rnn in tensorflow documentation how do I prepare some example data csv and python time sereis info and full code?2018-03-15T17:41:01Z2018-05-14T11:11:00ZTrue
+MDU6SXNzdWUzMTI1NTI2Mjg=Must the batch size be fixed?2018-04-09T14:24:55Z2018-04-11T15:01:08ZTrue
+MDU6SXNzdWUzMTY0OTg2Mjk=How to improve the use of cpu2018-04-21T14:58:48Z2018-05-14T11:03:01ZTrue
+MDU6SXNzdWUzMjAxMTMwOTM=How to print the value of read/write head and memory?2018-05-03T23:27:59Z2018-05-14T10:52:11ZTrue
+MDU6SXNzdWUzMjIyMzcxMjg=Tensorboard graph visualization2018-05-11T09:52:33Z2018-09-26T19:51:37ZTrue
+MDU6SXNzdWUzMjUwNzg2MzI=Visualization Tools2018-05-21T22:22:39Z2018-09-26T19:52:06ZTrue
+MDU6SXNzdWUzMzU4NTMxNzU=What values are saved between episodes?2018-06-26T14:40:58Z2018-06-27T10:43:57ZTrue
+MDU6SXNzdWUzNDE5MjEyNTI=Is it possible to learn the functionality of a Set data structure with DNC?2018-07-17T13:32:38Z2018-07-24T22:08:07ZTrue
+MDU6SXNzdWUzNzU5NDUyODM=Formal description of multiple write heads2018-10-31T12:46:32ZFalse
+MDU6SXNzdWUzNzcyMjkwMzY=can't run train.py2018-11-05T02:33:09ZFalse
+MDU6SXNzdWU0MDcyNTI4NDk=DNC with Reinforcement Learning examples? 2019-02-06T14:09:36ZFalse
+MDU6SXNzdWU0OTgxMDE4MDQ=How to make a placeholder with changed batches for the dnc state? thanks2019-09-25T07:29:25ZFalse

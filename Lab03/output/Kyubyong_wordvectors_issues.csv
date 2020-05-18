@@ -1,0 +1,20 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxOTczNTI2NTg=Embedding Projector Format2016-12-23T11:15:07ZFalse
+MDU6SXNzdWUyMDAwODM1NzA=Missing numpy objects for Portuguese2017-01-11T12:43:56Z2017-01-11T14:56:20ZTrue
+MDU6SXNzdWUyMzE4OTgzOTA=comparing word2vec and fastText2017-05-28T22:14:56ZFalse
+MDU6SXNzdWUyMzY2NjY0NDk=First step of workflow isn't specific enough2017-06-17T15:22:42ZFalse
+MDU6SXNzdWUyMzY4MDQ0MTM=The link to Japanese word2vec embeddings links to Javanese2017-06-19T07:40:03Z2017-07-03T13:56:08ZTrue
+MDU6SXNzdWUyNDY2ODAxMDA=What tokenizer for Bahasa?2017-07-31T08:25:56ZFalse
+MDU6SXNzdWUyNTE3Mzk1MDY=Encoding Type for Pretrained Models2017-08-21T18:47:00Z2017-08-21T21:25:09ZTrue
+MDU6SXNzdWUyNTQ4MzMxOTg=Error while loading the bin file2017-09-02T20:08:38Z2017-10-14T03:34:07ZTrue
+MDU6SXNzdWUyNjU1NzcwMzA=Details on word2vec model2017-10-15T14:41:53ZFalse
+MDU6SXNzdWUyOTA1Njc0MTU=UnicodeDecodeError: 'utf8' codec can't decode byte 0x80 in position 0: invalid start byte2018-01-22T18:26:09ZFalse
+MDU6SXNzdWUzMDE1MTQxNzY=fasttext file format seems wrong2018-03-01T18:39:18ZFalse
+MDU6SXNzdWUzMDMyMDA0Nzk=Read word2vec in Pyhton 2.72018-03-07T17:59:13Z2018-03-12T12:11:13ZTrue
+MDU6SXNzdWUzMDkxOTk5NzI=Divide word vectors into simply Chinese and traditional Chinese2018-03-28T02:35:50Z2018-04-11T10:12:03ZTrue
+MDU6SXNzdWUzMTA5NTU1OTE="Calling word embeddings ""models"" is a bit misleading."2018-04-03T18:53:33ZFalse
+MDU6SXNzdWUzMzE0OTA1NTM=Build out-of-vocabulary word fom data.bin2018-06-12T08:37:38ZFalse
+MDU6SXNzdWUzNDc5Njc5NDI=Unable to get most similar word2018-08-06T15:17:54Z2018-08-08T10:56:48ZTrue
+MDU6SXNzdWUzNjk3OTA3ODY=Loading embeddings2018-10-13T10:49:50ZFalse
+MDU6SXNzdWUzOTU4MDA0NTY=Dictionary for Japanese morpheme analyzer is not mentioned2019-01-04T03:44:10ZFalse
+MDU6SXNzdWU1NDc4MTQyNDU=Training specification for pretrained model2020-01-10T01:28:52ZFalse

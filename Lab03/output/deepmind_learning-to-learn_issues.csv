@@ -1,0 +1,27 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxOTQ0MzU2NTU=Initialization Error for Problems2016-12-08T20:26:07Z2016-12-09T05:26:12ZTrue
+MDU6SXNzdWUxOTQ1NDEwMjE=Can not run 'simple' problem. TypeError: ones_initializer() got multiple values for keyword argument 'dtype' 2016-12-09T08:40:43Z2016-12-12T09:37:57ZTrue
+MDU6SXNzdWUxOTQ3NzEyOTY=Outputting the optimized parameters after or during evaluation2016-12-10T14:34:38Z2016-12-21T10:47:42ZTrue
+MDU6SXNzdWUxOTYzNDg2OTA=TypeError when trying with latest Tensorflow2016-12-19T07:35:16Z2016-12-19T12:37:57ZTrue
+MDU6SXNzdWUyMDE2ODc4Nzk=Learning-to-learn code doesn't run after dependencies met AFAIK with an error message.2017-01-18T20:47:21Z2017-01-20T00:09:40ZTrue
+MDU6SXNzdWUyMDU0MDc0NTE=AttributeError: module 'types' has no attribute 'StringTypes'2017-02-05T07:15:59Z2017-02-09T17:00:06ZTrue
+MDU6SXNzdWUyMDY0MjA5MDk=AttributeError: 'Template' object has no attribute 'variable_scope'2017-02-09T06:54:06Z2017-02-09T09:46:10ZTrue
+MDU6SXNzdWUyMDY1NDQzNTc=AttributeError: module 'tensorflow.contrib.rnn' has no attribute 'RNNCell'2017-02-09T15:54:29Z2017-02-09T15:56:46ZTrue
+MDU6SXNzdWUyMDkxNjAxNTY=Debugging the meta-optimizer2017-02-21T14:24:51ZFalse
+MDU6SXNzdWUyMTg5MTY5MjA=Distributed version of this?2017-04-03T12:25:17ZFalse
+MDU6SXNzdWUyMjMwOTUwNDc=AttributeError: 'module' object has no attribute 'AbstractModule'2017-04-20T14:53:18ZFalse
+MDU6SXNzdWUyMjQ4MjAzNDg=Just a ConvNet 2017-04-27T15:22:12Z2017-05-08T10:01:20ZTrue
+MDU6SXNzdWUyMjYzNzEyMjU=Dependency: dill2017-05-04T18:37:06ZFalse
+MDU6SXNzdWUyMzA3MTk2MTg=Resetting each epoch? 2017-05-23T14:06:50ZFalse
+MDU6SXNzdWUyNjU4MTQ0MjA=No restore logic in evaluate.py2017-10-16T15:36:38Z2017-10-17T00:48:35ZTrue
+MDU6SXNzdWUyODgzMzUwOTM=Problems for CIFAR experiments2018-01-13T14:58:29ZFalse
+MDU6SXNzdWUyOTgwNzM2Mzc=structures don't have the same sequence type2018-02-18T10:13:39Z2018-11-27T15:15:03ZTrue
+MDU6SXNzdWUzNjExNTQwODI=windows run error2018-09-18T06:31:41Z2018-09-18T06:32:29ZTrue
+MDU6SXNzdWUzODgzMzk2NTI=Tensorflow and sonnet versions?2018-12-06T18:25:47ZFalse
+MDU6SXNzdWUzOTkzMzM5MTg=fatal error:iso:no such a file or directory.2019-01-15T12:58:28Z2019-01-15T13:00:56ZTrue
+MDU6SXNzdWU0MzUzNjgyMjA=TypeError: The two structures don't have the same nested structure.2019-04-20T07:52:05ZFalse
+MDU6SXNzdWU0MzU1ODEyMTc=How to add accuracy prediciton2019-04-22T02:59:49ZFalse
+MDU6SXNzdWU0NjE1NDI2Mjc=Is BPTT implemented here?2019-06-27T13:52:23Z2019-08-07T17:09:13ZTrue
+MDU6SXNzdWU0NzAyNjY1NDE=mnist result is not good2019-07-19T10:58:48Z2019-07-25T22:37:15ZTrue
+MDU6SXNzdWU0NzU5NDg0MDM=cifar queues problem2019-08-02T00:53:28ZFalse
+MDU6SXNzdWU1Mzk3NTYzMjI=MNIST not reproducible 2019-12-18T15:35:34Z2019-12-26T21:22:23ZTrue

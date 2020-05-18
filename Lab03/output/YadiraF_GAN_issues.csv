@@ -1,0 +1,11 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMjY4NDAwMDY=A small question2017-05-07T08:30:55Z2017-05-07T09:36:23ZTrue
+MDU6SXNzdWUyMjY4NDA3OTE=Papers2017-05-07T08:45:59Z2017-05-07T14:42:06ZTrue
+MDU6SXNzdWUyMzcwNzg5NTk=batch norm problem2017-06-20T02:57:29Z2017-06-20T06:32:00ZTrue
+MDU6SXNzdWUyNDg2OTc4Mzk="encounter ValueError when I ""python dcgan.py"""2017-08-08T12:26:19Z2017-08-23T02:05:46ZTrue
+MDU6SXNzdWUyNjU3MzkyNDY=where's the celeba dataset?2017-10-16T11:40:26Z2018-03-21T13:01:52ZTrue
+MDU6SXNzdWUyOTE1MjE4NDM=ValueError: Cannot feed value of shape (0,) for Tensor u'Placeholder:0', which has shape '(?, 64, 64, 3)'2018-01-25T10:33:14Z2018-03-22T12:06:45ZTrue
+MDU6SXNzdWUzMzA4Nzc3NDc=Some puzzles about the hidden variable C2018-06-09T11:15:09ZFalse
+MDU6SXNzdWUzMzkzNjQ0NjQ=wgan_conv runs error2018-07-09T09:06:03ZFalse
+MDU6SXNzdWUzNjIxMzEyOTg=infogan-latent variables2018-09-20T10:52:53ZFalse
+MDU6SXNzdWU0MjUxOTkzNjg=After training , cannot test the cgan if i define a variable and use cgan.generate(example) always wrong2019-03-26T02:38:43ZFalse

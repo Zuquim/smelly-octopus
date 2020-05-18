@@ -1,0 +1,27 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNzI4MTcyMzk=Dry run option2016-08-23T21:55:58Z2016-08-25T17:55:57ZTrue
+MDU6SXNzdWUxNzI4MjU5NzA=Should the assert_keys argument to tokens_as_dict check for subset?2016-08-23T22:50:16Z2016-08-23T23:07:53ZTrue
+MDU6SXNzdWUxNzI5NTExNzQ=bin/__main__.py2016-08-24T13:26:45Z2016-08-24T17:04:53ZTrue
+MDU6SXNzdWUxNzI5NTEyOTg=pypi distfile does not include tests2016-08-24T13:27:14Z2016-08-25T17:56:32ZTrue
+MDU6SXNzdWUxNzI5OTQ2MDY=unintended replacements in remove_needless_u_specifier example2016-08-24T16:08:30Z2016-08-24T21:58:55ZTrue
+MDU6SXNzdWUxNzMwMjAyMzY=Set up travis-ci2016-08-24T18:07:32Z2016-08-24T20:14:12ZTrue
+MDU6SXNzdWUxNzMyMTY0NzA=Dry run option should have variant to show diff2016-08-25T14:20:27Z2016-10-14T18:31:14ZTrue
+MDU6SXNzdWUxNzMyNjY4Njc=How can I match only standalone NAMEs?2016-08-25T17:45:06Z2016-08-25T17:58:41ZTrue
+MDU6SXNzdWUxNzMyNzMzNjc=Support --grep option to only undebt the files that contain a particular string2016-08-25T18:13:23Z2016-08-29T17:48:12ZTrue
+MDU6SXNzdWUxNzMyODYwMTA=Adding a 'stdlib' of anti-patterns fixes2016-08-25T19:14:24Z2017-02-03T02:19:24ZTrue
+MDU6SXNzdWUxNzM1MjExNzU=Example test case for Swift 2.2 to Swift 3.02016-08-26T19:02:03Z2016-08-26T22:45:26ZTrue
+MDU6SXNzdWUxNzM1MzgxMjM=Modify CLI to support input paths as positional arguments2016-08-26T20:34:14Z2016-08-29T02:29:04ZTrue
+MDU6SXNzdWUxNzM2ODU4OTk="Include a ""Tips"" section in the README"2016-08-29T02:41:01Z2016-08-29T17:58:02ZTrue
+MDU6SXNzdWUxNzM4MzM4Nzc=Remove directory traversal and multiprocess2016-08-29T18:01:46Z2016-08-29T23:40:24ZTrue
+MDU6SXNzdWUxNzM4NDE0ODM=tox is not in requirements-dev.txt2016-08-29T18:37:08Z2016-08-29T18:56:07ZTrue
+MDU6SXNzdWUxNzM4NDc3MTg=Improve test coverage to 100%2016-08-29T19:06:00Z2016-08-30T19:39:26ZTrue
+MDU6SXNzdWUxNzM4NzA3Njg=Automate generation of CLI usage2016-08-29T20:57:33ZFalse
+MDU6SXNzdWUxNzM4NzcxNzc=Allow pattern to be a module instead of a file2016-08-29T21:29:14Z2016-08-30T22:24:26ZTrue
+MDU6SXNzdWUxNzQwOTg1MzY=Refactor to avoid needing to patch `sys.argv`2016-08-30T19:02:44Z2016-10-14T18:28:02ZTrue
+MDU6SXNzdWUxNzQxNjI5Mjk=Remove support for path-like module names2016-08-31T01:18:55Z2016-09-13T21:16:58ZTrue
+MDU6SXNzdWUxNzQyOTMxMzg=Add some contribution documentation2016-08-31T14:46:39Z2016-09-08T15:35:11ZTrue
+MDU6SXNzdWUxNzQzMDE4Mzg=Replace deprecated `<>` operator with `!=`2016-08-31T15:19:29Z2016-09-01T15:51:39ZTrue
+MDU6SXNzdWUxNzQzMjEwMDk=Create a submodule under undebt.pattern for languages?2016-08-31T16:37:36Z2016-09-01T15:52:01ZTrue
+MDU6SXNzdWUxNzQ4NzM4OTc=`_file_processor` no longer needs to be an object2016-09-03T02:09:23Z2016-09-13T21:15:29ZTrue
+MDU6SXNzdWUxNzU4ODUxOTc=readthedocs is out of date2016-09-08T22:54:02Z2016-09-12T23:48:20ZTrue
+MDU6SXNzdWUxNzgxMTg4Nzk=Add a helper function to match exactly N repititions of a pattern2016-09-20T17:06:36Z2016-09-22T17:31:06ZTrue

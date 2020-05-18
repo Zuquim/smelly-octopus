@@ -1,0 +1,25 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNjk0NDE5NTM=Support for custom resources2017-10-29T22:12:08Z2017-11-08T03:52:12ZTrue
+MDU6SXNzdWUyNzIwMzg0Mjc="Add ""sl"" to ""get"" for --show-labels"2017-11-08T00:54:28Z2017-11-08T03:27:37ZTrue
+MDU6SXNzdWUyNzIwMzg4NDY=Add krun=kubectl run -i -t --rm2017-11-08T00:56:52Z2017-11-08T03:27:37ZTrue
+MDU6SXNzdWUyNzcxODM4MjQ=ksysa doesn't make sense2017-11-27T21:58:07Z2020-04-29T17:16:51ZTrue
+MDU6SXNzdWUyNzc5OTAwNTk=Difficult to remember and utilise most of them2017-11-30T03:53:19Z2018-01-03T16:15:03ZTrue
+MDU6SXNzdWUyODU2NzY3OTQ=Add NetworkPolicy resource support2018-01-03T12:44:55Z2018-01-03T16:14:53ZTrue
+MDU6SXNzdWUyOTk3ODY4Njc=Support cronjobs and jobs2018-02-23T17:20:04Z2018-02-23T17:32:31ZTrue
+MDU6SXNzdWUzMjc0MjI4NTA=Single quotes from labels removed 2018-05-29T17:45:59Z2018-05-29T18:21:08ZTrue
+MDU6SXNzdWUzNDA1NTYxMDU=Problem using the aliases with the `watch` command2018-07-12T09:20:20Z2018-07-12T16:58:04ZTrue
+MDU6SXNzdWUzNTYzOTgyMjY=Fish abbreviations2018-09-03T08:04:44Z2019-01-31T23:29:09ZTrue
+MDU6SXNzdWU0MDMxOTM0MzM=No aliases for `kubectl logs -p <podName>`2019-01-25T15:03:14Z2019-01-31T07:06:02ZTrue
+MDU6SXNzdWU0MDU3MTI4NTM=Completion not working with Bash2019-02-01T13:58:32Z2019-02-01T18:18:00ZTrue
+MDU6SXNzdWU0MTYzMTkwNjQ=`function kubectl()` in README doesn't handle quoted arguments correctly2019-03-01T23:25:32Z2020-04-29T17:15:52ZTrue
+MDU6SXNzdWU0MTkxNTQyMTA=rename dep to d ?2019-03-10T07:00:29Z2019-03-11T03:19:43ZTrue
+MDU6SXNzdWU0NDgxOTA4ODY=Why not 'ed' for edit ?2019-05-24T14:07:38Z2019-05-26T22:37:08ZTrue
+MDU6SXNzdWU0NzIwMTk2OTM=Printing the command line breaks ps-12019-07-24T00:06:03Z2019-07-24T08:05:21ZTrue
+MDU6SXNzdWU0NzQ2NDMyNjE=Why this script try to connect to server when startup?2019-07-30T15:09:52Z2019-07-30T15:28:55ZTrue
+MDU6SXNzdWU0NzUwOTYxNTc=Support configuration to handle more use-cases while not sacrificing the performance2019-07-31T11:46:58ZFalse
+MDU6SXNzdWU0OTM0Njk4NzQ=Consider `kpf` for kubectl port-forward2019-09-13T18:53:39Z2019-09-17T21:29:46ZTrue
+MDU6SXNzdWU1MDIwNTMyNTQ=Support more resources2019-10-03T13:03:17Z2020-04-29T17:17:08ZTrue
+MDU6SXNzdWU1MDMzMDQwNDA=Add --show-labels for nodes, configmaps and other resources.2019-10-07T08:29:38Z2020-04-29T17:15:18ZTrue
+MDU6SXNzdWU1NDA1ODU0MjY=Watch examples in Readme.md are wrong2019-12-19T21:42:10Z2020-04-29T17:13:54ZTrue
+MDU6SXNzdWU1NTgzNTQ0NzE=function kubectl() {...} doesn't provide any autocomplete of the kubectl command2020-01-31T20:25:08Z2020-01-31T20:27:07ZTrue
+MDU6SXNzdWU2MDM4MDA5NDI=kubectl exec [POD] [COMMAND] is DEPRECATED2020-04-21T08:15:18ZFalse

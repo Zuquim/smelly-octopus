@@ -1,0 +1,53 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNzAxNDEyNDU=Batch operations2017-10-31T22:39:15ZFalse
+MDU6SXNzdWUyOTAxMTk0NDk=inconsistent tensor size2018-01-19T21:57:46Z2018-01-19T22:13:05ZTrue
+MDU6SXNzdWUyOTk5OTE2NzY=build symmetric adjacency matrix2018-02-25T02:40:05Z2018-02-26T11:54:35ZTrue
+MDU6SXNzdWUzMDI2MTY1ODU=Question normalization trick2018-03-06T09:06:24Z2018-03-06T09:12:08ZTrue
+MDU6SXNzdWUzMDI2NjQ3NTA= Chebyshev convolution in Pytroch and its kernel size2018-03-06T11:31:04Z2018-04-09T18:47:51ZTrue
+MDU6SXNzdWUzMDU0OTM5Njk=How convolutional filters are initialized in spectral domain ? 2018-03-15T10:30:23Z2018-03-15T13:21:18ZTrue
+MDU6SXNzdWUzMDkyMDI0MzY=Symmetrically normalize adjacency matrix2018-03-28T02:51:08Z2018-03-28T02:52:49ZTrue
+MDU6SXNzdWUzMjgwMjIwMTU=TypeError: expected torch.FloatTensor (got torch.LongTensor)2018-05-31T07:20:07ZFalse
+MDU6SXNzdWUzMzc2OTAzNzU=the normalize function in utils.py 2018-07-02T22:56:52ZFalse
+MDU6SXNzdWUzMzkzNTQ5Mzc=datasets partition2018-07-09T08:37:48ZFalse
+MDU6SXNzdWUzNDE5OTU3OTM=Scale up to million of nodes2018-07-17T16:34:26Z2018-07-19T17:01:20ZTrue
+MDU6SXNzdWUzNTU5NTExNjk=F.log_softmax(x, dim=1) output is not probability?2018-08-31T11:54:45ZFalse
+MDU6SXNzdWUzNTc2NDI5NjE=Why test sample number is much more than train / validation sample? 2018-09-06T12:57:56Z2018-09-06T14:14:29ZTrue
+MDU6SXNzdWUzNjI5NTQxNzg=can I adapt the code to multi-label classificaiton?2018-09-23T16:02:04ZFalse
+MDU6SXNzdWUzNjMwNzk4NjY=torch.spmm2018-09-24T09:58:23ZFalse
+MDU6SXNzdWUzNjM0NzY4MzY=What is different from the original code?2018-09-25T09:02:40ZFalse
+MDU6SXNzdWUzNjQ1NTAzNzI=load own adjacency matrix and features2018-09-27T16:11:25ZFalse
+MDU6SXNzdWUzNjk5MzcwMDc=Processing a single graph in batch mode2018-10-14T19:50:00Z2018-10-20T10:04:47ZTrue
+MDU6SXNzdWUzNzA5NDgyMTc=non-square adj matrix2018-10-17T08:08:26Z2018-10-18T10:17:12ZTrue
+MDU6SXNzdWUzNzcxOTk4NzM=Could I get the node embedding?2018-11-04T22:03:25ZFalse
+MDU6SXNzdWUzODYwMTY4Mjk=Citeseer data set accuracy2018-11-30T02:57:26ZFalse
+MDU6SXNzdWUzOTYxMjgzMTc=I am confused about the dataset2019-01-05T03:20:27ZFalse
+MDU6SXNzdWUzOTg2NTc1NDc=The cora sites graph is not connected?2019-01-13T13:27:56ZFalse
+MDU6SXNzdWU0MDM1NTE1NDQ=Where is the implementation of the convolved signal matrix2019-01-27T13:35:23ZFalse
+MDU6SXNzdWU0MDYwOTU5MDU=Vocabulary items2019-02-03T14:52:09ZFalse
+MDU6SXNzdWU0MTE1MDk0NTI=No features + sparse labels training2019-02-18T14:45:23ZFalse
+MDU6SXNzdWU0MTYzODc5NjQ=Using GCN as encoder alone for multiple small graph data.2019-03-02T11:30:18ZFalse
+MDU6SXNzdWU0MzM3NjU2NzA=How to achieve the training using multi-graph (each graph/mesh from an 3D medical image)?2019-04-16T12:57:43ZFalse
+MDU6SXNzdWU0NDc5NjcyNDY=How to implement residual connections in gcn? 2019-05-24T03:52:22ZFalse
+MDU6SXNzdWU0NDkwNDEyMDY=Question about adj2019-05-28T02:51:43Z2019-05-28T08:22:45ZTrue
+MDU6SXNzdWU0NTExOTM3ODY=Data format2019-06-02T13:46:50ZFalse
+MDU6SXNzdWU0NTYwMjA4NTM=GPU usage is 0 when training2019-06-14T01:29:29Z2019-06-15T10:22:57ZTrue
+MDU6SXNzdWU0NTkxODczMTA= determinism problem2019-06-21T13:03:35Z2019-11-10T13:23:42ZTrue
+MDU6SXNzdWU0NjEzNDU2MTI=Xavier initialization use output size instead of input size2019-06-27T06:42:05ZFalse
+MDU6SXNzdWU0NjIyNzc3Mjg=The intended output2019-06-29T07:51:27ZFalse
+MDU6SXNzdWU0NzY1NTYwMzI=question about inputs matrix X, the node feature matirx2019-08-04T13:54:37ZFalse
+MDU6SXNzdWU0ODA5NzYxOTE=What is difference between tensorflow version and pytorch version?2019-08-15T03:18:33ZFalse
+MDU6SXNzdWU0OTc1Mzg3MTk=Multiple instance learning and GCN.. 2019-09-24T08:31:15ZFalse
+MDU6SXNzdWU1MDM4NjU3MTU=What is the difference between two adjacency matrix normalization?2019-10-08T07:01:28ZFalse
+MDU6SXNzdWU1MDcyMDcwNzA=The SpecialSpmmFunction Class question2019-10-15T12:19:14ZFalse
+MDU6SXNzdWU1MTExMjI3NzQ=output = model(features, adj)  Are test features  involved in the trainning process?2019-10-23T07:10:00Z2019-10-23T12:45:49ZTrue
+MDU6SXNzdWU1MTEzMDAyNTI=output = model(features, adj) Are test features involved in the trainning process?2019-10-23T12:48:22ZFalse
+MDU6SXNzdWU1MTI0MDI4NzM=Why Early Stop is not leverage in this codes?2019-10-25T09:20:45ZFalse
+MDU6SXNzdWU1MTU2NjA1MTg=Node Classification for Multiple Graphs2019-10-31T18:43:28Z2019-11-18T17:01:25ZTrue
+MDU6SXNzdWU1MzY5MzM4NjY=Still curious about the code of building symmetric adjacency matrix 2019-12-12T11:57:03Z2019-12-12T12:34:00ZTrue
+MDU6SXNzdWU1NDg1MTI5Mjc=About symmetrically normalization of adjacency matrix2020-01-12T02:46:33Z2020-01-12T04:03:36ZTrue
+MDU6SXNzdWU1NTg0NTAxMjg=Order of nodes2020-02-01T00:59:30ZFalse
+MDU6SXNzdWU1NzAwMDgzNTI=Using for Regression2020-02-24T17:31:39ZFalse
+MDU6SXNzdWU1NzUyNDk4NTU=Question about the results2020-03-04T09:21:47ZFalse
+MDU6SXNzdWU2MDI0NDMwMzc=Values of some parameters 2020-04-18T11:55:10ZFalse
+MDU6SXNzdWU2MDI4NTU0ODQ=specifying modes train, validation and test2020-04-19T23:53:44ZFalse
+MDU6SXNzdWU2MDI4NjAwNDg=Where is Filter parameters in the code?2020-04-20T00:15:48ZFalse

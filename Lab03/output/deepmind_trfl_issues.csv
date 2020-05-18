@@ -1,0 +1,19 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzNzIyNzUxODc=Help installing on Windows 10 via Anaconda Environment2018-10-21T03:27:45Z2018-10-21T04:25:32ZTrue
+MDU6SXNzdWUzNzUwNjI4MTQ=Add/alias dpg critic update2018-10-29T15:07:31Z2018-11-09T18:25:11ZTrue
+MDU6SXNzdWUzODE4Mjc2MzY=Clarification of some abbreviations?2018-11-17T04:41:47Z2018-11-18T03:27:37ZTrue
+MDU6SXNzdWUzODY0NzcwOTM=policy_gradient_loss batch_shape requirements2018-12-01T17:16:35Z2018-12-05T14:29:23ZTrue
+MDU6SXNzdWU0MDczODY4NjA=ImportError: cannot import name gen_distribution_ops2019-02-06T19:11:05Z2019-03-18T09:03:13ZTrue
+MDU6SXNzdWU0MTE4NDQwMzM="Raise ""error: could not create 'build': File exists"" while installing"2019-02-19T10:10:54Z2019-04-05T17:00:29ZTrue
+MDU6SXNzdWU0MTY4MTY0MTE=Is gen_distribution_ops.py missing?2019-03-04T14:04:33Z2019-03-05T11:32:09ZTrue
+MDU6SXNzdWU0MjA2NDU1MTc=import trfl not working2019-03-13T18:08:13Z2019-03-18T05:41:13ZTrue
+MDU6SXNzdWU0MjUwNjU0NTA=tensorflow.python.framework.errors_impl.NotFoundError: _gen_distribution_ops.so2019-03-25T18:58:27Z2019-03-26T08:48:52ZTrue
+MDU6SXNzdWU0MjUwODIzNjQ=Removing tf.contrib 2019-03-25T19:42:03Z2019-03-26T09:02:02ZTrue
+MDU6SXNzdWU0MzEyNDAxMzA=Trouble Installing TRFL 1.0.1 in Colab2019-04-09T23:34:39Z2019-04-09T23:49:27ZTrue
+MDU6SXNzdWU0MzU0OTQxMTk=Tensorflow2.0 support? and Request example notebooks(sample projects)2019-04-21T09:56:52ZFalse
+MDU6SXNzdWU0NDMyMDcxNTc=Issue with pip install trfl on MacOs2019-05-13T05:07:15Z2020-04-16T13:33:55ZTrue
+MDU6SXNzdWU0Njk2ODkwNjI=Unable to install trfl on Windows 10 via Anaconda Prompt2019-07-18T10:21:11Z2019-07-23T22:53:50ZTrue
+MDU6SXNzdWU0OTI5NTU5MTY=target 'libtensorflow_framework.so' is both a rule and a file; please choose another name for the rule2019-09-12T18:16:06Z2019-09-14T15:27:32ZTrue
+MDU6SXNzdWU1NjE5NjE2MjE=How is deterministic policy gradient being evaluated?2020-02-08T03:13:22Z2020-02-11T17:26:15ZTrue
+MDU6SXNzdWU1NzI0ODU4NDc=Pre-built python 3.7 packages2020-02-28T02:48:41ZFalse
+MDU6SXNzdWU1OTgyOTg3NzE=Questions about retrace implementation2020-04-11T16:12:20Z2020-04-14T13:33:01ZTrue

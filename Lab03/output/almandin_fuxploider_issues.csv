@@ -1,0 +1,25 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNDQxMTEwMjA=[Feature Request] Pypi package2017-07-19T17:09:32Z2018-01-27T10:24:08ZTrue
+MDU6SXNzdWUyODkyMTU5OTg=OSX - requirements - FIXED2018-01-17T10:33:14Z2018-01-17T15:14:36ZTrue
+MDU6SXNzdWUyOTkyNDQ1MTU=Nice Tool. But need some tutorials on DVWA or something2018-02-22T07:13:47Z2018-03-12T10:40:54ZTrue
+MDU6SXNzdWUzMjE2MzQ0ODE=No Module named requests 2018-05-09T16:12:07Z2018-05-20T10:24:27ZTrue
+MDU6SXNzdWUzMzA5NDI1MjU=site with untrusted cert - disable verify cert2018-06-10T05:45:40Z2018-06-10T17:39:24ZTrue
+MDU6SXNzdWUzNjI4NTgwOTU=Non-ASCII character '\xc3' in file fuxploider/UploadForm.py on line 49, but no encoding 2018-09-22T13:41:23Z2018-11-02T18:20:55ZTrue
+MDU6SXNzdWUzNzUxMTE4NDQ=No module named 'coloredlogs'2018-10-29T16:44:36Z2018-11-02T12:46:10ZTrue
+MDU6SXNzdWUzNzU5MTg3NjE=SyntaxError: invalid syntax2018-10-31T11:33:12Z2018-10-31T17:48:00ZTrue
+MDU6SXNzdWUzNzYyNzExODI=Error2018-11-01T06:33:25Z2018-11-01T06:35:56ZTrue
+MDU6SXNzdWUzNzY1MjUwODQ=templates contains utf-8, which my python3 balks at2018-11-01T18:57:35ZFalse
+MDU6SXNzdWUzNzk3NDA2ODc=Warning2018-11-12T11:45:29Z2020-04-17T15:41:10ZTrue
+MDU6SXNzdWUzODAwNzM1ODE=issue2018-11-13T06:07:32Z2018-11-13T06:25:37ZTrue
+MDU6SXNzdWUzODM3MTkyNTA=TypeError when uploading payloads2018-11-23T07:00:00Z2019-01-11T20:43:35ZTrue
+MDU6SXNzdWU0MTUyNzE1MzQ=Print issue2019-02-27T18:45:13Z2019-02-28T16:56:24ZTrue
+MDU6SXNzdWU0MzE5MDQ5NjM=FileNotFoundError: [Errno 2] No such file or directory: 'templates.json'2019-04-11T08:52:32ZFalse
+MDU6SXNzdWU0ODY2NjkwNzA=Question - How to use in private sessions2019-08-29T00:13:56Z2020-03-26T21:45:24ZTrue
+MDU6SXNzdWU1MDgyOTc1NjY=No module named 'coloredlogs'2019-10-17T07:47:25ZFalse
+MDU6SXNzdWU1NDI5NTgyOTA=Error in fuxploider.py line 12  (ImportError: No module named 'coloredlogs')2019-12-27T18:45:09ZFalse
+MDU6SXNzdWU1NTE4NDUxMDQ=No module named 'coloredlogs' in windows2020-01-19T00:28:34Z2020-05-10T09:07:02ZTrue
+MDU6SXNzdWU1NTM4OTg3NTA=AttributeError: 'str' object has no attribute 'text'2020-01-23T02:10:15ZFalse
+MDU6SXNzdWU1ODg3MjQyMTQ=How to use this tool in private sessions ?2020-03-26T20:58:22Z2020-03-26T21:45:34ZTrue
+MDU6SXNzdWU1OTI0NTQ3MTA=where is coloredlogs ?2020-04-02T08:34:45Z2020-05-10T08:35:10ZTrue
+MDU6SXNzdWU1OTUyOTI2Nzk=i have error when run commund2020-04-06T17:27:26Z2020-04-17T15:41:33ZTrue
+MDU6SXNzdWU2MDExODUxODA=I can't seem to get it working2020-04-16T15:46:10ZFalse

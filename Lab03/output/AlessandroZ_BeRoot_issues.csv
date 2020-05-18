@@ -1,0 +1,18 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyMjI0NTM1ODg=when put this comand python beRoot.py i have this bug2017-04-18T15:23:23Z2017-04-19T17:18:23ZTrue
+MDU6SXNzdWUyMzgzODk1NjU=32-bits pre-compiled binary2017-06-25T16:06:37Z2017-08-14T13:20:56ZTrue
+MDU6SXNzdWUyMzgzOTMyMjI=WebClient check failing with ValueError: Procedure probably called with not enough arguments (4 bytes missing2017-06-25T17:13:36Z2017-08-14T13:16:38ZTrue
+MDU6SXNzdWUyNTEyNDMzNTI=Issue with check_webclient2017-08-18T13:21:21Z2017-08-23T15:45:07ZTrue
+MDU6SXNzdWUyNTU5NTk5MjE=False detection of permission to create a service with openscmanager2017-09-07T14:38:20Z2017-09-13T14:32:43ZTrue
+MDU6SXNzdWUyOTQ0Mjk2MTA=Reopening of issue #3 ValueError: Procedure probably called with not enough arguments (4 bytes missing )2018-02-05T15:19:46Z2018-02-05T15:20:26ZTrue
+MDU6SXNzdWUzMzM0MTY5OTM=Python 3 compatibility2018-06-18T20:10:31Z2018-07-28T18:44:56ZTrue
+MDU6SXNzdWUzNDQ5Nzg3Mjg=Picture2018-07-26T19:39:20Z2018-07-26T19:39:25ZTrue
+MDU6SXNzdWUzNjAwMzk5NDA=Linux Exploit Suggester2018-09-13T19:46:26Z2018-09-14T08:33:11ZTrue
+MDU6SXNzdWU0MjgwMDI0NTA=Find service with writable binary2019-04-02T03:09:04Z2019-04-02T13:10:50ZTrue
+MDU6SXNzdWU0NDY1MTQ0NTI=ValueError: in check_webclient when running with different bitness of python2019-05-21T09:32:44Z2019-08-02T15:09:11ZTrue
+MDU6SXNzdWU0NDg1Njg4MTI=stand-alone2019-05-26T13:45:11Z2019-10-02T13:15:00ZTrue
+MDU6SXNzdWU0OTk3MjYxMjc=python files not found at runtime2019-09-28T04:50:48Z2019-10-02T13:14:51ZTrue
+MDU6SXNzdWU1MDI5ODk2Mzk=sudoers file - error2019-10-05T17:11:23Z2020-03-03T11:23:58ZTrue
+MDU6SXNzdWU1NTkwMzgzOTU=Unable to download win32net and make the python code working on windows2020-02-03T12:00:55Z2020-03-03T11:23:49ZTrue
+MDU6SXNzdWU1NjU4Mzk3NjM=SyntaxError: invalid syntax2020-02-16T02:27:31Z2020-03-09T21:33:38ZTrue
+MDU6SXNzdWU2MDQ0MzE2NDg=Missing error handling around Access Denied to SCManager2020-04-22T03:47:13ZFalse

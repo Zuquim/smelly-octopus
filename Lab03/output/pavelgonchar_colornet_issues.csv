@@ -1,0 +1,16 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxNTAwNTE5Mzg="Add a ""Getting Started"""2016-04-21T11:54:05ZFalse
+MDU6SXNzdWUxNTAwNzAwMDA=Awesome work, we are hiring2016-04-21T13:09:30Z2016-04-21T13:09:48ZTrue
+MDU6SXNzdWUxNTAxODczNjM=Better color algorithm2016-04-21T20:49:42ZFalse
+MDU6SXNzdWUxNTA0MzE4ODA=Missing LICENSE?2016-04-22T17:49:31ZFalse
+MDU6SXNzdWUxNTA0MzUxNzI=Color tone predictions based on location, orientation and timestamp.2016-04-22T18:05:37ZFalse
+MDU6SXNzdWUxOTA0OTIwODY= string_input_producer requires a non-null input tensor2016-11-19T11:38:50Z2016-11-20T05:37:31ZTrue
+MDU6SXNzdWUyMTQ4Njk3MTc=tf version2017-03-16T23:40:04ZFalse
+MDU6SXNzdWUyMjE5NTQ1NzQ=DecodeError : Tag had invalid wire type2017-04-15T15:24:14ZFalse
+MDU6SXNzdWUyMzU0ODk2MDE=Error in “grayscale = tf.concat(3, [grayscale, grayscale, grayscale])”2017-06-13T09:22:06ZFalse
+MDU6SXNzdWUyNDk4NjMyMTQ="error Traceback (most recent call last):   File ""train.py"", line 160, in <module>     graph_def.ParseFromString(fileContent) google.protobuf.message.DecodeError: Error parsing messag"2017-08-13T09:35:38ZFalse
+MDU6SXNzdWUyODU4ODc0OTY=Test on B/W images2018-01-04T05:49:29ZFalse
+MDU6SXNzdWUyOTUyOTE5ODA=TypeError: Using a `tf.Tensor` as a Python `bool` is not allowed. Use `if t is not None:` instead of `if t:` to test if a tensor is defined, and use TensorFlow ops such as tf.cond to execute subgraphs conditioned on the value of a tensor.2018-02-07T21:04:04ZFalse
+MDU6SXNzdWUzMTM2MDE3Nzk=not find jpg files2018-04-12T07:07:25ZFalse
+MDU6SXNzdWUzMjExMjM2NDE=Could you please release the reference code?2018-05-08T10:10:21ZFalse
+MDU6SXNzdWU1MzUzNjY2MDk=train.py fails: google.protobuf.message.DecodeError: Wrong wire type in tag.2019-12-09T22:06:46ZFalse

@@ -1,0 +1,18 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUxOTEzMTQ4MzM=ch06/overfit_weight_decay.pyのweight_decay_lambdaの切り替えについて2016-11-23T16:08:05Z2016-11-29T01:00:45ZTrue
+MDU6SXNzdWUxOTYxOTMxOTQ=Simple practice with one dimensional data 12016-12-17T03:27:41ZFalse
+MDU6SXNzdWUyMDM4MzgwODY=_pickle.PicklingError on Pythonista 32017-01-28T23:04:27Z2017-01-30T21:03:21ZTrue
+MDU6SXNzdWUyMTE1OTM1NTQ=ch03以下のファイル中にあるimport dataset.mnistが機能しない2017-03-03T04:36:15Z2017-03-03T04:45:30ZTrue
+MDU6SXNzdWUyMTE5MzExNTk=6章のハイパーパラメータ最適化のコードについて2017-03-05T05:17:02ZFalse
+MDU6SXNzdWUyNjg1OTM2MzU=rmsprpoはrmspropのタイポ2017-10-26T00:37:48Z2020-03-17T12:57:50ZTrue
+MDU6SXNzdWUyNzgwMDEyMDE=sys.path.append(os.pardir)がうまく行かず、os.pardirのところにフルパスを指定したところ動きました2017-11-30T05:15:32ZFalse
+MDU6SXNzdWUyOTA3Mjk1NzM=3章のMNIST画像の表示にはpillowライブラリが必要なようです2018-01-23T07:04:44ZFalse
+MDU6SXNzdWUyOTExNzkyNzk=col2im の結果について2018-01-24T11:45:44Z2018-02-07T14:00:32ZTrue
+MDU6SXNzdWUzMjI1NTg2NDA=Question about the algorithm of col2im2018-05-13T02:37:10Z2018-05-24T11:58:52ZTrue
+MDU6SXNzdWUzODA5NjczMjQ=P168の6.1.3(SGDの欠点)について2018-11-15T02:03:58Z2019-01-21T08:35:37ZTrue
+MDU6SXNzdWU0NTM4OTEzOTY=P169. 図６−２について2019-06-09T12:07:35ZFalse
+MDU6SXNzdWU0ODg5MDQ0MDk=common/gradient.py内のnumerical_gradient関数におけるfloatキャストの必要性2019-09-04T02:17:52Z2019-09-04T02:25:16ZTrue
+MDU6SXNzdWU1NDQzMTY3Mzk=softmax関数のコード改善案2020-01-01T06:13:08Z2020-03-17T13:27:57ZTrue
+MDU6SXNzdWU1NDQzMjYwNDU=col2im関数のimg配列の初期化サイズについて2020-01-01T07:47:02ZFalse
+MDU6SXNzdWU1NjU4NTQzNDY=8章：学習済みの重みパラメータのファイル名2020-02-16T05:24:46Z2020-03-17T13:36:37ZTrue
+MDU6SXNzdWU1ODQ5MDcxNTc=3章[P.76] pickleライブラリのインストールが必要なようです2020-03-20T08:12:52ZFalse

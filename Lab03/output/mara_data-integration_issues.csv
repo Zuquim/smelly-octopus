@@ -1,0 +1,12 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUzMjE2OTM2MTU=Pipeline.add upstreams parameter default should not be a list2018-05-09T19:19:01Z2018-05-09T22:15:40ZTrue
+MDU6SXNzdWUzMjE3MDU0OTc=Is there any way to deal with errors/exceptions raised in the pipeline tasks?2018-05-09T19:58:04Z2018-05-16T19:45:40ZTrue
+MDU6SXNzdWUzMjE3NzU0Mjg=Q: feasibility of substituting pgsql for sqlite?  2018-05-10T01:05:09Z2018-05-16T19:28:58ZTrue
+MDU6SXNzdWUzMjM3NjA1MTc="Implement a ""continue on error"" behavior for pipelines"2018-05-16T19:45:23Z2018-07-17T10:12:26ZTrue
+MDU6SXNzdWUzNDYzODI5ODA=PostgreSQLDB(..) constructor doesn't handle port2018-07-31T22:34:18Z2019-01-21T10:34:53ZTrue
+MDU6SXNzdWUzNTk3NjAzNDY=parallel_tasks\files.py ParallelReadFile copies data into master table instead of child tables2018-09-13T06:33:24Z2018-10-16T08:26:34ZTrue
+MDU6SXNzdWU0NTU1MTg1NDU=the pip command no longer works2019-06-13T03:31:07Z2019-07-05T08:32:38ZTrue
+MDU6SXNzdWU1MTQ1MzM5NTQ=Reverting a bad create_xxx_data_table with file dependencies leads to inconsistent state2019-10-30T10:01:36Z2020-03-05T09:16:49ZTrue
+MDU6SXNzdWU1NjI5NDAxMDg=Duplication of pk in table data_integration_system_statistics2020-02-11T02:25:47ZFalse
+MDU6SXNzdWU2MDY2MjMzOTI=ValueError: cannot find context for 'fork'2020-04-24T22:46:30ZFalse
+MDU6SXNzdWU2MTMwNzYyOTA=limit node cost calc.2020-05-06T06:16:50ZFalse

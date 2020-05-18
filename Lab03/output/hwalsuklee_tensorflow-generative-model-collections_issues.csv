@@ -1,0 +1,27 @@
+idtitlecreatedAtclosedAtclosed
+MDU6SXNzdWUyNTM0NTY3MjQ=link Fashion-MNIST readme to this notebook2017-08-28T21:05:20Z2017-08-28T23:11:36ZTrue
+MDU6SXNzdWUyNTQ0ODUzMDM=Bug in model constructors2017-08-31T22:23:07Z2017-08-31T23:23:25ZTrue
+MDU6SXNzdWUyNTQ3OTg0MjQ=FID score2017-09-02T08:31:14ZFalse
+MDU6SXNzdWUyNTU0NDY0OTk=Hi！ Could you provide a version of generative for Text Processing？2017-09-06T00:30:00Z2017-09-06T00:59:04ZTrue
+MDU6SXNzdWUyNTYyMjE0ODU=f-GAN2017-09-08T11:14:19ZFalse
+MDU6SXNzdWUyNTkzNjQ4OTA=Not an issue, but a request2017-09-21T03:27:35ZFalse
+MDU6SXNzdWUyNjgwNjQ2NDU=requesting DR-GAN2017-10-24T14:54:03ZFalse
+MDU6SXNzdWUyNzE2ODA2ODM=Question about marginal_likelihood in VAE2017-11-07T01:35:12ZFalse
+MDU6SXNzdWUyNzIyMDgxMTg=WGAN_GP - tensorflow2017-11-08T14:00:08Z2017-11-09T22:25:29ZTrue
+MDU6SXNzdWUyNzU5ODM2MTM=where is the filter  'data' ?2017-11-22T08:36:44Z2017-11-23T01:43:54ZTrue
+MDU6SXNzdWUyNzY4MTA3ODI=Question about batch normalization in WGAN_GP2017-11-26T09:14:57ZFalse
+MDU6SXNzdWUyODEzNDI3NDA=I want to know how to use celebA's label to train CGAN！2017-12-12T11:04:06Z2017-12-21T08:06:30ZTrue
+MDU6SXNzdWUyODEzNzMyNDU=Question about LSGAN2017-12-12T12:52:06Z2017-12-13T01:06:33ZTrue
+MDU6SXNzdWUyOTMwNzU5MTg=Don't use batch_normalization2018-01-31T08:50:22ZFalse
+MDU6SXNzdWUyOTMxOTQ3NDU=Continuous latent loss possibly wrong in InfoGAN2018-01-31T15:14:42Z2018-02-01T09:54:24ZTrue
+MDU6SXNzdWUzMDc5MDQ0ODM=Very fast convergence in VAE and CVAE2018-03-23T05:09:56ZFalse
+MDU6SXNzdWUzMDgyMzU1MDU=request about input data2018-03-24T07:04:55ZFalse
+MDU6SXNzdWUzMTM3NDYxNjY=about CVAE's input2018-04-12T14:14:55ZFalse
+MDU6SXNzdWUzNDE0NDI5OTU=about loss D_real or D_real_logits use ?2018-07-16T09:16:45ZFalse
+MDU6SXNzdWUzNDI3MTMzNjc=Questions about training ACGAN 2018-07-19T12:47:05ZFalse
+MDU6SXNzdWUzNTkzMjI0NzY=CGAN convergence time2018-09-12T05:36:38ZFalse
+MDU6SXNzdWUzNjI4NTI2Nzg=Not an issue2018-09-22T12:16:23ZFalse
+MDU6SXNzdWU0NjUyMTMzMzk=Gradient Penalty code error in WGAN_GP 2019-07-08T11:51:54ZFalse
+MDU6SXNzdWU0ODE1MTUyMDQ=discriminator los sfunction of w-gan  is wrong  ？2019-08-16T09:04:50ZFalse
+MDU6SXNzdWU1MzM4MjQ5MDk=Maybe it's unnecessary to use weight clipping in the LSGAN?2019-12-06T08:46:22ZFalse
+MDU6SXNzdWU1OTAxODc2MzY=Tensorflow implementation of color image data(eg. cifar10) VAE, or Pytorch implementation of VAE?2020-03-30T10:45:20ZFalse
