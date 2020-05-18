@@ -1,7 +1,7 @@
 from csv import DictWriter
 from datetime import datetime as dt
 from logging import DEBUG, INFO
-from os import getcwd, listdir, system
+from os import getcwd, system
 from socket import gethostname
 from subprocess import Popen, PIPE
 from sys import exit
@@ -11,7 +11,7 @@ from logzero import setup_logger
 
 from GitHub.GraphQL import Query
 
-log = setup_logger(name="tools", level=DEBUG)
+log = setup_logger(name="tools", level=INFO)
 
 # Some constants
 output_path = f"{getcwd()}/output"
