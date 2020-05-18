@@ -1,4 +1,4 @@
-from logging import INFO
+from logging import DEBUG, INFO
 from sys import exit
 from typing import Optional
 
@@ -16,7 +16,7 @@ repositories_template = (
     '      created:>=2016-01-01",'
     "      type:REPOSITORY,"
     "      first:!<FIRST>!,"
-    '      after:"!<AFTER>!"'
+    '      after:!<AFTER>!'
     "  ){"
     "    pageInfo{"
     "      hasNextPage"
@@ -53,7 +53,7 @@ issues_template = """
           field:CREATED_AT,
           direction:ASC
         },
-        after:"!<AFTER>!"
+        after:!<AFTER>!
     ){
       pageInfo{
         hasNextPage
@@ -111,8 +111,7 @@ class Query:
                 self.max_per_page = n_issues
 
         # Setting up first query (the only one where 'after' is 'null')
-        self.data_template = data_template.replace(
-            '"!<AFTER>!"', "null").replace("!<FIRST>!", str(self.max_per_page))
+        self.data_template = data_template.replace("!<FIRST>!", str(self.max_per_page))
         self.data = {"query": self.data_template}
 
         # Running HTTP POST request
@@ -144,7 +143,7 @@ class Query:
             )
 
         self.data["query"] = data
-
+        log.debug(f"query: {data}")
         return self.data
 
     def request(self):
@@ -183,9 +182,10 @@ class Query:
         try:
             if self.json["data"]["search"]["pageInfo"]["hasNextPage"]:
                 self.update_data_template(
-                    self.json["data"]["search"]["pageInfo"]["endCursor"]
+                    f'"{self.json["data"]["search"]["pageInfo"]["endCursor"]}"'
                 )
-                return self.json["data"]["search"]["pageInfo"]["endCursor"]
+                log.debug(f'endCursor: {self.json["data"]["search"]["pageInfo"]["endCursor"]}')
+                return True
             else:
                 return False
         except KeyError as e:
@@ -193,7 +193,7 @@ class Query:
             if self.json["data"]["repository"]["issues"]["pageInfo"]["hasNextPage"]:
                 self.n_issues -= self.max_per_page
                 self.update_data_template(
-                    end_cursor=self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"],
+                    end_cursor=f'"{self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"]}"',
                     n_issues=self.n_issues
                 )
                 return self.json["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
