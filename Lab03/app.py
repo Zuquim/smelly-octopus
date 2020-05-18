@@ -52,7 +52,9 @@ headers = {
 log.info("Getting repositories...")
 if not exists(f"{output_path}/repositories.csv"):
     # First run
-    query_repos = Query(url, headers, templates["repositories"], auto_run=True)
+    query_repos = Query(url, headers, templates["repositories"])
+    query_repos.update_data_template("null")
+    query_repos.request()
     query_repos, table_headers, nodes = first_run(query_repos)
 
     # Getting nodes for the next pages
@@ -101,6 +103,7 @@ for id_, owner_name, n_issues in zip(
             max_per_page=max_per_page
         )
         query_issue.update_data_template(owner=owner, name=name)
+        query_issue.update_data_template("null")
         query_issue.request()
         query_issue, table_headers, nodes = first_run(query_issue)
 
